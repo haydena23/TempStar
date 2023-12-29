@@ -1,0 +1,3012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GearBunny Ultra</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="60,40">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="15,85">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="30,20,50">
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="title">
+                <string>Character Information</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0">
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="classComboBox">
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Armsman</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Cabalist</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Cleric</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Friar</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Heretic</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Infiltrator</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Mercenary</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Minstrel</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Necromancer</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Paladin</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Reaver</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Scout</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Sorcerer</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Theurgist</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Alb) Wizard</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Animist</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Bainshee</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Bard</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Blademaster</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Champion</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Druid</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Eldritch</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Enchanter</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Hero</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Mentalist</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Nightshade</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Ranger</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Valewalker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Vampiir</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Hib) Warden</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Berserker</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Bonedancer</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Healer</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Hunter</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Runemaster</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Savage</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Shadowblade</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Shaman</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Skald</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Spiritmaster</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Thane</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Valkyrie</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>(Mid) Warrior</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="comboBox">
+                  <property name="currentText">
+                   <string>Eden</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Eden</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Character Name:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="2">
+                 <widget class="QLineEdit" name="lineEdit">
+                  <property name="placeholderText">
+                   <string>&lt;Name&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Server:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_4">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Class:</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_4">
+               <property name="title">
+                <string>Tools</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="0">
+                 <widget class="QToolButton" name="toolButton">
+                  <property name="text">
+                   <string>Tool1</string>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>16</width>
+                    <height>16</height>
+                   </size>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::DelayedPopup</enum>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonIconOnly</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QToolButton" name="toolButton_2">
+                  <property name="text">
+                   <string>Tool2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QToolButton" name="toolButton_3">
+                  <property name="text">
+                   <string>Tool3</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QToolButton" name="toolButton_4">
+                  <property name="text">
+                   <string>Tool4</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="title">
+                <string>This Configuration</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0" colspan="4">
+                 <widget class="QLineEdit" name="lineEdit_2">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>&lt;Configuration Name&gt;</string>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QComboBox" name="comboBox_4">
+                  <item>
+                   <property name="text">
+                    <string>CL0</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL5</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL6</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL7</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL9</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL10</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL11</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL12</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL13</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL14</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CL15</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QComboBox" name="comboBox_5">
+                  <item>
+                   <property name="text">
+                    <string>RR1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR5</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR6</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR7</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR9</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR10</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR11</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR12</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR13</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>RR14</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="QComboBox" name="comboBox_6">
+                  <item>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>12</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>13</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>14</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>15</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>16</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>17</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>18</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>19</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>20</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>21</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>22</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>23</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>24</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>25</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>26</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>27</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>28</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>29</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>30</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>31</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>32</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>33</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>34</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>35</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>36</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>37</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>38</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>39</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>40</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>41</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>42</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>43</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>44</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>45</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>46</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>47</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>48</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>49</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>50</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QComboBox" name="comboBox_3">
+                  <property name="frame">
+                   <bool>true</bool>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>&lt;None&gt;</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Avalonian</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Briton</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Half-Ogre</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Highlander</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Inconnu</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Minotaur</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Saracen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Celt</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Elf</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Firbolg</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Lurikeen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Minotaur</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Shar</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sylvan</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Dwarf</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Frostalf</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Kobold</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Minotaur</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Norseman</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Troll</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Valkyn</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Race</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLabel" name="label_7">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Champ</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0" colspan="4">
+                 <widget class="QComboBox" name="comboBox_7">
+                  <item>
+                   <property name="text">
+                    <string>&lt;Choose Weapons Equipped&gt;</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Right and Left Hands</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Two Handed</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Ranged / Instrument</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_5">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Equipped Weapons:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLabel" name="label_8">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Realm Rank</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Level</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>Welcome</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Choose a topic:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_8">
+                <item>
+                 <property name="text">
+                  <string>Getting Started</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Using the Interface</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="textEdit_2">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is a bunch of text that is written to this box&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Oh Romeo Romeo where art thou Romeo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>Equipment</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="70,30">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_5">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QListWidget" name="listWidget">
+                   <property name="horizontalScrollBarPolicy">
+                    <enum>Qt::ScrollBarAlwaysOff</enum>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                   <property name="selectionRectVisible">
+                    <bool>true</bool>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Jewel:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Neck:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Cloak:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Belt:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ring 1:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ring 2:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Wrist 1:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Wrist 2:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Chest:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Head:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Arms:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Hands:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Legs:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Feet:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Right Hand:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Left Hand:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Two Hand:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ranged:</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Mythirian:</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>&lt;Item&gt; Selection:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QListWidget" name="listWidget_2">
+                   <property name="selectionRectVisible">
+                    <bool>true</bool>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>&lt;Empty Slot&gt;</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Add Items from...</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>The Master Vault</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_2">
+                   <property name="text">
+                    <string>Via Manual Entry</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_3">
+                   <property name="text">
+                    <string>Spellcraft Calculator</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_4">
+                   <property name="text">
+                    <string>Unequip All Slots</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Spec Editor</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="font">
+                    <font>
+                     <pointsize>13</pointsize>
+                    </font>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="text">
+                    <string>Class : &lt;Class&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="text">
+                    <string>Spec Points Per Level:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_16">
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="text">
+                    <string>Total Spec Points:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_17">
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="text">
+                    <string>Spec Points Spent:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>1</number>
+                   </property>
+                   <property name="midLineWidth">
+                    <number>0</number>
+                   </property>
+                   <property name="text">
+                    <string>Spec Points Left:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_13">
+                   <property name="text">
+                    <string>Respec All</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="title">
+                 <string>Specialization Options</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5" columnstretch="10,90">
+                 <item row="1" column="1">
+                  <widget class="QPushButton" name="pushButton_6">
+                   <property name="text">
+                    <string>Skill 2</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="pushButton_5">
+                   <property name="text">
+                    <string>Skill 1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QSpinBox" name="spinBox">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QPushButton" name="pushButton_7">
+                   <property name="text">
+                    <string>Skill 3</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QPushButton" name="pushButton_10">
+                   <property name="text">
+                    <string>Skill 6</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QPushButton" name="pushButton_8">
+                   <property name="text">
+                    <string>Skill 4</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QPushButton" name="pushButton_9">
+                   <property name="text">
+                    <string>Skill 5</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QPushButton" name="pushButton_11">
+                   <property name="text">
+                    <string>Skill 7</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QPushButton" name="pushButton_12">
+                   <property name="text">
+                    <string>Skill 8</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QSpinBox" name="spinBox_2">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QSpinBox" name="spinBox_3">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QSpinBox" name="spinBox_4">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QSpinBox" name="spinBox_5">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QSpinBox" name="spinBox_6">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QSpinBox" name="spinBox_7">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QSpinBox" name="spinBox_8">
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>50</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="title">
+              <string>Report</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>Configuration Report</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="textEdit_3">
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                </property>
+                <property name="documentTitle">
+                 <string/>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="acceptRichText">
+                 <bool>false</bool>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+                </property>
+                <property name="placeholderText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_5">
+             <attribute name="title">
+              <string>Character Notes</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>Character Notes</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="textEdit_4">
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="acceptRichText">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>false</underline>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid black; /* Adjust the '2px' to the thickness you desire */
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item row="3" column="1">
+              <widget class="QTableWidget" name="bonusesTable">
+               <property name="styleSheet">
+                <string notr="true">QHeaderView::section {
+        font-weight: bold;
+}</string>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <property name="rowCount">
+                <number>13</number>
+               </property>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <column>
+                <property name="text">
+                 <string>ToA/PvE/Other</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Now</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>+/-</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QTableWidget" name="resistsTable">
+               <property name="styleSheet">
+                <string notr="true">QHeaderView::section {
+        font-weight: bold;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <property name="rowCount">
+                <number>10</number>
+               </property>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <column>
+                <property name="text">
+                 <string>Resists</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Now</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>+/-</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>Crush Resist</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="0" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="0" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="1" column="0">
+                <property name="text">
+                 <string>Slash Resist</string>
+                </property>
+               </item>
+               <item row="1" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="1" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="1" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="2" column="0">
+                <property name="text">
+                 <string>Thrust Resist</string>
+                </property>
+               </item>
+               <item row="2" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="2" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="2" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="3" column="0">
+                <property name="text">
+                 <string>Heat Resist</string>
+                </property>
+               </item>
+               <item row="3" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="3" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="3" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="4" column="0">
+                <property name="text">
+                 <string>Cold Resist</string>
+                </property>
+               </item>
+               <item row="4" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="4" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="4" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="5" column="0">
+                <property name="text">
+                 <string>Matter Resist</string>
+                </property>
+               </item>
+               <item row="5" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="5" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="5" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="6" column="0">
+                <property name="text">
+                 <string>Energy Resist</string>
+                </property>
+               </item>
+               <item row="6" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="6" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="6" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="7" column="0">
+                <property name="text">
+                 <string>Body Resist</string>
+                </property>
+               </item>
+               <item row="7" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="7" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="7" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="8" column="0">
+                <property name="text">
+                 <string>Spirit Resist</string>
+                </property>
+               </item>
+               <item row="8" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="8" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="8" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="9" column="0">
+                <property name="text">
+                 <string>Essence Resist</string>
+                </property>
+               </item>
+               <item row="9" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="9" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="9" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QTableWidget" name="statsCapTable">
+               <property name="styleSheet">
+                <string notr="true">QHeaderView::section {
+        font-weight: bold;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QAbstractScrollArea::AdjustIgnored</enum>
+               </property>
+               <property name="autoScroll">
+                <bool>true</bool>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <property name="showGrid">
+                <bool>true</bool>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+               <property name="cornerButtonEnabled">
+                <bool>true</bool>
+               </property>
+               <property name="rowCount">
+                <number>12</number>
+               </property>
+               <property name="columnCount">
+                <number>4</number>
+               </property>
+               <attribute name="horizontalHeaderVisible">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="horizontalHeaderCascadingSectionResizes">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <column>
+                <property name="text">
+                 <string>Stat Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Now</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>+/-</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>Strength Cap</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="0" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="0" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="1" column="0">
+                <property name="text">
+                 <string>Constitution Cap</string>
+                </property>
+               </item>
+               <item row="1" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="1" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="1" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="2" column="0">
+                <property name="text">
+                 <string>Dexterity Cap</string>
+                </property>
+               </item>
+               <item row="2" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="2" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="2" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="3" column="0">
+                <property name="text">
+                 <string>Quickness Cap</string>
+                </property>
+               </item>
+               <item row="3" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="3" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="3" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="4" column="0">
+                <property name="text">
+                 <string>Piety Cap</string>
+                </property>
+               </item>
+               <item row="4" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="4" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="4" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="5" column="0">
+                <property name="text">
+                 <string>Intelligence Cap</string>
+                </property>
+               </item>
+               <item row="5" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="5" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="5" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="6" column="0">
+                <property name="text">
+                 <string>Empathy Cap</string>
+                </property>
+               </item>
+               <item row="6" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="6" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="6" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="7" column="0">
+                <property name="text">
+                 <string>Charisma Cap</string>
+                </property>
+               </item>
+               <item row="7" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="7" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="7" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="8" column="0">
+                <property name="text">
+                 <string>Acuity Cap</string>
+                </property>
+               </item>
+               <item row="8" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="8" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="8" column="3">
+                <property name="text">
+                 <string>-26</string>
+                </property>
+               </item>
+               <item row="9" column="0">
+                <property name="text">
+                 <string>Fatigue Cap</string>
+                </property>
+               </item>
+               <item row="9" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="9" column="2">
+                <property name="text">
+                 <string>25</string>
+                </property>
+               </item>
+               <item row="9" column="3">
+                <property name="text">
+                 <string>-25</string>
+                </property>
+               </item>
+               <item row="10" column="0">
+                <property name="text">
+                 <string>Power Cap</string>
+                </property>
+               </item>
+               <item row="10" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="10" column="2">
+                <property name="text">
+                 <string>50</string>
+                </property>
+               </item>
+               <item row="10" column="3">
+                <property name="text">
+                 <string>-50</string>
+                </property>
+               </item>
+               <item row="11" column="0">
+                <property name="text">
+                 <string>Hit Points Cap</string>
+                </property>
+               </item>
+               <item row="11" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="11" column="2">
+                <property name="text">
+                 <string>200</string>
+                </property>
+               </item>
+               <item row="11" column="3">
+                <property name="text">
+                 <string>-200</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Show All ToA/PvE/Other Stats</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QTableWidget" name="skillsTable">
+               <property name="font">
+                <font>
+                 <underline>false</underline>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QHeaderView::section {
+        font-weight: bold;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <property name="rowCount">
+                <number>8</number>
+               </property>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <column>
+                <property name="text">
+                 <string>Skills</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Now</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>+/-</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QTableWidget" name="statsTable">
+               <property name="font">
+                <font>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QHeaderView::section {
+        font-weight: bold;
+}</string>
+               </property>
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QAbstractScrollArea::AdjustIgnored</enum>
+               </property>
+               <property name="dragDropOverwriteMode">
+                <bool>true</bool>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::NoSelection</enum>
+               </property>
+               <property name="gridStyle">
+                <enum>Qt::SolidLine</enum>
+               </property>
+               <property name="rowCount">
+                <number>13</number>
+               </property>
+               <attribute name="horizontalHeaderVisible">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="horizontalHeaderCascadingSectionResizes">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="horizontalHeaderStretchLastSection">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderVisible">
+                <bool>false</bool>
+               </attribute>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <row/>
+               <column>
+                <property name="text">
+                 <string>Main Stats</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Now</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Cap</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>+/-</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>Strength</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="0" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="0" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="1" column="0">
+                <property name="text">
+                 <string>Constitution</string>
+                </property>
+               </item>
+               <item row="1" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="1" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="1" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="2" column="0">
+                <property name="text">
+                 <string>Dexterity</string>
+                </property>
+               </item>
+               <item row="2" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="2" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="2" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="3" column="0">
+                <property name="text">
+                 <string>Quickness</string>
+                </property>
+               </item>
+               <item row="3" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="3" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="3" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="4" column="0">
+                <property name="text">
+                 <string>Piety</string>
+                </property>
+               </item>
+               <item row="4" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="4" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="4" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="5" column="0">
+                <property name="text">
+                 <string>Intelligence</string>
+                </property>
+               </item>
+               <item row="5" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="5" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="5" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="6" column="0">
+                <property name="text">
+                 <string>Empathy</string>
+                </property>
+               </item>
+               <item row="6" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="6" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="6" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="7" column="0">
+                <property name="text">
+                 <string>Charisma</string>
+                </property>
+               </item>
+               <item row="7" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="7" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="7" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="8" column="0">
+                <property name="text">
+                 <string>Acuity</string>
+                </property>
+               </item>
+               <item row="8" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="8" column="2">
+                <property name="text">
+                 <string>75</string>
+                </property>
+               </item>
+               <item row="8" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="9" column="0">
+                <property name="text">
+                 <string>Fatigue</string>
+                </property>
+               </item>
+               <item row="9" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="9" column="2">
+                <property name="text">
+                 <string>50</string>
+                </property>
+               </item>
+               <item row="9" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="10" column="0">
+                <property name="text">
+                 <string>Power Points</string>
+                </property>
+               </item>
+               <item row="10" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="10" column="2">
+                <property name="text">
+                 <string>26</string>
+                </property>
+               </item>
+               <item row="10" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="11" column="0">
+                <property name="text">
+                 <string>Hit Points</string>
+                </property>
+               </item>
+               <item row="11" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="11" column="2">
+                <property name="text">
+                 <string>200</string>
+                </property>
+               </item>
+               <item row="11" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+               <item row="12" column="0">
+                <property name="text">
+                 <string>Armor Factor</string>
+                </property>
+               </item>
+               <item row="12" column="1">
+                <property name="text">
+                 <string>0</string>
+                </property>
+               </item>
+               <item row="12" column="2">
+                <property name="text">
+                 <string>50</string>
+                </property>
+               </item>
+               <item row="12" column="3">
+                <property name="text">
+                 <string>-75</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QTextEdit" name="textEdit">
+               <property name="verticalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOn</enum>
+               </property>
+               <property name="horizontalScrollBarPolicy">
+                <enum>Qt::ScrollBarAlwaysOff</enum>
+               </property>
+               <property name="documentTitle">
+                <string/>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="textInteractionFlags">
+                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+               </property>
+               <property name="placeholderText">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Items effecting &lt;Stat&gt;</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+               <property name="indent">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen_Recent">
+     <property name="title">
+      <string>Open Recent</string>
+     </property>
+     <addaction name="actionTemp1"/>
+     <addaction name="actionTemp2"/>
+    </widget>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="menuOpen_Recent"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuTheme">
+     <property name="title">
+      <string>Theme</string>
+     </property>
+     <addaction name="actionLight"/>
+     <addaction name="actionDark"/>
+    </widget>
+    <addaction name="actionFullscreen"/>
+    <addaction name="menuTheme"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionGuide"/>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionDonate"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGuide">
+   <property name="text">
+    <string>Guide</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionDonate">
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionFullscreen">
+   <property name="text">
+    <string>Fullscreen</string>
+   </property>
+  </action>
+  <action name="actionLight">
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="actionDark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionTemp1">
+   <property name="text">
+    <string>Temp1</string>
+   </property>
+  </action>
+  <action name="actionTemp2">
+   <property name="text">
+    <string>Temp2</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
