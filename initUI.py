@@ -1,14 +1,16 @@
 from PyQt5.QtWidgets import QComboBox
 
-from class_types import *
-from mappings import *
-from changeClass import changeClass
+from Models.class_types import *
+from Models.race_types import *
+from Models.mappings import *
+from changeFunctions import *
+
 from newCharacter import create_new_character_on_open
 
-def setupUI(main_window):
+def initUI(main_window):
     create_new_character_on_open(main_window)
     configClassComboBox(main_window, class_type_mapping, changeClass)
-    # configRaceComboBox(main_window, race_type_mapping, changeRace)
+    configRaceComboBox(main_window, race_type_mapping, changeRace)
     
 """
 Configure Class ComboBox
@@ -33,6 +35,5 @@ def configRaceComboBox(main_window, race_type_mapping, change_race_callback):
 def on_race_changed(main_window, race_type_mapping, change_race_callback):
     selected_race_name = main_window.raceComboBox.currentText()
     selected_race_type = race_type_mapping.get(selected_race_name)
-    print(selected_race_name)
     if selected_race_type:
         change_race_callback(main_window, selected_race_type)

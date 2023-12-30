@@ -1,7 +1,7 @@
-from character import Character
-from class_types import *
-from race_types import *
-from mappings import *
+from Models.character import Character
+from Models.class_types import *
+from Models.race_types import *
+from Models.mappings import *
 from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget, QComboBox
 from setTables import initTables, setSkillsTable
 
@@ -13,8 +13,7 @@ def create_new_character_on_open(self):
     initTables(self)
     self.character = Character("New Character", Armsman, 1, 1, 1)
     reset_ui_for_new_character(self)
-    
-        
+     
 def reset_ui_for_new_character(self):
     update_stats_table(self)
     update_resists_table(self)
@@ -25,7 +24,7 @@ def reset_ui_for_new_character(self):
 def update_stats_table(self):
     if self.character:
         for stat_type, row in stats_row_mapping.items():
-            stat_value = self.character.stats.get(stat_type, 0)
+            stat_value = self.character.base_stats.get(stat_type, 0)
             self.tableWidget = self.findChild(QTableWidget,'statsTable')
             value_item = QTableWidgetItem(str(stat_value))
             self.tableWidget.setItem(row, 1, value_item)

@@ -1,4 +1,4 @@
-from class_types import ClassType
+from Models.class_types import ClassType
 
 class Character:
     def __init__(self, name, class_type: ClassType, level, champion_level, realm_rank):
@@ -7,7 +7,7 @@ class Character:
         self.level = level
         self.champion_level = champion_level
         self.realm_rank = realm_rank
-        self.stats = {
+        self.base_stats = {
             'strength': 0, 'constitution': 0, 'dexterity': 0, 'quickness': 0,
             'piety': 0, 'intelligence': 0, 'empathy': 0, 'charisma': 0,
             'acuity': 0, 'fatigue': 0, 'power_points': 0, 'hit_points': 0, 'armor_factor': 0

@@ -2,7 +2,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QComboBox
 from PyQt5 import uic
-from setupUI import setupUI
+from initUI import initUI
 
 class MyApplication(QMainWindow):
     def __init__(self):
@@ -10,7 +10,7 @@ class MyApplication(QMainWindow):
         uic.loadUi('gbx.ui', self)
         self.character = None
         self.lockTemplate = False
-        setupUI(self)
+        initUI(self)
 
 if __name__ == "__main__":
     import sys

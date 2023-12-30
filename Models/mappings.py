@@ -1,5 +1,5 @@
-from class_types import *
-from race_types import *
+from Models.class_types import *
+from Models.race_types import *
 
 stats_row_mapping = {
     'strength': 0, 
@@ -97,7 +97,7 @@ class_type_mapping = {
 
 race_type_mapping = {
     "<None>": NoRace,
-    "Avalonian": Armsman,
+    "Avalonian": Avalonian,
     "Briton": Briton,
     "Half-Ogre": HalfOgre,
     "Highlander": Highlander,

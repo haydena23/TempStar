@@ -1,4 +1,4 @@
-from race_types import *
+from Models.race_types import *
 
 class ClassType:
     def __init__(self, name, magic_skills, melee_skills, allowed_races: RaceType):

@@ -48,3 +48,18 @@ def setSkillsTable(self):
         self.skillsTable.setColumnWidth(1,20)
         self.skillsTable.setColumnWidth(2,20)
         self.skillsTable.setColumnWidth(3,20)
+        
+def clearTable(self, table_name):
+    self.tableToClear = self.findChild(QTableWidget, table_name)
+    for row in range(self.tableToClear.rowCount()):
+        self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
+        self.tableToClear.setItem(row, 2, QTableWidgetItem("26"))
+        self.tableToClear.setItem(row, 3, QTableWidgetItem("-26"))
+        
+def calcuateDifferenceOfStatAndCap(self, table_name):
+    self.table = self.findChild(QTableWidget, table_name)
+    for row in range(self.table.rowCount()):
+        self.currentValue = int(self.table.item(row, 1).text())
+        self.cap = int(self.table.item(row, 2).text())
+        difference = self.currentValue - self.cap
+        self.table.setItem(row, 3, QTableWidgetItem(str(difference)))
