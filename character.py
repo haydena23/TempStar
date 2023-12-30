@@ -30,7 +30,3 @@ class Character:
             'spell_duration': 0, 'arcane_siphoning': 0, 'healing_bonus': 0, 'buff_enhance': 0,
             'debuff_bonus': 0, 'xp_bonus': 0, 'rp_bonus': 0, 'bp_bonus': 0,
         }
-        self.updateResists()
-    
-    def updateResists():
-        pass

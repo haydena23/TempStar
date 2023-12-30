@@ -1,7 +1,8 @@
 from character import Character
 from class_types import *
+from race_types import *
 from mappings import *
-from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget
+from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget, QComboBox
 from setTables import initTables, setSkillsTable
 
 def new_character_change(self, class_type: ClassType):
@@ -46,4 +47,10 @@ def update_resists_table(self):
             self.tableWidget.setItem(row, 1, value_item)
 
 def setAllowedClassesComboBox(self):
-    pass
+    if self.character:
+        self.raceComboBox = self.findChild(QComboBox,'raceComboBox')
+        self.raceComboBox.clear()
+        for race in self.character.allowed_races:
+            self.raceComboBox.addItem(str(race.name))
+        self.raceComboBox.model().sort(0)
+        self.raceComboBox.setCurrentIndex(0)

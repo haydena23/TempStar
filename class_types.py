@@ -26,7 +26,8 @@ Armsman = ClassType(
                    HalfOgre,
                    Highlander,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -41,7 +42,8 @@ Cabalist = ClassType(
                    Avalonian,
                    Saracen,
                    Inconnu,
-                   HalfOgre
+                   HalfOgre,
+                   NoRace
                    }
 )
 
@@ -55,6 +57,7 @@ Cleric = ClassType(
     allowed_races={Briton, 
                    Avalonian,
                    Highlander,
+                   NoRace
                    }
 )
 
@@ -69,6 +72,7 @@ Friar = ClassType(
     allowed_races={Briton, 
                    Avalonian,
                    Highlander,
+                   NoRace
                    }
 )
 
@@ -86,6 +90,7 @@ Heretic = ClassType(
                    Highlander,
                    Saracen,
                    Inconnu,
+                   NoRace
                    }
 )
 
@@ -103,6 +108,7 @@ Infiltrator = ClassType(
                    Highlander,
                    Saracen,
                    Inconnu,
+                   NoRace
                    }
 )
 
@@ -128,7 +134,8 @@ Mercenary = ClassType(
                    HalfOgre,
                    Highlander,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -143,7 +150,8 @@ Minstrel = ClassType(
     allowed_races={Briton,
                    Highlander,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -157,7 +165,8 @@ Necromancer = ClassType(
     allowed_races={Avalonian, 
                    Briton,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -175,7 +184,8 @@ Paladin = ClassType(
     allowed_races={Avalonian, 
                    Briton,
                    Highlander,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -192,7 +202,8 @@ Reaver = ClassType(
                   },
     allowed_races={Briton,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -208,7 +219,8 @@ Scout = ClassType(
     allowed_races={Briton,
                    Highlander,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -223,7 +235,8 @@ Sorcerer = ClassType(
                    Briton,
                    HalfOgre,
                    Inconnu,
-                   Saracen
+                   Saracen,
+                   NoRace
                    }
 )
 
@@ -237,6 +250,7 @@ Theurgist = ClassType(
     allowed_races={Avalonian, 
                    Briton,
                    HalfOgre,
+                   NoRace
                    }
 )
 
@@ -251,6 +265,7 @@ Wizard = ClassType(
                    Briton,
                    HalfOgre,
                    Inconnu,
+                   NoRace
                    }
 )
 
@@ -269,6 +284,7 @@ Animist = ClassType(
                    Firbolg,
                    Elf,
                    Sylvan,
+                   NoRace
                    }
 )
 
@@ -282,6 +298,7 @@ Bainshee = ClassType(
     allowed_races={Celt, 
                    Elf,
                    Lurikeen,
+                   NoRace
                    }
 )
 
@@ -296,6 +313,7 @@ Bard = ClassType(
                   },
     allowed_races={Celt, 
                    Firbolg,
+                   NoRace
                    }
 )
 
@@ -313,7 +331,8 @@ Blademaster = ClassType(
                    Firbolg,
                    Elf,
                    Lurikeen,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -332,7 +351,8 @@ Champion = ClassType(
                    Elf,
                    Lurikeen,
                    Sylvan,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -346,6 +366,7 @@ Druid = ClassType(
     allowed_races={Celt, 
                    Firbolg,
                    Sylvan,
+                   NoRace
                    }
 )
 
@@ -358,6 +379,7 @@ Eldritch = ClassType(
     melee_skills={},
     allowed_races={Elf,
                    Lurikeen,
+                   NoRace
                    }
 )
 
@@ -370,6 +392,7 @@ Enchanter = ClassType(
     melee_skills={},
     allowed_races={Elf,
                    Lurikeen,
+                   NoRace
                    }
 )
 
@@ -388,7 +411,8 @@ Hero = ClassType(
                    Firbolg,
                    Lurikeen,
                    Sylvan,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -409,7 +433,8 @@ Mentalist = ClassType(
     allowed_races={Celt, 
                    Elf,
                    Lurikeen,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -426,6 +451,7 @@ Nightshade = ClassType(
     allowed_races={Celt, 
                    Elf,
                    Lurikeen,
+                   NoRace
                    }
 )
 
@@ -442,7 +468,8 @@ Ranger = ClassType(
                    Elf,
                    Lurikeen,
                    Sylvan,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -456,6 +483,7 @@ Valewalker = ClassType(
     allowed_races={Celt, 
                    Firbolg,
                    Sylvan,
+                   NoRace
                    }
 )
 
@@ -481,7 +509,8 @@ Warden = ClassType(
                    Elf,
                    Lurikeen,
                    Sylvan,
-                   Shar
+                   Shar,
+                   NoRace
                    }
 )
 
@@ -503,6 +532,7 @@ Berserker = ClassType(
                    Dwarf,
                    Kobold,
                    Valkyn,
+                   NoRace
                    }
 )
 
@@ -516,7 +546,8 @@ Bonedancer = ClassType(
     allowed_races={Troll,
                    Kobold,
                    Valkyn,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -529,7 +560,8 @@ Healer = ClassType(
     melee_skills={},
     allowed_races={Norseman, 
                    Dwarf,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -546,7 +578,8 @@ Hunter = ClassType(
                    Dwarf,
                    Kobold,
                    Valkyn,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -567,7 +600,8 @@ Runemaster = ClassType(
     allowed_races={Norseman, 
                    Dwarf,
                    Kobold,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -586,6 +620,7 @@ Savage = ClassType(
                    Dwarf,
                    Kobold,
                    Valkyn,
+                   NoRace
                    }
 )
 
@@ -603,7 +638,8 @@ Shadowblade = ClassType(
                    Dwarf,
                    Kobold,
                    Valkyn,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -617,7 +653,8 @@ Shaman = ClassType(
     allowed_races={Troll,
                    Dwarf,
                    Kobold,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -634,6 +671,7 @@ Skald = ClassType(
                    Troll,
                    Dwarf,
                    Kobold,
+                   NoRace
                    }
 )
 
@@ -646,7 +684,8 @@ Spiritmaster = ClassType(
     melee_skills={},
     allowed_races={Norseman, 
                    Kobold,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -664,7 +703,8 @@ Thane = ClassType(
                    Troll,
                    Dwarf,
                    Valkyn,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -681,7 +721,8 @@ Valkyrie = ClassType(
     allowed_races={Norseman, 
                    Dwarf,
                    Valkyn,
-                   Frostalf
+                   Frostalf,
+                   NoRace
                    }
 )
 
@@ -707,5 +748,6 @@ Warrior = ClassType(
                    Dwarf,
                    Kobold,
                    Valkyn,
+                   NoRace
                    }
 )

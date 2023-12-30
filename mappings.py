@@ -96,6 +96,7 @@ class_type_mapping = {
 }
 
 race_type_mapping = {
+    "<None>": NoRace,
     "Avalonian": Armsman,
     "Briton": Briton,
     "Half-Ogre": HalfOgre,

@@ -131,3 +131,8 @@ Minotaur = RaceType(
              'heat_resist': 3,
              'cold_resist': 3}
 )
+
+NoRace = RaceType(
+    "<None>",
+    resists={}
+)
