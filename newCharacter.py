@@ -5,12 +5,12 @@ from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget
 from setTables import initTables, setSkillsTable
 
 def new_character_change(self, class_type: ClassType):
-    self.character = Character("Test", class_type, 1, 1, 1)
+    self.character = Character("New Character", class_type, 1, 1, 1)
     reset_ui_for_new_character(self)
 
 def create_new_character_on_open(self):
     initTables(self)
-    self.character = Character("Armsman", Armsman, 1, 1, 1)
+    self.character = Character("New Character", Armsman, 1, 1, 1)
     reset_ui_for_new_character(self)
     
         
@@ -19,6 +19,7 @@ def reset_ui_for_new_character(self):
     update_resists_table(self)
     update_stats_cap_table(self)
     setSkillsTable(self)
+    setAllowedClassesComboBox(self)
 
 def update_stats_table(self):
     if self.character:
@@ -43,3 +44,6 @@ def update_resists_table(self):
             self.tableWidget = self.findChild(QTableWidget,'resistsTable')
             value_item = QTableWidgetItem(str(resist_value))
             self.tableWidget.setItem(row, 1, value_item)
+
+def setAllowedClassesComboBox(self):
+    pass

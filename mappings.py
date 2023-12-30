@@ -1,4 +1,5 @@
 from class_types import *
+from race_types import *
 
 stats_row_mapping = {
     'strength': 0, 
@@ -92,4 +93,26 @@ class_type_mapping = {
     "(Mid) Valkyrie": Valkyrie,
     "(Mid) Warlock": Warlock,
     "(Mid) Warrior": Warrior,
+}
+
+race_type_mapping = {
+    "Avalonian": Armsman,
+    "Briton": Briton,
+    "Half-Ogre": HalfOgre,
+    "Highlander": Highlander,
+    "Inconnu": Inconnu,
+    "Saracen": Saracen,
+    "Celt": Celt,
+    "Elf": Elf,
+    "Firbolg": Firbolg,
+    "Lurikeen": Lurikeen,
+    "Shar": Shar,
+    "Sylvan": Sylvan,
+    "Dwarf": Dwarf,
+    "Frostalf": Frostalf,
+    "Kobold": Kobold,
+    "Norseman": Norseman,
+    "Troll": Troll,
+    "Valkyn": Valkyn,
+    "Minotaur": Minotaur
 }

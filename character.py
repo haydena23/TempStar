@@ -23,9 +23,14 @@ class Character:
         }
         self.magic_skills = class_type.magic_skills
         self.melee_skills = class_type.melee_skills
+        self.allowed_races = class_type.allowed_races
         self.toa_bonuses = {
             'melee_speed': 0, 'melee_damage': 0, 'style_damage': 0, 'power_pool': 0,
             'spell_speed': 0, 'spell_damage': 0, 'spell_range': 0, 'spell_pierce': 0,
             'spell_duration': 0, 'arcane_siphoning': 0, 'healing_bonus': 0, 'buff_enhance': 0,
             'debuff_bonus': 0, 'xp_bonus': 0, 'rp_bonus': 0, 'bp_bonus': 0,
         }
+        self.updateResists()
+    
+    def updateResists():
+        pass
