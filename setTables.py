@@ -1,30 +1,23 @@
 from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
+from PyQt5.QtGui import QColor, QBrush
 
 def initTables(self):
-    self.statsTable = self.findChild(QTableWidget, 'statsTable')
-    for row in range(self.statsTable.rowCount()):
-        self.statsTable.setRowHeight(row,20)
-        self.statsTable.setColumnWidth(0,100)
-        self.statsTable.setColumnWidth(1,20)
-        self.statsTable.setColumnWidth(2,20)
-        self.statsTable.setColumnWidth(3,20)
-        
-    self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')
-    for row in range(self.statsCapTable.rowCount()):
-        self.statsCapTable.setRowHeight(row,20)
-        self.statsCapTable.setColumnWidth(0,100)
-        self.statsCapTable.setColumnWidth(1,20)
-        self.statsCapTable.setColumnWidth(2,20)
-        self.statsCapTable.setColumnWidth(3,20)
-        
+    self.statsTable = self.findChild(QTableWidget, 'statsTable')    
+    self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')        
     self.resistsTable = self.findChild(QTableWidget, 'resistsTable')
-    for row in range(self.resistsTable.rowCount()):
-        self.resistsTable.setRowHeight(row,20)
-        self.resistsTable.setColumnWidth(0,100)
-        self.resistsTable.setColumnWidth(1,20)
-        self.resistsTable.setColumnWidth(2,20)
-        self.resistsTable.setColumnWidth(3,20)
+    
+    setTableItemGeometry(self.statsTable)
+    setTableItemGeometry(self.statsCapTable)
+    setTableItemGeometry(self.resistsTable)
         
+def setTableItemGeometry(table: QTableWidget):
+    for row in range(table.rowCount()):
+        table.setRowHeight(row,20)
+        table.setColumnWidth(0,100)
+        table.setColumnWidth(1,20)
+        table.setColumnWidth(2,20)
+        table.setColumnWidth(3,20)
+
 def setSkillsTable(self):
     self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
     magic_skills = self.character.magic_skills
@@ -39,8 +32,10 @@ def setSkillsTable(self):
         
         self.skillsTable.setItem(current_row, 0, skill_item)
         self.skillsTable.setItem(current_row, 1, value_item)
+        self.skillsTable.setItem(current_row, 2, QTableWidgetItem("11"))
         
         current_row += 1
+    calcuateDifferenceOfStatAndCap(self, 'skillsTable')
     
     for row in range(self.statsCapTable.rowCount()):
         self.skillsTable.setRowHeight(row,20)
@@ -63,3 +58,15 @@ def calcuateDifferenceOfStatAndCap(self, table_name):
         self.cap = int(self.table.item(row, 2).text())
         difference = self.currentValue - self.cap
         self.table.setItem(row, 3, QTableWidgetItem(str(difference)))
+        setColorBasedOnDifference(self, self.table, row, difference)
+        
+def setColorBasedOnDifference(self, table, row, difference):
+    for column_index in range(table.columnCount()):
+        item = table.item(row, column_index)
+        match difference:
+            case _ if difference < 0:
+                item.setForeground(QBrush(QColor('blue')))
+            case 0:
+                item.setForeground(QBrush(QColor('green')))
+            case _ if difference > 0:
+                item.setForeground(QBrush(QColor('red')))

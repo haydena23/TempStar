@@ -10,3 +10,15 @@ def changeClass(self, class_type: ClassType):
         
 def changeRace(self, race_type: RaceType):
     updateResistsFromRace(self, race_type)
+
+def changeChampionLevel(self):
+    pass
+
+def changeRealmRank(self):
+    pass
+
+def changeLevel(self):
+    pass
+
+def changeWeapons(self):
+    pass
