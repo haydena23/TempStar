@@ -979,7 +979,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="tab">
              <attribute name="title">
@@ -2725,7 +2725,7 @@ p, li { white-space: pre-wrap; }
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QLabel" name="label">
+              <widget class="QLabel" name="informationLabel">
                <property name="font">
                 <font>
                  <weight>75</weight>
@@ -2734,7 +2734,7 @@ p, li { white-space: pre-wrap; }
                 </font>
                </property>
                <property name="text">
-                <string>Items effecting &lt;Stat&gt;</string>
+                <string>Information</string>
                </property>
                <property name="textFormat">
                 <enum>Qt::AutoText</enum>

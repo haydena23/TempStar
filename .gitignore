@@ -1,3 +1,5 @@
 /__pycache__
 /Models/__pycache__
 /.dist
+/daoc_item_metadata.json
+/static_objects.json
