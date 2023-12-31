@@ -1,4 +1,5 @@
-from Models.class_types import ClassType
+from Models.classes import ClassType
+from Models.item import Item, belt
 
 class Character:
     def __init__(self, name, class_type: ClassType, level, champion_level, realm_rank):
@@ -30,3 +31,27 @@ class Character:
             'spell_duration': 0, 'arcane_siphoning': 0, 'healing_bonus': 0, 'buff_enhance': 0,
             'debuff_bonus': 0, 'xp_bonus': 0, 'rp_bonus': 0, 'bp_bonus': 0,
         }
+        self.items = {
+            'jewel': None,
+            'neck': None,
+            'cloak': None,
+            'belt': belt,
+            'ring_one': None,
+            'ring_two': None,
+            'wrist_one': None,
+            'wrist_two': None,
+            'chest': None,
+            'head': None,
+            'arms': None,
+            'hands': None,
+            'legs': None,
+            'feet': None,
+            'right_hand': None,
+            'left_hand': None,
+            'two_hand': None,
+            'ranged': None,
+            'mythirian': None,
+        }
+    
+    def setItem(self, item: Item):
+        self.items[item.slot] = item

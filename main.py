@@ -1,13 +1,20 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QMainWindow, QComboBox
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import uic
 from initUI import initUI
+
+# Work in progress
+from stylesheets import dark_mode_style
 
 class MyApplication(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('gbx.ui', self)
+        
+        # Work in progress
+        self.setStyleSheet(dark_mode_style)
+        
         self.character = None
         self.lockTemplate = False
         initUI(self)

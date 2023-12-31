@@ -979,7 +979,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget">
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="tab">
              <attribute name="title">
@@ -1051,7 +1051,7 @@ p, li { white-space: pre-wrap; }
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
-                  <widget class="QListWidget" name="listWidget">
+                  <widget class="QListWidget" name="itemsListWidget">
                    <property name="horizontalScrollBarPolicy">
                     <enum>Qt::ScrollBarAlwaysOff</enum>
                    </property>
@@ -1171,9 +1171,9 @@ p, li { white-space: pre-wrap; }
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_5">
                  <item>
-                  <widget class="QLabel" name="label_11">
+                  <widget class="QLabel" name="slotSelectionLabel">
                    <property name="text">
-                    <string>&lt;Item&gt; Selection:</string>
+                    <string>&lt;Item&gt; Slot Selection :</string>
                    </property>
                   </widget>
                  </item>

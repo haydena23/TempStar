@@ -1,6 +1,6 @@
 from Models.character import Character
-from Models.class_types import *
-from Models.race_types import *
+from Models.classes import *
+from Models.races import *
 from Models.mappings import *
 from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget, QComboBox
 from setTables import initTables, setSkillsTable, calcuateDifferenceOfStatAndCap

@@ -1,5 +1,5 @@
-from Models.class_types import *
-from Models.race_types import *
+from Models.classes import *
+from Models.races import *
 
 stats_row_mapping = {
     'strength': 0, 
@@ -116,4 +116,54 @@ race_type_mapping = {
     "Troll": Troll,
     "Valkyn": Valkyn,
     "Minotaur": Minotaur
+}
+
+main_stats_default_caps = {
+    'strength': 75, 
+    'constitution': 75, 
+    'dexterity': 75, 
+    'quickness': 75,
+    'piety': 75, 
+    'intelligence': 75, 
+    'empathy': 75, 
+    'charisma': 75,
+    'acuity': 75, 
+    'fatigue': 50, 
+    'power_points': 26, 
+    'hit_points': 200, 
+    'armor_factor': 50
+}
+
+stat_cap_default_caps = {
+    'strength_cap': 26, 
+    'constitution_cap': 26, 
+    'dexterity_cap': 26, 
+    'quickness_cap': 26,
+    'piety_cap': 26, 
+    'intelligence_cap': 26, 
+    'empathy_cap': 26, 
+    'charisma_cap': 26,
+    'acuity_cap': 26, 
+    'fatigue_cap': 25, 
+    'power_points_cap': 50, 
+    'hit_points_cap': 200
+}
+
+resists_default_caps = {
+    'crush_resist': 26, 
+    'slash_resist': 26, 
+    'thrust_resist': 26, 
+    'heat_resist': 26, 
+    'cold_resist': 26,
+    'matter_resist': 26, 
+    'energy_resist': 26, 
+    'body_resist': 26, 
+    'spirit_resist': 26,
+    'essence_resist': 26
+}
+
+default_caps_map = {
+    'statsTable': main_stats_default_caps,
+    'statsCapTable': stat_cap_default_caps,
+    'resistsTable': resists_default_caps
 }
