@@ -187,3 +187,20 @@ table_names = {
     'skillsTable',
     # 'bonusesTable'
 }
+
+realm_rank_map = {
+    'RR1': 1,
+    'RR2': 2,
+    'RR3': 3,
+    'RR4': 4,
+    'RR5': 5,
+    'RR6': 6,
+    'RR7': 7,
+    'RR8': 8,
+    'RR9': 9,
+    'RR10': 10,
+    'RR11': 11,
+    'RR12': 12,
+    'RR13': 13,
+    'RR14': 14,
+}

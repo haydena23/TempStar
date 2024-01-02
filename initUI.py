@@ -15,7 +15,7 @@ def initUI(main_window):
     configClassComboBox(main_window, class_type_mapping, changeClass)
     configRaceComboBox(main_window, race_type_mapping, changeRace)
     configItemsListWidget(main_window, setSlotSelectionLabel)
-    
+    configRealmRankComboBox(main_window, realm_rank_map, changeRealmRank)
 """
 Configure Class ComboBox
 """
@@ -56,3 +56,16 @@ def on_items_list_widget_clicked(main_window, set_slot_selection_callback):
         set_slot_selection_callback(main_window, selected_text)
     ## Todo
     ## Fill information box with item details
+    
+"""
+Configure Realm Rank ComboBox
+"""
+def configRealmRankComboBox(main_window, realm_rank_map, change_realm_rank_callback):
+    main_window.realmRankComboBox = main_window.findChild(QComboBox, 'realmRankComboBox')
+    main_window.realmRankComboBox.currentIndexChanged.connect(lambda: on_realm_rank_changed(main_window, realm_rank_map, change_realm_rank_callback))
+
+def on_realm_rank_changed(main_window, realm_rank_map, change_realm_rank_callback):
+    realmRankRaw = main_window.realmRankComboBox.currentText()
+    realmRank = realm_rank_map.get(realmRankRaw)
+    if realmRank:
+        change_realm_rank_callback(main_window, realmRank)

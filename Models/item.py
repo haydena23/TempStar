@@ -16,7 +16,8 @@ belt = Item(
         'hit_points_cap': 250,
         'crush_skill': 15,
         'parry_skill': 10,
-        'crush_resist': 26}
+        'crush_resist': 26,
+        'matter_magic_skill': 10}
 )
 
 cloak = Item(

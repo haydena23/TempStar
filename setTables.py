@@ -37,7 +37,7 @@ def setSkillsTable(self):
         self.skillsTable.setItem(current_row, 2, QTableWidgetItem("11"))
         
         current_row += 1
-    calcuateDifferenceOfStatAndCap(self, 'skillsTable')
+    calculateDifferenceOfStatAndCap(self, 'skillsTable')
     
     for row in range(self.statsCapTable.rowCount()):
         self.skillsTable.setRowHeight(row,20)
@@ -58,7 +58,7 @@ def clearTable(self, table_name):
         self.tableToClear.setItem(row, 2, QTableWidgetItem(f"{default_caps[keys[row]]}"))
         # print(default_caps[keys[row]])
         
-def calcuateDifferenceOfStatAndCap(self, table_name):
+def calculateDifferenceOfStatAndCap(self, table_name):
     self.table = self.findChild(QTableWidget, table_name)
     for row in range(self.table.rowCount()):
         self.currentValue = int(self.table.item(row, 1).text())

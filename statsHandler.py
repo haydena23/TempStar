@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
 from PyQt5.QtCore import Qt
 
-from setTables import clearTable, calcuateDifferenceOfStatAndCap
+from setTables import clearTable, calculateDifferenceOfStatAndCap
 from Models.races import *
 from Models.mappings import table_names, stat_cap_default_caps
 
@@ -19,7 +19,7 @@ def updateResistsFromRace(self, race_type: RaceType):
             resistsCapValue = int(self.resistsTable.item(resistWidget[0].row(),2).text()) + value
             adjustedResistsCapValueWidget = QTableWidgetItem(str(resistsCapValue))
             self.resistsTable.setItem(resistWidget[0].row(),2,adjustedResistsCapValueWidget)       
-        calcuateDifferenceOfStatAndCap(self, 'resistsTable')
+        calculateDifferenceOfStatAndCap(self, 'resistsTable')
         
 def calculateNowStats(self):
     if self.character:
@@ -42,7 +42,7 @@ def calculateNowStats(self):
                             pass
         adjustBaseCapFromStatCap(self)
         for table in table_names:
-            calcuateDifferenceOfStatAndCap(self, table)
+            calculateDifferenceOfStatAndCap(self, table)
     
 def adjustBaseCapFromStatCap(self):
     if self.character:
@@ -57,8 +57,21 @@ def adjustBaseCapFromStatCap(self):
             currentStatCapValue = int(self.statsTable.item(row,2).text())
             newValueWidget = QTableWidgetItem(str(currentStatCapValue + capWidgetValue))
             self.statsTable.setItem(row, 2, newValueWidget)
-        # calcuateDifferenceOfStatAndCap(self, 'statsTable')
 
 def adjustStatsFromMythirian(self):
     if self.character:
         pass
+
+def adjustSkillsFromRealmRank(self, realm_rank):
+    if self.character:
+        self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
+        calculateNowStats(self)
+        for row in range(self.skillsTable.rowCount()):
+            pass
+            currentStat = int(self.skillsTable.item(row, 1).text())
+            currentStatCap = int(self.skillsTable.item(row, 2).text())
+            correctedSkillWidget = QTableWidgetItem(str(currentStat + (realm_rank - 1)))
+            correctedSkillCapWidget = QTableWidgetItem(str(currentStatCap + (realm_rank - 1)))
+            self.skillsTable.setItem(row, 1, correctedSkillWidget)
+            self.skillsTable.setItem(row, 2, correctedSkillCapWidget)
+        calculateDifferenceOfStatAndCap(self, 'skillsTable')

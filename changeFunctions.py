@@ -1,5 +1,5 @@
 from newCharacter import new_character_change
-from statsHandler import updateResistsFromRace
+from statsHandler import updateResistsFromRace, adjustSkillsFromRealmRank
 
 # REMOVE BELOW
 from statsHandler import calculateNowStats
@@ -7,7 +7,7 @@ from statsHandler import calculateNowStats
 from Models.classes import *
 from Models.races import *
 
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtWidgets import QLabel, QTableWidget, QTableWidgetItem
 
 def changeClass(self, class_type: ClassType):
     if(self.lockTemplate == False):
@@ -19,8 +19,9 @@ def changeRace(self, race_type: RaceType):
 def changeChampionLevel(self):
     pass
 
-def changeRealmRank(self):
-    pass
+def changeRealmRank(self, realm_rank):
+    adjustSkillsFromRealmRank(self, realm_rank)
+    # pass
 
 def changeLevel(self):
     pass
