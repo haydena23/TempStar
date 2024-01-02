@@ -1,0 +1,1 @@
+FIXED: Clicking on an item resets realm rank bonuses but not realm rank combobox

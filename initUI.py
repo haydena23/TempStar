@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QComboBox, QListWidget
+from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton
 
 from Models.classes import *
 from Models.races import *
@@ -16,6 +16,7 @@ def initUI(main_window):
     configRaceComboBox(main_window, race_type_mapping, changeRace)
     configItemsListWidget(main_window, setSlotSelectionLabel)
     configRealmRankComboBox(main_window, realm_rank_map, changeRealmRank)
+    configUnequipAllButton(main_window, unquipAllSlotsWarning)
 """
 Configure Class ComboBox
 """
@@ -69,3 +70,14 @@ def on_realm_rank_changed(main_window, realm_rank_map, change_realm_rank_callbac
     realmRank = realm_rank_map.get(realmRankRaw)
     if realmRank:
         change_realm_rank_callback(main_window, realmRank)
+        
+"""
+Configure Unequip All Items Push Button
+"""
+
+def configUnequipAllButton(main_window, unequip_all_button_callback):
+    main_window.unequipAllButton = main_window.findChild(QPushButton, 'unequipAllButton')
+    main_window.unequipAllButton.clicked.connect(lambda: on_unequip_all_pressed(main_window, unequip_all_button_callback))
+
+def on_unequip_all_pressed(main_window, unequip_all_button_callback):
+    unequip_all_button_callback(main_window)

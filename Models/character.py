@@ -35,7 +35,7 @@ class Character:
             'jewel': None,
             'neck': None,
             'cloak': None,
-            'belt': belt,
+            'belt': None,
             'ring_one': None,
             'ring_two': None,
             'wrist_one': None,
@@ -53,5 +53,5 @@ class Character:
             'mythirian': None,
         }
     
-    def setItem(self, item: Item):
-        self.items[item.slot] = item
+    def setItem(self, slot, item: Item):
+        self.items[slot] = item

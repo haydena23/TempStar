@@ -1,9 +1,9 @@
-from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox
 from PyQt5.QtCore import Qt
 
 from setTables import clearTable, calculateDifferenceOfStatAndCap
 from Models.races import *
-from Models.mappings import table_names, stat_cap_default_caps
+from Models.mappings import *
 
 def updateResistsFromRace(self, race_type: RaceType):
     if self.character:
@@ -75,3 +75,7 @@ def adjustSkillsFromRealmRank(self, realm_rank):
             self.skillsTable.setItem(row, 1, correctedSkillWidget)
             self.skillsTable.setItem(row, 2, correctedSkillCapWidget)
         calculateDifferenceOfStatAndCap(self, 'skillsTable')
+        
+def autoUpdateRealmRank(self):
+    currentRealmRank = realm_rank_map.get(self.findChild(QComboBox, 'realmRankComboBox').currentText())
+    adjustSkillsFromRealmRank(self, currentRealmRank)
