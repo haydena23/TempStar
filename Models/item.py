@@ -10,10 +10,10 @@ belt = Item(
         'intelligence': 5,
         'piety': 75,
         'acuity': 5,
-        'dexterity_cap': 5,
+        'dexterity_cap': 30,
         'heat_resist': 27,
         'power_cap': 99,
-        'hit_points_cap': 150,
+        'hit_points_cap': 250,
         'crush_skill': 15,
         'parry_skill': 10,
         'crush_resist': 26}

@@ -40,15 +40,24 @@ def calculateNowStats(self):
                             self.tableWidget.setItem(statWidgetRow,1,valueWidget)
                         except:
                             pass
-            # adjustBaseCapFromStatCap(self)
+        adjustBaseCapFromStatCap(self)
+        for table in table_names:
             calcuateDifferenceOfStatAndCap(self, table)
     
 def adjustBaseCapFromStatCap(self):
     if self.character:
         stat_caps = stat_cap_default_caps
-        
-        self.statsTable - self.findChild(QTableWidget, 'statsTable')
-        self.statsCapTable - self.findChild(QTableWidget, 'statsCapTable')
+        self.statsTable = self.findChild(QTableWidget, 'statsTable')
+        self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')
+        for row in range(self.statsCapTable.rowCount()):
+            capWidgetValue = int(self.statsCapTable.item(row, 1).text())
+            cap = ((list(stat_caps.items()))[row])[1]
+            if capWidgetValue > cap:
+                capWidgetValue = cap
+            currentStatCapValue = int(self.statsTable.item(row,2).text())
+            newValueWidget = QTableWidgetItem(str(currentStatCapValue + capWidgetValue))
+            self.statsTable.setItem(row, 2, newValueWidget)
+        # calcuateDifferenceOfStatAndCap(self, 'statsTable')
 
 def adjustStatsFromMythirian(self):
     if self.character:
