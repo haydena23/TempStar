@@ -162,8 +162,28 @@ resists_default_caps = {
     'essence_resist': 26
 }
 
+skills_default_caps = {
+    'skill1': 11,
+    'skill2': 11,
+    'skill3': 11,
+    'skill4': 11,
+    'skill5': 11,
+    'skill6': 11,
+    'skill7': 11,
+    'skill8': 11,
+}
+
 default_caps_map = {
     'statsTable': main_stats_default_caps,
     'statsCapTable': stat_cap_default_caps,
-    'resistsTable': resists_default_caps
+    'resistsTable': resists_default_caps,
+    'skillsTable': skills_default_caps
+}
+
+table_names = {
+    'statsTable',
+    'statsCapTable',
+    'resistsTable',
+    'skillsTable',
+    # 'bonusesTable'
 }

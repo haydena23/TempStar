@@ -32,4 +32,6 @@ def setSlotSelectionLabel(self, text):
     text = str(text).replace(":","")
     label = self.findChild(QLabel, 'slotSelectionLabel')
     label.setText(f"{text} Slot Selections :")
+    
+    #Remove below
     calculateNowStats(self)

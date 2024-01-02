@@ -1,5 +1,5 @@
 from Models.classes import ClassType
-from Models.item import Item, belt
+from Models.item import *
 
 class Character:
     def __init__(self, name, class_type: ClassType, level, champion_level, realm_rank):
