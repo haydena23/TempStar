@@ -1,29 +1,54 @@
+from Models.classes import *
+
 class Item:
-    def __init__(self, slot, stats):
+    def __init__(self, slot, stats, single_utility, total_utility, 
+                 level, bonus_level, realm, armor_factor, usable,
+                 tradeable, item_type, quality, dps, speed, damage_type,
+                 ):
         self.slot = slot
         self.stats = stats
+        self.single_utility = single_utility
+        self.total_utility = total_utility
+        self.level = level
+        self.bonus_level = bonus_level
+        self.realm = realm
+        self.armor_factor = armor_factor
+        self.usable = usable
+        self.tradeable = tradeable
+        self.itemType = item_type
+        self.quality = quality
+        self.dps = dps
+        self.speed = speed
+        self.damage_type = damage_type
         
 belt = Item(
     "Belt",
-    stats={'strength': 5,
-        'constitution': 5,
-        'intelligence': 5,
-        'piety': 75,
-        'acuity': 5,
-        'dexterity_cap': 30,
-        'heat_resist': 27,
-        'power_cap': 99,
-        'hit_points_cap': 250,
-        'crush_skill': 15,
-        'parry_skill': 10,
-        'crush_resist': 26,
-        'matter_magic_skill': 10}
-)
-
-cloak = Item(
-    "Cloak",
-    stats={'strength': 5,
-        'essence_resist': 26,
-        'shields_skill': 15,
-        'piety': 10}
+    stats={'strength_cap': 15,
+        'strength': 92,
+        'constitution_cap': 13,
+        'constitution': 90,
+        'dexterity': 75,
+        'quickness_cap': 13,
+        'quickness': 88,
+        'heat_resist': 26,
+        'color_resist': 24,
+        'crush_resist': 29,
+        'crush_skill': 12,
+        'parry_skill': 11,
+        'shields_skill': 11,
+        'polearm_skill': 11,
+        'crush_resist': 26,},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
 )

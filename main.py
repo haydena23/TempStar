@@ -13,7 +13,7 @@ class MyApplication(QMainWindow):
         uic.loadUi('gbx.ui', self)
         
         # Work in progress
-        # self.setStyleSheet(dark_mode_style)
+        self.setStyleSheet(dark_mode_style)
         
         self.character = None
         self.race = False

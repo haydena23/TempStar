@@ -31,6 +31,7 @@ def changeWeapons(self):
 
 def setSlotSelectionLabel(self, text):
     text = str(text).replace(":","")
+    text = str(text).replace(" <Empty Slot>","")
     label = self.findChild(QLabel, 'slotSelectionLabel')
     label.setText(f"{text} Slot Selections :")
     

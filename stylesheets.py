@@ -1,5 +1,5 @@
 dark_mode_style = """
-    QMenuBar, QMenu {
+    QMenuBar, QMenu, QFrame {
         background-color: #2b2f38;
         color: #9da5b4;
     }
@@ -7,10 +7,10 @@ dark_mode_style = """
         background-color: #313438;
     }
     QMainWindow {
-        background-color: #2b2f38; /* Dark background color */
-        color: #abb2bf; /* Light text color */
+        background-color: #2b2f38;
+        color: #abb2bf;
     }
-    QLabel, QGroupBox {
+    QLabel, QGroupBox, QCheckBox {
         color: #abb2bf;
     }
     QTabWidget::pane {
@@ -24,13 +24,39 @@ dark_mode_style = """
         background-color: #2b2f38;
         color: #9da5b4;
     }
-    QTableWidget, QTableWidget::Section {
-        background-color: #585a5c;
+    QTableWidget, QListWidget {
+        background-color: #313640;
+        alternate-background-color: #2b2f38;
+    }
+    QHeaderView::section {
+        background-color: #2b2f38;
+        color: #9da5b4;
+    }
+    QComboBox {
+        background-color: #21252b;
+        color: #9da5b4;
+    }
+    QScrollBar {
+        background-color: #2b2f38;
+    }
+    QScrollBar::handle {
+        background-color: #313640;
+        border: 2px solid #2b2f38;
+        border-radius: 8px;
+    }
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: #2b2f38;
+    }
+    QTextEdit {
+        color: #9da5b4;
+    }
+    QLineEdit {
+        background-color: #21252b;
+        color: #9da5b4;
+        border: 1px solid #9da5b4
+    }
+    QPushButton, QToolButton {
+        background-color: #313640;
+        color: #9da5b4;
     }
 """
-
-    # QLabel, QPushButton, QLineEdit, QTableWidget, QComboBox {
-    #     background-color: #454545; /* Darker elements */
-    #     color: #ffffff;
-    #     border: 1px solid #767676;
-    # # }

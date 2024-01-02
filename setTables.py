@@ -72,8 +72,8 @@ def setColorBasedOnDifference(self, table, row, difference):
         item = table.item(row, column_index)
         match difference:
             case _ if difference < 0:
-                item.setForeground(QBrush(QColor('blue')))
+                item.setForeground(QBrush(QColor('#24b5c2')))
             case 0:
-                item.setForeground(QBrush(QColor('green')))
+                item.setForeground(QBrush(QColor('#5ad662')))
             case _ if difference > 0:
                 item.setForeground(QBrush(QColor('red')))
