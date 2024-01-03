@@ -26,7 +26,7 @@ def calculateNowStats(self):
         for table in table_names:
             self.tableWidget = self.findChild(QTableWidget, table)
             clearTable(self, table)
-            for name, item in self.character.items.items():
+            for name, item in self.character.currentItems.items():
                 if item is not None:
                     for stat, value in item.stats.items():
                         if '_' in stat:
@@ -67,7 +67,6 @@ def adjustSkillsFromRealmRank(self, realm_rank):
         self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
         calculateNowStats(self)
         for row in range(self.skillsTable.rowCount()):
-            pass
             currentStat = int(self.skillsTable.item(row, 1).text())
             currentStatCap = int(self.skillsTable.item(row, 2).text())
             correctedSkillWidget = QTableWidgetItem(str(currentStat + (realm_rank - 1)))

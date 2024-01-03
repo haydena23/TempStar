@@ -1181,15 +1181,10 @@ p, li { white-space: pre-wrap; }
                   </widget>
                  </item>
                  <item>
-                  <widget class="QListWidget" name="listWidget_2">
+                  <widget class="QListWidget" name="slotSelectionListWidget">
                    <property name="selectionRectVisible">
                     <bool>true</bool>
                    </property>
-                   <item>
-                    <property name="text">
-                     <string>&lt;Empty Slot&gt;</string>
-                    </property>
-                   </item>
                   </widget>
                  </item>
                  <item>

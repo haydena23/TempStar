@@ -16,9 +16,13 @@ class MyApplication(QMainWindow):
         self.setStyleSheet(dark_mode_style)
         
         self.character = None
-        self.race = False
-        self.lockTemplate = False
+        self.lockTemplate = bool
         initUI(self)
+    
+    def lockTemp(self):
+        self.lockTemplate == True
+    def unlockTemp(self):
+        self.lockTemplate == False
 
 if __name__ == "__main__":
     import sys

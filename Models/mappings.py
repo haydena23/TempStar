@@ -204,3 +204,25 @@ realm_rank_map = {
     'RR13': 13,
     'RR14': 14,
 }
+
+slot_mapping = {
+    0: 'Jewel',
+    1: 'Neck',
+    2: 'Cloak',
+    3: 'Belt',
+    4: 'Ring 1',
+    5: 'Ring 2',
+    6: 'Wrist 1',
+    7: 'Wrist 2',
+    8: 'Chest',
+    9: 'Head',
+    10: 'Arms',
+    11: 'Hands',
+    12: 'Legs',
+    13: 'Feet',
+    14: 'Right Hand',
+    15: 'Left Hand',
+    16: 'Two Hand',
+    17: 'Ranged',
+    18: 'Mythirian'
+}

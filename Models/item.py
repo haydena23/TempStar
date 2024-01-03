@@ -1,11 +1,12 @@
 from Models.classes import *
 
 class Item:
-    def __init__(self, slot, stats, single_utility, total_utility, 
+    def __init__(self, slot, name, stats, single_utility, total_utility, 
                  level, bonus_level, realm, armor_factor, usable,
                  tradeable, item_type, quality, dps, speed, damage_type,
                  ):
         self.slot = slot
+        self.name = name
         self.stats = stats
         self.single_utility = single_utility
         self.total_utility = total_utility
@@ -20,9 +21,10 @@ class Item:
         self.dps = dps
         self.speed = speed
         self.damage_type = damage_type
-        
+
 belt = Item(
     "Belt",
+    "Shimmering Satin Sash",
     stats={'strength_cap': 15,
         'strength': 92,
         'constitution_cap': 13,
@@ -52,3 +54,48 @@ belt = Item(
     speed=None,
     damage_type=None
 )
+
+belt2 = Item(
+    "Belt",
+    "Apostle of Arawn Belt",
+    stats={'quickness': 75,
+        'strength': 75,
+        'constitution': 75,
+        'dexterity': 75,},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
+cloak = Item(
+    "Cloak",
+    "Dragonsworn Cloak",
+    stats={'crush_resist': 26,
+        'slash_resist': 26,
+        'thrust_resist': 26},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
+gear = [belt, belt2]
