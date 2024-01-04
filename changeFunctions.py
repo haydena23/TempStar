@@ -1,7 +1,7 @@
 from newCharacter import new_character_change
 from statsHandler import updateResistsFromRace, adjustSkillsFromRealmRank
 
-from statsHandler import adjustSkillsFromRealmRank, autoUpdateRealmRank
+from statsHandler import adjustSkillsFromRealmRank, autoUpdateRealmRank, calculateNowStats
 
 from Models.classes import *
 from Models.races import *
@@ -17,6 +17,7 @@ def changeClass(self, class_type: ClassType):
 
 def changeRace(self, race_type: RaceType):
     updateResistsFromRace(self, race_type)
+    autoUpdateRealmRank(self)
 
 def changeChampionLevel(self):
     pass
@@ -65,6 +66,9 @@ def setItemsListWidgetSlots(self, itemsListWidget):
             setLockStatus(self)
             itemsListWidget.item(slot).setText(f"{text}: {self.character.currentItems.get(text).name}")
     autoUpdateRealmRank(self)
+    currentRace = race_type_mapping.get(self.findChild(QComboBox, 'raceComboBox').currentText())
+    updateResistsFromRace(self, currentRace)
+    # autoUpdateRealmRank(self)
 
 def setInformationTextEdit(self):
     pass
@@ -80,6 +84,10 @@ def setItemFromSlotSelection(self):
             if item.name == slotSelectionListWidget.currentItem().text():
                 self.character.setCurrentItem(slotName, item)
     setItemsListWidgetSlots(self, self.findChild(QListWidget, 'itemsListWidget'))
+    autoUpdateRealmRank(self)
+
+def setEquippedWeapons(self):
+    autoUpdateRealmRank(self)
 
 def unquipAllSlotsWarning(self):
     if unequipMessageBox():

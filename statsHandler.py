@@ -23,23 +23,28 @@ def updateResistsFromRace(self, race_type: RaceType):
         
 def calculateNowStats(self):
     if self.character:
+        equipWeapons = self.findChild(QComboBox, 'equippedWeaponsComboBox')
+        weaponsNotAllowed = equip_weapon_map.get(equipWeapons.currentText())
         for table in table_names:
             self.tableWidget = self.findChild(QTableWidget, table)
             clearTable(self, table)
             for name, item in self.character.currentItems.items():
                 if item is not None:
-                    for stat, value in item.stats.items():
-                        if '_' in stat:
-                            stat = ' '.join(word.capitalize() for word in stat.split('_'))
-                        else:
-                            stat = stat.capitalize()
-                        try:
-                            statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
-                            currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
-                            valueWidget = QTableWidgetItem(str(value + currentValue))
-                            self.tableWidget.setItem(statWidgetRow,1,valueWidget)
-                        except:
-                            pass
+                    if item.slot in weaponsNotAllowed:
+                        pass
+                    else:
+                        for stat, value in item.stats.items():
+                            if '_' in stat:
+                                stat = ' '.join(word.capitalize() for word in stat.split('_'))
+                            else:
+                                stat = stat.capitalize()
+                            try:
+                                statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
+                                currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
+                                valueWidget = QTableWidgetItem(str(value + currentValue))
+                                self.tableWidget.setItem(statWidgetRow,1,valueWidget)
+                            except:
+                                pass
         adjustBaseCapFromStatCap(self)
         for table in table_names:
             calculateDifferenceOfStatAndCap(self, table)
@@ -66,6 +71,8 @@ def adjustSkillsFromRealmRank(self, realm_rank):
     if self.character:
         self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
         calculateNowStats(self)
+        currentRace = race_type_mapping.get(self.findChild(QComboBox, 'raceComboBox').currentText())
+        updateResistsFromRace(self, currentRace)
         for row in range(self.skillsTable.rowCount()):
             currentStat = int(self.skillsTable.item(row, 1).text())
             currentStatCap = int(self.skillsTable.item(row, 2).text())

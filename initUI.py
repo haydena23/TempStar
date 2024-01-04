@@ -17,6 +17,7 @@ def initUI(self):
     configRealmRankComboBox(self, realm_rank_map, changeRealmRank)
     configUnequipAllButton(self, unquipAllSlotsWarning)
     configSlotSelectionListWidget(self, setItemFromSlotSelection)
+    configEquippedWeaponsComboBox(self, setEquippedWeapons)
 """
 Configure Class ComboBox
 """
@@ -102,3 +103,15 @@ def configSlotSelectionListWidget(self, slot_selection_callback):
 
 def on_slot_pressed(self, slot_selection_callback):
     slot_selection_callback(self)
+    
+"""
+Configure Equipped Weapons Combo Box
+"""
+
+def configEquippedWeaponsComboBox(self, weapons_selection_callback):
+    self.weaponsComboBox = self.findChild(QComboBox, 'equippedWeaponsComboBox')
+    self.weaponsComboBox.currentIndexChanged.connect(lambda: on_weapons_changed(self, weapons_selection_callback))
+
+def on_weapons_changed(self, weapons_selection_callback):
+    weapons_selection_callback(self)
+        

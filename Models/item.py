@@ -98,4 +98,80 @@ cloak = Item(
     damage_type=None
 )
 
+sword1 = Item(
+    "Right Hand",
+    "Right Hand Sword",
+    stats={'crush_resist': 26},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
+sword2 = Item(
+    "Left Hand",
+    "Left Hand Sword",
+    stats={'slash_resist': 26},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
+claymore = Item(
+    "Two Hand",
+    "Two Hand Sword",
+    stats={'strength': 75},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
+bow = Item(
+    "Ranged",
+    "Bow",
+    stats={'dexterity': 75},
+    single_utility=None,
+    total_utility=None,
+    level=None,
+    bonus_level=None,
+    realm=None,
+    armor_factor=None,
+    usable=None,
+    tradeable=None,
+    item_type=None,
+    quality=None,
+    dps=None,
+    speed=None,
+    damage_type=None
+)
+
 gear = [belt, belt2]

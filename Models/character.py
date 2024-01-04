@@ -67,10 +67,10 @@ class Character:
             'Hands': None,
             'Legs': None,
             'Feet': None,
-            'Right Hand': None,
-            'Left Hand': None,
-            'Two Hand': None,
-            'Ranged': None,
+            'Right Hand': [sword1],
+            'Left Hand': [sword2],
+            'Two Hand': [claymore],
+            'Ranged': [bow],
             'Mythirian': None,
         }
     

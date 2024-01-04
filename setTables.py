@@ -50,13 +50,9 @@ def clearTable(self, table_name):
     self.tableToClear = self.findChild(QTableWidget, table_name)
     default_caps = default_caps_map[table_name]
     keys = list(default_caps.keys())
-    # print(keys)
     for row in range(self.tableToClear.rowCount()):
-        # pass
-        # print(default_caps[keys[row]])
         self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
         self.tableToClear.setItem(row, 2, QTableWidgetItem(f"{default_caps[keys[row]]}"))
-        # print(default_caps[keys[row]])
         
 def calculateDifferenceOfStatAndCap(self, table_name):
     self.table = self.findChild(QTableWidget, table_name)
