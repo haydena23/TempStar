@@ -18,6 +18,7 @@ def initUI(self):
     configUnequipAllButton(self, unquipAllSlotsWarning)
     configSlotSelectionListWidget(self, setItemFromSlotSelection)
     configEquippedWeaponsComboBox(self, setEquippedWeapons)
+    configLevelsComboBox(self, setLevel)
 """
 Configure Class ComboBox
 """
@@ -115,3 +116,13 @@ def configEquippedWeaponsComboBox(self, weapons_selection_callback):
 def on_weapons_changed(self, weapons_selection_callback):
     weapons_selection_callback(self)
         
+"""
+Configure Level Combo Box
+"""
+
+def configLevelsComboBox(self, level_selection_callback):
+    self.levelComboBox = self.findChild(QComboBox, 'levelComboBox')
+    self.levelComboBox.currentIndexChanged.connect(lambda: on_level_changed(self, level_selection_callback))
+
+def on_level_changed(self, level_selection_callback):
+    level_selection_callback(self)

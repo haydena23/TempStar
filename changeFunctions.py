@@ -88,6 +88,9 @@ def setItemFromSlotSelection(self):
 
 def setEquippedWeapons(self):
     autoUpdateRealmRank(self)
+    
+def setLevel(self):
+    autoUpdateRealmRank(self)
 
 def unquipAllSlotsWarning(self):
     if unequipMessageBox():

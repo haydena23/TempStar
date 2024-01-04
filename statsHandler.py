@@ -5,6 +5,8 @@ from setTables import clearTable, calculateDifferenceOfStatAndCap
 from Models.races import *
 from Models.mappings import *
 
+from Models.levels import *
+
 def updateResistsFromRace(self, race_type: RaceType):
     if self.character:
         self.resistsTable = self.findChild(QTableWidget, 'resistsTable')
@@ -51,12 +53,13 @@ def calculateNowStats(self):
     
 def adjustBaseCapFromStatCap(self):
     if self.character:
-        stat_caps = stat_cap_default_caps
+        self.level = self.findChild(QComboBox, 'levelComboBox').currentText()
+        default = levels.get(self.level).get('statsCapTable')
         self.statsTable = self.findChild(QTableWidget, 'statsTable')
         self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')
         for row in range(self.statsCapTable.rowCount()):
             capWidgetValue = int(self.statsCapTable.item(row, 1).text())
-            cap = ((list(stat_caps.items()))[row])[1]
+            cap = ((list(default.items()))[row])[1]
             if capWidgetValue > cap:
                 capWidgetValue = cap
             currentStatCapValue = int(self.statsTable.item(row,2).text())
