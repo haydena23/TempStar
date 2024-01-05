@@ -2,10 +2,10 @@ from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox
 from PyQt5.QtCore import Qt
 
 from setTables import clearTable, calculateDifferenceOfStatAndCap
-from Models.races import *
-from Models.mappings import *
+from Models.races import RaceType
+from Models.mappings import equip_weapon_map, table_names, race_type_mapping, realm_rank_map
 
-from Models.levels import *
+from Models.levels import levels
 
 def updateResistsFromRace(self, race_type: RaceType):
     if self.character:
@@ -73,7 +73,6 @@ def adjustStatsFromMythirian(self):
 def adjustSkillsFromRealmRank(self, realm_rank):
     if self.character:
         self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
-        calculateNowStats(self)
         currentRace = race_type_mapping.get(self.findChild(QComboBox, 'raceComboBox').currentText())
         updateResistsFromRace(self, currentRace)
         for row in range(self.skillsTable.rowCount()):

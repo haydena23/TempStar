@@ -380,7 +380,7 @@ Bard = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded'},
+                 'Reinforced'},
     realm={'Hibernia'}
 )
 
@@ -403,7 +403,7 @@ Blademaster = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded'},
+                 'Reinforced'},
     realm={'Hibernia'}
 )
 
@@ -427,8 +427,8 @@ Champion = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded',
-                 'Chain'},
+                 'Reinforced',
+                 'Scale'},
     realm={'Hibernia'}
 )
 
@@ -446,8 +446,8 @@ Druid = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded',
-                 'Chain'},
+                 'Reinforced',
+                 'Scale'},
     realm={'Hibernia'}
 )
 
@@ -501,8 +501,8 @@ Hero = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded',
-                 'Chain'},
+                 'Reinforced',
+                 'Scale'},
     realm={'Hibernia'}
 )
 
@@ -570,7 +570,7 @@ Ranger = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded'},
+                 'Reinforced'},
     realm={'Hibernia'}
 )
 
@@ -619,8 +619,8 @@ Warden = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather',
-                 'Studded',
-                 'Chain'},
+                 'Reinforced',
+                 'Scale'},
     realm={'Hibernia'}
 )
 

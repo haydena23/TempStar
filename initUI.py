@@ -1,14 +1,15 @@
 from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton
-from Models.classes import *
-from Models.races import *
-from Models.mappings import *
 
-from changeFunctions import *
+from Models.mappings import class_type_mapping, race_type_mapping, realm_rank_map
+from changeFunctions import changeClass, changeRace, setSlotSelectionLabel, setSlotSelectionList, setInformationTextEdit
+from changeFunctions import changeRealmRank, unquipAllSlotsWarning, setItemFromSlotSelection, setEquippedWeapons, setLevel, setItemsListWidgetSlots
 
 from newCharacter import create_new_character_on_open
+from Models.vault import loadVault
 
 def initUI(self):
     create_new_character_on_open(self)
+    loadVault(self)
     
     # Configure UI components
     configClassComboBox(self, class_type_mapping, changeClass)
@@ -19,6 +20,7 @@ def initUI(self):
     configSlotSelectionListWidget(self, setItemFromSlotSelection)
     configEquippedWeaponsComboBox(self, setEquippedWeapons)
     configLevelsComboBox(self, setLevel)
+    
 """
 Configure Class ComboBox
 """

@@ -32,7 +32,7 @@ dark_mode_style = """
         background-color: #2b2f38;
         color: #9da5b4;
     }
-    QComboBox {
+    QComboBox, QSpinBox {
         background-color: #21252b;
         color: #9da5b4;
     }

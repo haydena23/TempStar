@@ -233,3 +233,21 @@ equip_weapon_map = {
     "Two Handed": ["Right Hand", "Left Hand", "Ranged"],
     "Ranged / Instrument": ["Right Hand", "Left Hand", "Two Hand"]
 }
+
+armor_name_map = {
+    "Cloth": "Cloth",
+    "Leather": "Leather",
+    "Studded": "Studded",
+    "Reinforced": "Studded",
+    "Scale": "Chain",
+    "Chain": "Chain",
+    "Plate": "Plate"
+}
+
+armor_abs_map = {
+    "0%": "Cloth",
+    "10%": "Leather",
+    "19%": "Studded",
+    "27%": "Chain",
+    "34%": "Plate"
+}

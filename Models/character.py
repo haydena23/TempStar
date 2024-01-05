@@ -53,26 +53,52 @@ class Character:
             'Mythirian': None,
         }
         self.allAddedItems = {
-            'Jewel': None,
-            'Neck': None,
-            'Cloak': [cloak],
-            'Belt': [belt, belt2],
-            'Ring 1': None,
-            'Ring 2': None,
-            'Wrist 1': None,
-            'Wrist 2': None,
-            'Chest': None,
-            'Head': None,
-            'Arms': None,
-            'Hands': None,
-            'Legs': None,
-            'Feet': None,
-            'Right Hand': [sword1],
-            'Left Hand': [sword2],
-            'Two Hand': [claymore],
-            'Ranged': [bow],
-            'Mythirian': None,
+            'Jewel': [],
+            'Neck': [],
+            'Cloak': [],
+            'Belt': [],
+            'Ring 1': [],
+            'Ring 2': [],
+            'Wrist 1': [],
+            'Wrist 2': [],
+            'Chest': [],
+            'Head': [],
+            'Arms': [],
+            'Hands': [],
+            'Legs': [],
+            'Feet': [],
+            'Right Hand': [],
+            'Left Hand': [],
+            'Two Hand': [],
+            'Ranged': [],
+            'Mythirian': [],
+        }
+        self.vault = {
+            'Jewel': {},
+            'Neck': {},
+            'Cloak': {},
+            'Belt': {},
+            'Ring 1': {},
+            'Ring 2': {},
+            'Wrist 1': {},
+            'Wrist 2': {},
+            'Chest': {},
+            'Head': {},
+            'Arms': {},
+            'Hands': {},
+            'Legs': {},
+            'Feet': {},
+            'Right Hand': {},
+            'Left Hand': {},
+            'Two Hand': {},
+            'Ranged': {},
+            'Mythirian': {},
         }
     
     def setCurrentItem(self, slot, item: Item):
         self.currentItems[slot] = item
+    
+    def addToVault(self, slot, item: Item):
+        # Work in progress
+        # self.vault[slot].add(item)
+        self.allAddedItems[slot].append(item)

@@ -3,10 +3,8 @@ from statsHandler import updateResistsFromRace, adjustSkillsFromRealmRank
 
 from statsHandler import adjustSkillsFromRealmRank, autoUpdateRealmRank, calculateNowStats
 
-from Models.classes import *
-from Models.races import *
-from Models.mappings import *
-from Models.item import gear
+from Models.classes import ClassType, RaceType
+from Models.mappings import slot_mapping
 from widgets import unequipMessageBox
 
 from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox
@@ -24,12 +22,6 @@ def changeChampionLevel(self):
 
 def changeRealmRank(self, realm_rank):
     adjustSkillsFromRealmRank(self, realm_rank)
-
-def changeLevel(self):
-    pass
-
-def changeWeapons(self):
-    pass
 
 def setSlotSelectionLabel(self, text):
     text = str(text).split(":")[0]
@@ -50,10 +42,10 @@ def setSlotSelectionList(self, text):
     itemsSelectionListWidget = self.findChild(QListWidget, 'itemsListWidget')
     slotWidget = itemsSelectionListWidget.findItems(text, Qt.MatchFlag.MatchStartsWith)[0]
     if self.character.currentItems.get(text) is None:
-        slotWidget.setText(f"{text}: <Empty Slot>")
+        slotWidget.setText(f"{text}:\t\t<Empty Slot>")
         slotSelectionListWidget.setCurrentItem(emptyItem)
     else:
-        slotWidget.setText(f"{text}: {self.character.currentItems.get(text).name}")
+        slotWidget.setText(f"{text}:\t\t{self.character.currentItems.get(text).name}")
         itemWidget = slotSelectionListWidget.findItems(self.character.currentItems.get(text).name, Qt.MatchFlag.MatchExactly)[0]
         slotSelectionListWidget.setCurrentItem(itemWidget)
         
@@ -61,14 +53,11 @@ def setItemsListWidgetSlots(self, itemsListWidget):
     for slot in range(itemsListWidget.count()):
         text = itemsListWidget.item(slot).text().split(":")[0]
         if self.character.currentItems.get(text) is None:
-            itemsListWidget.item(slot).setText(f"{text}: <Empty Slot>")
+            itemsListWidget.item(slot).setText(f"{text}:\t\t<Empty Slot>")
         else:
             setLockStatus(self)
-            itemsListWidget.item(slot).setText(f"{text}: {self.character.currentItems.get(text).name}")
+            itemsListWidget.item(slot).setText(f"{text}:\t\t{self.character.currentItems.get(text).name}")
     autoUpdateRealmRank(self)
-    currentRace = race_type_mapping.get(self.findChild(QComboBox, 'raceComboBox').currentText())
-    updateResistsFromRace(self, currentRace)
-    # autoUpdateRealmRank(self)
 
 def setInformationTextEdit(self):
     pass

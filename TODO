@@ -1,0 +1,11 @@
+
+Todo:
+  - Set information box from selected slot
+  - Add an item for every slot for testing
+  - Create check for empty currentItems for unlock class change
+  - Add confirmation on close program
+  - Bind equiptment spellcrafting button to spellcrafting page
+  - Implement ToA bonuses
+  - Add functionality for report generation
+  - Add items to the vault
+  - Add weaponry to classes (i.e allowed: Staves, small shields etc.)

@@ -1,4 +1,5 @@
 import sys
+import cProfile
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import uic
@@ -11,7 +12,6 @@ class MyApplication(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('gbx.ui', self)
-        
         # Work in progress
         self.setStyleSheet(dark_mode_style)
         
@@ -20,12 +20,22 @@ class MyApplication(QMainWindow):
         initUI(self)
     
     def lockTemp(self):
-        self.lockTemplate == True
+        self.lockTemplate = True
     def unlockTemp(self):
-        self.lockTemplate == False
+        self.lockTemplate = False
 
+## UNCOMMENT BELOW TO SEE PROGRAM PERFORMANCE METRICS
+## THEN COMMENT THE LAST IF STATEMENT
+# def main():
+#     app = QApplication(sys.argv)
+#     mainWindow = MyApplication()
+#     mainWindow.show()
+#     sys.exit(app.exec_())
+
+# if __name__ == "__main__":
+#     cProfile.run('main()')
+    
 if __name__ == "__main__":
-    import sys
     app = QApplication(sys.argv)
     mainWindow = MyApplication()
     mainWindow.show()

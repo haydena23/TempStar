@@ -48,12 +48,9 @@ def setSkillsTable(self):
         
 def clearTable(self, table_name):
     self.tableToClear = self.findChild(QTableWidget, table_name)
-    self.level = self.findChild(QComboBox, 'levelComboBox').currentText()
-    
+    self.level = self.findChild(QComboBox, 'levelComboBox').currentText() 
     default_caps = levels.get(self.level).get(table_name)
-        
     default_keys = list(default_caps.keys())
-    
     for row in range(self.tableToClear.rowCount()):
         self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
         self.tableToClear.setItem(row, 2, QTableWidgetItem(f"{default_caps[default_keys[row]]}"))
