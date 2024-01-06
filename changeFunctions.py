@@ -7,7 +7,7 @@ from Models.classes import ClassType, RaceType
 from Models.mappings import slot_mapping
 from widgets import unequipMessageBox
 
-from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox
+from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox, QTabWidget
 from PyQt5.QtCore import Qt
 
 def changeClass(self, class_type: ClassType):
@@ -98,3 +98,11 @@ def setLockStatus(self):
 def setUnlockStatus(self):
     self.unlockTemp()
     self.findChild(QComboBox, 'classComboBox').setDisabled(False)
+
+def changeTab(self, index, slot):
+    self.tabWidget = self.findChild(QTabWidget, 'tabWidget')
+    self.tabWidget.setCurrentIndex(index)
+    if slot is not None:
+        self.vaultCurrentSlotWidget = self.findChild(QComboBox, 'vaultCurrentSlot')
+        indexOfVaultSlot = self.vaultCurrentSlotWidget.findText(slot, Qt.MatchFlag.MatchExactly)
+        self.vaultCurrentSlotWidget.setCurrentIndex(indexOfVaultSlot)

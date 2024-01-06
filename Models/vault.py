@@ -2,7 +2,7 @@ import json
 from Models.item import Item
 
 def loadVault(self):
-    with open('items.json') as f:
+    with open('database.json') as f:
         data = json.load(f)
         for item_data in data["items"]:
             item = Item(**item_data)

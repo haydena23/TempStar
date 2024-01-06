@@ -2,7 +2,7 @@ from Models.classes import ClassType
 from Models.item import *
 
 class Character:
-    def __init__(self, name, class_type: ClassType, level, champion_level, realm_rank):
+    def __init__(self, name, class_type: ClassType, level, champion_level, realm_rank, allAddedItems = None, vault = None):
         self.name = name
         self.class_type = class_type
         self.level = level
@@ -52,7 +52,7 @@ class Character:
             'Ranged': None,
             'Mythirian': None,
         }
-        self.allAddedItems = {
+        self.allAddedItems = allAddedItems if allAddedItems is not None else{
             'Jewel': [],
             'Neck': [],
             'Cloak': [],
@@ -73,26 +73,26 @@ class Character:
             'Ranged': [],
             'Mythirian': [],
         }
-        self.vault = {
-            'Jewel': {},
-            'Neck': {},
-            'Cloak': {},
-            'Belt': {},
-            'Ring 1': {},
-            'Ring 2': {},
-            'Wrist 1': {},
-            'Wrist 2': {},
-            'Chest': {},
-            'Head': {},
-            'Arms': {},
-            'Hands': {},
-            'Legs': {},
-            'Feet': {},
-            'Right Hand': {},
-            'Left Hand': {},
-            'Two Hand': {},
-            'Ranged': {},
-            'Mythirian': {},
+        self.vault = vault if vault is not None else {
+            'Jewel': [],
+            'Neck': [],
+            'Cloak': [],
+            'Belt': [],
+            'Ring 1': [],
+            'Ring 2': [],
+            'Wrist 1': [],
+            'Wrist 2': [],
+            'Chest': [],
+            'Head': [],
+            'Arms': [],
+            'Hands': [],
+            'Legs': [],
+            'Feet': [],
+            'Right Hand': [],
+            'Left Hand': [],
+            'Two Hand': [],
+            'Ranged': [],
+            'Mythirian': [],
         }
     
     def setCurrentItem(self, slot, item: Item):
@@ -100,5 +100,5 @@ class Character:
     
     def addToVault(self, slot, item: Item):
         # Work in progress
-        # self.vault[slot].add(item)
+        self.vault[slot].append(item)
         self.allAddedItems[slot].append(item)

@@ -4,8 +4,11 @@ Todo:
   - Add an item for every slot for testing
   - Create check for empty currentItems for unlock class change
   - Add confirmation on close program
-  - Bind equiptment spellcrafting button to spellcrafting page
+  - Bind equiptment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
+  - Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection
+  - Display items in master vault
   - Implement ToA bonuses
   - Add functionality for report generation
-  - Add items to the vault
   - Add weaponry to classes (i.e allowed: Staves, small shields etc.)
+  - Configure spellcraft change tab. Enable button when slot selection clicked on armor/weapons?
+  ✔ Change class deleting vault. Carry it over to new class @started(24-01-05 15:35) @done(24-01-05 15:49) @lasted(14m7s)

@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget, QComboBox
 from setTables import initTables, setSkillsTable, calculateDifferenceOfStatAndCap
 
 def new_character_change(self, class_type: ClassType):
-    self.character = Character("New Character", class_type, 1, 1, 1)
+    self.character = Character("New Character", class_type, 1, 1, 1, self.character.allAddedItems, self.character.vault)
     reset_ui_for_new_character(self)
 
 def create_new_character_on_open(self):
