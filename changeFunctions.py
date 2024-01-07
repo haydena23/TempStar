@@ -112,6 +112,8 @@ def changeTab(self, index, slot):
         indexOfVaultSlot = self.vaultCurrentSlotWidget.findText(slot, Qt.MatchFlag.MatchExactly)
         self.vaultCurrentSlotWidget.setCurrentIndex(indexOfVaultSlot)
     autoUpdateRealmRank(self)
+    itemsListWidget = self.findChild(QListWidget, 'itemsListWidget')
+    setItemsListWidgetSlots(self, itemsListWidget)
 
 def resetOnVaultComboBoxChange(self):
     self.character.copyTempToCurrent()
@@ -205,8 +207,8 @@ def vaultCurrentDoubleClick(self):
     for item in itemsToPickFrom:
         if item.name == selectedItem:
             self.character.removeFromAllItems(self.vaultCurrentSlotText, item)
-            if self.character.currentItems[self.vaultCurrentSlotText].name == selectedItem:
-                self.character.setCurrentItem(self.vaultCurrentSlotText, None)
+            if self.character.temporaryItems[self.vaultCurrentSlotText].name == selectedItem:
+                self.character.setTempItem(self.vaultCurrentSlotText, None) 
             row = self.selectedItemWidget.currentRow()
             item = self.selectedItemWidget.takeItem(row)
             del item
@@ -217,8 +219,6 @@ def vaultCurrentDoubleClick(self):
     refreshSlotSelectionListWidget(self)
     populateVault(self)
     populateAvailable(self)
-    # itemsListWidget = self.findChild(QListWidget, 'itemsListWidget')
-    # setItemsListWidgetSlots(self, itemsListWidget)
     
 def refreshSlotSelectionListWidget(self):
     slotSelectionListWidget = self.findChild(QListWidget, 'slotSelectionListWidget')

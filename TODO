@@ -7,9 +7,9 @@ Todo:
   - Bind equiptment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
   ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)
   ✔ Display items in master vault @done(24-01-05 21:55)
-  - Remove from available list item if in allAddedItems. Iterate vault and removed all added items widgets, don't modify vault
-  - Link "Currently In Item List" to Slot Selections
-  - Implement single/double click functionality to "Currently in Item List"
+  ✔ Remove from available list item if in allAddedItems. Iterate vault and removed all added items widgets, don't modify vault @done(24-01-06 23:57)
+  ✔ Link "Currently In Item List" to Slot Selections @done(24-01-06 23:57)
+  ✔ Implement single/double click functionality to "Currently in Item List" @done(24-01-06 23:57)
   - Implement ToA bonuses
   - Add functionality for report generation
   - Add weaponry to classes (i.e allowed: Staves, small shields etc.)

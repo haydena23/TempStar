@@ -118,6 +118,9 @@ class Character:
     
     def setCurrentItem(self, slot, item: Item):
         self.currentItems[slot] = item
+        
+    def setTempItem(self, slot, item: Item):
+        self.temporaryItems[slot] = item
     
     def addToVault(self, slot, item: Item):
         self.vault[slot].append(item)
