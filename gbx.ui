@@ -322,18 +322,6 @@
                   </item>
                  </widget>
                 </item>
-                <item row="1" column="0">
-                 <widget class="QComboBox" name="comboBox">
-                  <property name="currentText">
-                   <string>Eden</string>
-                  </property>
-                  <item>
-                   <property name="text">
-                    <string>Eden</string>
-                   </property>
-                  </item>
-                 </widget>
-                </item>
                 <item row="2" column="0">
                  <widget class="QLabel" name="label_2">
                   <property name="font">
@@ -381,6 +369,18 @@
                   <property name="text">
                    <string>Class:</string>
                   </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="comboBox">
+                  <property name="currentText">
+                   <string>Eden</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Eden</string>
+                   </property>
+                  </item>
                  </widget>
                 </item>
                </layout>
@@ -1163,7 +1163,7 @@ p, li { white-space: pre-wrap; }
                  <item>
                   <widget class="QLabel" name="slotSelectionLabel">
                    <property name="text">
-                    <string>&lt;Item&gt; Slot Selection :</string>
+                    <string>Jewel Slot Selections :</string>
                    </property>
                   </widget>
                  </item>
@@ -1172,6 +1172,11 @@ p, li { white-space: pre-wrap; }
                    <property name="selectionRectVisible">
                     <bool>true</bool>
                    </property>
+                   <item>
+                    <property name="text">
+                     <string>&lt;Empty Slot&gt;</string>
+                    </property>
+                   </item>
                   </widget>
                  </item>
                  <item>
@@ -1352,7 +1357,7 @@ p, li { white-space: pre-wrap; }
                   <number>0</number>
                  </property>
                  <item>
-                  <widget class="QGroupBox" name="groupBox_5">
+                  <widget class="QGroupBox" name="availableItemListGroupBox">
                    <property name="title">
                     <string>Available Item List : ( 0 )</string>
                    </property>
@@ -1370,7 +1375,7 @@ p, li { white-space: pre-wrap; }
                      <number>9</number>
                     </property>
                     <item>
-                     <widget class="QListWidget" name="listWidget">
+                     <widget class="QListWidget" name="vaultAvailableWidget">
                       <property name="verticalScrollBarPolicy">
                        <enum>Qt::ScrollBarAlwaysOn</enum>
                       </property>
@@ -1389,14 +1394,14 @@ p, li { white-space: pre-wrap; }
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_6">
                        <item>
-                        <widget class="QPushButton" name="pushButton_8">
+                        <widget class="QPushButton" name="addFromVaultButton">
                          <property name="text">
                           <string>Add</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="pushButton_9">
+                        <widget class="QPushButton" name="addAllFromVault">
                          <property name="text">
                           <string>Add All</string>
                          </property>
@@ -1409,7 +1414,7 @@ p, li { white-space: pre-wrap; }
                   </widget>
                  </item>
                  <item>
-                  <widget class="QGroupBox" name="groupBox_6">
+                  <widget class="QGroupBox" name="currentlyInItemList">
                    <property name="title">
                     <string>Currently in Item List : ( 0 )</string>
                    </property>
@@ -1427,7 +1432,7 @@ p, li { white-space: pre-wrap; }
                      <number>9</number>
                     </property>
                     <item>
-                     <widget class="QListWidget" name="listWidget_2">
+                     <widget class="QListWidget" name="currentlyInItemListWidget">
                       <property name="verticalScrollBarPolicy">
                        <enum>Qt::ScrollBarAlwaysOn</enum>
                       </property>
@@ -1446,7 +1451,7 @@ p, li { white-space: pre-wrap; }
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_12">
                        <item>
-                        <widget class="QPushButton" name="pushButton_11">
+                        <widget class="QPushButton" name="removeFromVaultButton">
                          <property name="text">
                           <string>Remove</string>
                          </property>
@@ -1476,7 +1481,7 @@ p, li { white-space: pre-wrap; }
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="8,1,1">
+                <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="8,0,1,1">
                  <property name="leftMargin">
                   <number>5</number>
                  </property>
@@ -1497,6 +1502,13 @@ p, li { white-space: pre-wrap; }
                   </spacer>
                  </item>
                  <item>
+                  <widget class="QLabel" name="label_39">
+                   <property name="text">
+                    <string>Filter Status: Inactive</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
                   <widget class="QPushButton" name="pushButton_12">
                    <property name="text">
                     <string>Clear Filters</string>
@@ -1504,7 +1516,7 @@ p, li { white-space: pre-wrap; }
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_13">
+                  <widget class="QPushButton" name="vaultDoneButton">
                    <property name="text">
                     <string>Done</string>
                    </property>
@@ -2134,7 +2146,7 @@ p, li { white-space: pre-wrap; }
                   </widget>
                  </item>
                  <item>
-                  <widget class="QComboBox" name="comboBox_13">
+                  <widget class="QComboBox" name="spellcraftCurrentSlot">
                    <item>
                     <property name="text">
                      <string>Chest</string>

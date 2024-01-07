@@ -94,11 +94,42 @@ class Character:
             'Ranged': [],
             'Mythirian': [],
         }
+        self.temporaryItems = {
+            'Jewel': None,
+            'Neck': None,
+            'Cloak': None,
+            'Belt': None,
+            'Ring 1': None,
+            'Ring 2': None,
+            'Wrist 1': None,
+            'Wrist 2': None,
+            'Chest': None,
+            'Head': None,
+            'Arms': None,
+            'Hands': None,
+            'Legs': None,
+            'Feet': None,
+            'Right Hand': None,
+            'Left Hand': None,
+            'Two Hand': None,
+            'Ranged': None,
+            'Mythirian': None,
+        }
     
     def setCurrentItem(self, slot, item: Item):
         self.currentItems[slot] = item
     
     def addToVault(self, slot, item: Item):
-        # Work in progress
         self.vault[slot].append(item)
+    
+    def addToAllItems(self, slot, item: Item):
         self.allAddedItems[slot].append(item)
+    
+    def removeFromAllItems(self, slot, item: Item):
+        self.allAddedItems[slot].remove(item)
+    
+    def copyCurrentToTemp(self):
+        self.temporaryItems = self.currentItems.copy()
+    
+    def copyTempToCurrent(self):
+        self.currentItems = self.temporaryItems.copy()

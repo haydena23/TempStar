@@ -5,8 +5,11 @@ Todo:
   - Create check for empty currentItems for unlock class change
   - Add confirmation on close program
   - Bind equiptment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
-  - Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection
-  - Display items in master vault
+  ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)
+  ✔ Display items in master vault @done(24-01-05 21:55)
+  - Remove from available list item if in allAddedItems. Iterate vault and removed all added items widgets, don't modify vault
+  - Link "Currently In Item List" to Slot Selections
+  - Implement single/double click functionality to "Currently in Item List"
   - Implement ToA bonuses
   - Add functionality for report generation
   - Add weaponry to classes (i.e allowed: Staves, small shields etc.)

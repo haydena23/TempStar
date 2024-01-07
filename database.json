@@ -112,6 +112,30 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": ""
+        },
+        {
+            "idValue": 5,
+            "slot": "Jewel",
+            "name": "Gemstone of Swirling Energy",
+            "stats": {
+                "hit_points": 50,
+                "hit_points_cap": 50,
+                "crush_resist": 9
+            },
+            "single_utility": 113.0,
+            "total_utility": 143.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": 0,
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Magical",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
         }
     ]
 }
