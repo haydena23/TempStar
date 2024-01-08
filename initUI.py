@@ -84,7 +84,11 @@ def on_items_list_widget_clicked_set_slot_selection_list_widget(self, set_slot_s
         set_slot_selection_callback(self, selected_text)
     
 def on_items_list_widget_clicked_set_information_textedit_widget(self, set_slot_selection_callback):
-    set_slot_selection_callback(self)
+    selected_item = self.itemsListWidget.currentItem()
+    if selected_item:
+        slot = selected_item.text().split(':')[0].strip()
+        itemName = selected_item.text().split(':')[1].strip()
+    set_slot_selection_callback(self, slot, itemName)
     
 """
 Configure Realm Rank ComboBox

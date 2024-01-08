@@ -1,9 +1,8 @@
 class Item:
-    def __init__(self, idValue, slot, shield_size, name, stats, single_utility, total_utility, 
+    def __init__(self, slot, shield_size, name, stats, single_utility, total_utility, 
                  level, bonus_level, realm, armor_factor, usable,
                  tradeable, item_type, quality, dps, speed, damage_type,
                  ):
-        self.id = idValue
         self.slot = slot
         self.name = name
         self.stats = stats

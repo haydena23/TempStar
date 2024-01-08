@@ -1,7 +1,6 @@
 {
     "items": [
         {
-            "idValue": 1,
             "slot": "Belt",
             "name": "Shimmering Satin Sash",
             "stats": {
@@ -25,7 +24,7 @@
             "level": 51,
             "bonus_level": 50,
             "realm": "Albion",
-            "armor_factor": 0,
+            "armor_factor": "",
             "usable": "All",
             "tradeable": "Yes",
             "item_type": "Magical",
@@ -36,7 +35,6 @@
             "shield_size": ""
         },
         {
-            "idValue": 2,
             "slot": "Left Hand",
             "name": "Bonesliver Rapier",
             "stats": {
@@ -50,7 +48,7 @@
             "level": 51,
             "bonus_level": 50,
             "realm": "Albion",
-            "armor_factor": 0,
+            "armor_factor": "",
             "usable": "All",
             "tradeable": "Yes",
             "item_type": "Thrust",
@@ -61,7 +59,6 @@
             "shield_size": ""
         },
         {
-            "idValue": 3,
             "slot": "Right Hand",
             "name": "Acaeus Rapier",
             "stats": {
@@ -74,7 +71,7 @@
             "level": 51,
             "bonus_level": 50,
             "realm": "Albion",
-            "armor_factor": 0,
+            "armor_factor": "",
             "usable": "All",
             "tradeable": "Yes",
             "item_type": "Thrust",
@@ -85,7 +82,6 @@
             "shield_size": ""
         },
         {
-            "idValue": 4,
             "slot": "Ring",
             "name": "Ring of Arcane Strength",
             "stats": {
@@ -103,7 +99,7 @@
             "level": 51,
             "bonus_level": 50,
             "realm": "Albion",
-            "armor_factor": 0,
+            "armor_factor": "",
             "usable": "All",
             "tradeable": "Yes",
             "item_type": "Magical",
@@ -114,7 +110,6 @@
             "shield_size": ""
         },
         {
-            "idValue": 5,
             "slot": "Jewel",
             "name": "Gemstone of Swirling Energy",
             "stats": {
@@ -127,7 +122,7 @@
             "level": 51,
             "bonus_level": 50,
             "realm": "Albion",
-            "armor_factor": 0,
+            "armor_factor": "",
             "usable": "All",
             "tradeable": "Yes",
             "item_type": "Magical",
@@ -136,6 +131,271 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": ""
+        },
+        {
+            "slot": "Neck",
+            "name": "Albion Medal of Honor",
+            "stats": {
+                "body_resist": 5,
+                "cold_resist": 5,
+                "crush_resist": 5,
+                "energy_resist": 5,
+                "heat_resist": 5,
+                "matter_resist": 5,
+                "slash_resist": 5,
+                "spirit_resist": 5,
+                "thrust_resist": 5
+            },
+            "single_utility": 90.0,
+            "total_utility": 90.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "No",
+            "item_type": "Magical",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Wrist",
+            "name": "Bracer of Arcane Vigor",
+            "stats": {
+                "strength": 21,
+                "hit_points": 35,
+                "armor_factor": 5,
+                "strength_cap": 5,
+                "hit_points_cap": 35,
+                "crush_resist": 4,
+                "slash_resist": 4,
+                "thrust_resist": 4
+            },
+            "single_utility": 100.5,
+            "total_utility": 120.5,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Magical",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Cloak",
+            "name": "Sulphurous Fiend Cloak",
+            "stats": {
+                "hit_points": 50,
+                "armor_factor": 12,
+                "hit_points_cap": 50,
+                "body_resist": 7,
+                "energy_resist": 7
+            },
+            "single_utility": 129.0,
+            "total_utility": 149.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Magical",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Head",
+            "name": "Cloth Cap",
+            "stats": {
+                "hit_points": 30,
+                "dexterity_cap": 10,
+                "acuity_cap": 10,
+                "body_resist": 3,
+                "cold_resist": 3,
+                "energy_resist": 3,
+                "heat_resist": 3,
+                "matter_resist": 3,
+                "spirit_resist": 3
+            },
+            "single_utility": 108.5,
+            "total_utility": 108.5,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "51",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Cloth",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Arms",
+            "name": "Sleeves of Decaying Flesh",
+            "stats": {
+                "dexterity": 21,
+                "quickness": 21,
+                "crush_resist": 9,
+                "slash_resist": 9,
+                "thrust_resist": 9
+            },
+            "single_utility": 113.0,
+            "total_utility": 143.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "102",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Leather",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Hands",
+            "name": "Ageless Fluted Vambraces",
+            "stats": {
+                "strength_cap": 10,
+                "constitution_cap": 10,
+                "quickness_cap": 10,
+                "crush_resist": 1,
+                "heat_resist": 1,
+                "matter_resist": 1,
+                "slash_resist": 1,
+                "thrust_resist": 1
+            },
+            "single_utility": 105.0,
+            "total_utility": 120.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "102",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Plate",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Chest",
+            "name": "Ebon Vanquisher's Warchain",
+            "stats": {
+                "dexterity": 24,
+                "constitution": 24,
+                "dexterity_cap": 6,
+                "crush_resist": 3,
+                "slash_resist": 3,
+                "thrust_resist": 3
+            },
+            "single_utility": 142.0,
+            "total_utility": 162.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "102",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Chain",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Legs",
+            "name": "Shadow-bound Leggings",
+            "stats": {
+                "strength": 18,
+                "strength_cap": 7,
+                "cold_resist": 7,
+                "crush_resist": 8
+            },
+            "single_utility": 81.0,
+            "total_utility": 96.0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "100",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Studded",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Feet",
+            "name": "Furtive Knave's Boots",
+            "stats": {
+                "dexterity": 10,
+                "quickness": 16,
+                "constitution_cap": 5,
+                "hit_points_cap": 40,
+                "cold_resist": 6,
+                "heat_resist": 6
+            },
+            "single_utility": 101.3,
+            "total_utility": 116.3,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "102",
+            "usable": "Infiltrator",
+            "tradeable": "Yes",
+            "item_type": "Leather",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Left Hand",
+            "name": "Buckler of Eternal Retribution",
+            "stats": {
+                "strength": 22,
+                "dexterity": 22,
+                "shields_skill": 3,
+                "strength_cap": 5,
+                "dexterity_cap": 5
+            },
+            "single_utility": 109.3,
+            "total_utility": 124.3,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Shield",
+            "quality": "100%",
+            "dps": 16.5,
+            "speed": 3,
+            "damage_type": "Crush",
+            "shield_size": "Small"
         }
     ]
 }
