@@ -253,11 +253,11 @@ armor_abs_map = {
 }
 
 mythical_base_map = {
-    'mythical_strength_cap': ['strength'],
-    'mythical_constitution_cap': ['constitution'],
-    'mythical_dexterity_cap': ['dexterity'],
-    'mythical_quickness_cap': ['quickness'],
-    'mythical_acuity_cap': ['acuity'],
+    'mythical_strength_cap': ['strength', 'strength_cap'],
+    'mythical_constitution_cap': ['constitution', 'constitution_cap'],
+    'mythical_dexterity_cap': ['dexterity', 'dexterity_cap'],
+    'mythical_quickness_cap': ['quickness', 'quickness_cap'],
+    'mythical_acuity_cap': ['acuity', 'acuity_cap'],
     'mythical_crush_resist': ['crush_resist'], 
     'mythical_slash_resist': ['slash_resist'],
     'mythical_thrust_resist': ['thrust_resist'], 

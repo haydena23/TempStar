@@ -59,12 +59,7 @@ def clearTable(self, table_name):
     default_keys = list(default_caps.keys())
     adjustStatsFromMythirian(self, default_caps, self.resistanceHardCap, table_name, baseStats, resistStats)
     for row in range(self.tableToClear.rowCount()):
-        if table_name == 'statsTable':
-            self.tableToClear.setItem(row, 1, QTableWidgetItem(f"{baseStats[default_keys[row]]}"))
-        if table_name == 'resistsTable':
-            self.tableToClear.setItem(row, 1, QTableWidgetItem(f"{resistStats[default_keys[row]]}"))
-        if table_name == 'skillsTable':
-            self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
+        self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
         self.tableToClear.setItem(row, 2, QTableWidgetItem(f"{default_caps[default_keys[row]]}"))
         
 def calculateDifferenceOfStatAndCap(self, table_name):

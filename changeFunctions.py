@@ -149,6 +149,7 @@ def populateVault(self):
     vaultAvailableWidget.addItem(QListWidgetItem(str("<Empty Slot>")))
     counter = 0
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
+    currentLevel = int(self.findChild(QComboBox, 'levelComboBox').currentText())
     try:
         availableVaultItems = self.character.vault.get(self.vaultCurrentSlotText)
         addedItemNames = [item.name for item in self.character.allAddedItems.get(self.vaultCurrentSlotText)]
