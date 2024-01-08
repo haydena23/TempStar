@@ -54,21 +54,17 @@ def calculateNowStats(self):
 def adjustBaseCapFromStatCap(self):
     if self.character:
         self.level = self.findChild(QComboBox, 'levelComboBox').currentText()
-        default = levels.get(self.level).get('statsCapTable')
         self.statsTable = self.findChild(QTableWidget, 'statsTable')
         self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')
+        self.default = levels.get(self.level).get('statsCapTable')
         for row in range(self.statsCapTable.rowCount()):
             capWidgetValue = int(self.statsCapTable.item(row, 1).text())
-            cap = ((list(default.items()))[row])[1]
+            cap = ((list(self.default.items()))[row])[1]
             if capWidgetValue > cap:
                 capWidgetValue = cap
             currentStatCapValue = int(self.statsTable.item(row,2).text())
             newValueWidget = QTableWidgetItem(str(currentStatCapValue + capWidgetValue))
             self.statsTable.setItem(row, 2, newValueWidget)
-
-def adjustStatsFromMythirian(self):
-    if self.character:
-        pass
 
 def adjustSkillsFromRealmRank(self, realm_rank):
     if self.character:

@@ -396,6 +396,29 @@
             "speed": 3,
             "damage_type": "Crush",
             "shield_size": "Small"
+        },
+        {
+            "slot": "Mythirian",
+            "name": "Focus Mythirian",
+            "stats": {
+                "mythical_strength_cap": 3,
+                "mythical_dexterity_cap": 3,
+                "mythical_crush_resist": 3
+            },
+            "single_utility": 0,
+            "total_utility": 0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "No",
+            "item_type": "Magical",
+            "quality": "100%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": ""
         }
     ]
 }

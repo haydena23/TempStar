@@ -7,8 +7,9 @@ def loadVault(self):
         for item_data in data["items"]:
             item = Item(**item_data)
             if item.slot == "Left Hand":
-                self.character.addToVault('Right Hand', item)
                 self.character.addToVault('Left Hand', item)
+                if item.item_type != "Shield":
+                    self.character.addToVault('Right Hand', item)
             elif item.slot == "Ring":
                 self.character.addToVault('Ring 1', item)
                 self.character.addToVault('Ring 2', item)

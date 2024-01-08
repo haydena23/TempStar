@@ -251,3 +251,21 @@ armor_abs_map = {
     "27%": "Chain",
     "34%": "Plate"
 }
+
+mythical_base_map = {
+    'mythical_strength_cap': ['strength'],
+    'mythical_constitution_cap': ['constitution'],
+    'mythical_dexterity_cap': ['dexterity'],
+    'mythical_quickness_cap': ['quickness'],
+    'mythical_acuity_cap': ['acuity'],
+    'mythical_crush_resist': ['crush_resist'], 
+    'mythical_slash_resist': ['slash_resist'],
+    'mythical_thrust_resist': ['thrust_resist'], 
+    'mythical_heat_resist': ['heat_resist'], 
+    'mythical_cold_resist': ['cold_resist'], 
+    'mythical_matter_resist': ['matter_resist'],
+    'mythical_energy_resist': ['energy_resist'], 
+    'mythical_body_resist': ['body_resist'], 
+    'mythical_spirit_resist': ['spirit_resist'], 
+    'mythical_essence_resist': ['essence_resist'],
+}

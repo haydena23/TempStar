@@ -1,13 +1,12 @@
 from Models.item import Item
 
-def formatItemReport(item: Item):
+def formatItemReportForInformationBox(item: Item):
     lines = []
 
-    # Adding basic item attributes
     lines.append(f"{item.name}")
     lines.append("")
     lines.append(f"Item Slot : {item.slot}")
-    lines.append(f"Item Type : {item.itemType}")
+    lines.append(f"Item Type : {item.item_type}")
     lines.append(f"Item Level : {item.level}")
     lines.append(f"Tradeable : {item.tradeable}")
     lines.append(f"Quality : {item.quality}")
@@ -26,7 +25,7 @@ def formatItemReport(item: Item):
         lines.append(f"Speed : {item.speed}")
     lines.append("")
     for stat, value in item.stats.items():
-        lines.append(f"{value} {stat.replace('_', ' ').capitalize()}")
+        lines.append(f"{value} {stat.replace('_', ' ').title()}")
     
     lines.append("")
     lines.append(f"Single Utility : {item.single_utility}")

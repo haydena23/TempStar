@@ -27,9 +27,17 @@ class Character:
         self.allowed_races = class_type.allowed_races
         self.toa_bonuses = {
             'melee_speed': 0, 'melee_damage': 0, 'style_damage': 0, 'power_pool': 0,
-            'spell_speed': 0, 'spell_damage': 0, 'spell_range': 0, 'spell_pierce': 0,
+            'spell_speed': 0, 'spell_damage': 0, 'spell_range': 0, 'resist_pierce': 0,
             'spell_duration': 0, 'arcane_siphoning': 0, 'healing_bonus': 0, 'buff_enhance': 0,
-            'debuff_bonus': 0, 'xp_bonus': 0, 'rp_bonus': 0, 'bp_bonus': 0,
+            'debuff_bonus': 0, 'all_melee_skills': 0, 'all_magic_skills': 0, 'all_focus_levels': 0,
+            'power_regen': 0, 'spell_level': 0, 'endurance_regen': 0, 'health_regen': 0, 'mythical_physical_defenses': 0,
+            'mythical_dps': 0, 'mythical_evade_chance': 0, 'mythical_safe_fall': 0, 'mythical_realm_points': 0, 
+            'mythical_siege': 0, 'mythical_strength_cap': 0, 'mythical_constitution_cap': 0, 'mythical_dexterity_cap': 0,
+            'mythical_quickness_cap': 0, 'mythical_acuity_cap': 0, 'mythical_crush_resist': 0, 'mythical_slash_resist': 0,
+            'mythical_thrust_resist': 0, 'mythical_heat_resist': 0, 'mythical_cold_resist': 0, 'mythical_matter_resist': 0,
+            'mythical_energy_resist': 0, 'mythical_body_resist': 0, 'mythical_spirit_resist': 0, 'mythical_essence_resist': 0,
+            'mythical_parry_chance': 0, 'mythical_block_chance': 0, 'mythical_mesmerize_reduction': 0, 'mythical_stun_reduction': 0,
+            'mythical_speed_decrease_reduction': 0, 'mythical_encumberance': 0, 'mythical_craft_speed': 0
         }
         self.currentItems = {
             'Jewel': None,

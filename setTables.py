@@ -2,15 +2,18 @@ from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox
 from PyQt5.QtGui import QColor, QBrush
 
 from Models.levels import levels
+from Models.mappings import mythical_base_map
 
 def initTables(self):
     self.statsTable = self.findChild(QTableWidget, 'statsTable')    
     self.statsCapTable = self.findChild(QTableWidget, 'statsCapTable')        
     self.resistsTable = self.findChild(QTableWidget, 'resistsTable')
+    self.bonusesTable = self.findChild(QTableWidget, 'bonusesTable')
     
     setTableItemGeometry(self.statsTable)
     setTableItemGeometry(self.statsCapTable)
     setTableItemGeometry(self.resistsTable)
+    setTableItemGeometry(self.bonusesTable)
         
 def setTableItemGeometry(table: QTableWidget):
     for row in range(table.rowCount()):
@@ -49,10 +52,19 @@ def setSkillsTable(self):
 def clearTable(self, table_name):
     self.tableToClear = self.findChild(QTableWidget, table_name)
     self.level = self.findChild(QComboBox, 'levelComboBox').currentText() 
-    default_caps = levels.get(self.level).get(table_name)
+    self.resistanceHardCap = levels.get(self.level).get(table_name)
+    baseStats = self.character.base_stats.copy()
+    resistStats = self.character.resists.copy()
+    default_caps = levels.get(self.level).get(table_name).copy()
     default_keys = list(default_caps.keys())
+    adjustStatsFromMythirian(self, default_caps, self.resistanceHardCap, table_name, baseStats, resistStats)
     for row in range(self.tableToClear.rowCount()):
-        self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
+        if table_name == 'statsTable':
+            self.tableToClear.setItem(row, 1, QTableWidgetItem(f"{baseStats[default_keys[row]]}"))
+        if table_name == 'resistsTable':
+            self.tableToClear.setItem(row, 1, QTableWidgetItem(f"{resistStats[default_keys[row]]}"))
+        if table_name == 'skillsTable':
+            self.tableToClear.setItem(row, 1, QTableWidgetItem("0"))
         self.tableToClear.setItem(row, 2, QTableWidgetItem(f"{default_caps[default_keys[row]]}"))
         
 def calculateDifferenceOfStatAndCap(self, table_name):
@@ -74,3 +86,22 @@ def setColorBasedOnDifference(self, table, row, difference):
                 item.setForeground(QBrush(QColor('#5ad662')))
             case _ if difference > 0:
                 item.setForeground(QBrush(QColor('red')))
+                
+def adjustStatsFromMythirian(self, capsDict, realCaps, table_name, baseStats, resistsStats):
+    if self.character:
+        try:
+            myth = self.character.currentItems['Mythirian'].stats
+            if myth is not None:
+                for mythical_key, base_keys in mythical_base_map.items():
+                    if mythical_key in myth:
+                        for bonus in mythical_base_map[mythical_key]:
+                            if bonus in capsDict:
+                                capsDict[bonus] = realCaps[bonus] + myth[mythical_key]
+                                if table_name == 'statsTable':
+                                    baseStats[bonus] = myth[mythical_key]
+                                if table_name == 'resistsTable':
+                                    resistsStats[bonus] = myth[mythical_key]
+                                    
+        except:
+            pass
+            

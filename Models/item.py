@@ -14,7 +14,7 @@ class Item:
         self.armor_factor = armor_factor
         self.usable = usable
         self.tradeable = tradeable
-        self.itemType = item_type
+        self.item_type = item_type
         self.quality = quality
         self.dps = dps
         self.speed = speed

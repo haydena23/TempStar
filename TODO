@@ -1,17 +1,35 @@
 
 Todo:
-  - Set information box from selected slot
-  - Add an item for every slot for testing
-  - Create check for empty currentItems for unlock class change
-  - Add confirmation on close program
-  - Bind equiptment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
-  ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)
-  ✔ Display items in master vault @done(24-01-05 21:55)
-  ✔ Remove from available list item if in allAddedItems. Iterate vault and removed all added items widgets, don't modify vault @done(24-01-06 23:57)
-  ✔ Link "Currently In Item List" to Slot Selections @done(24-01-06 23:57)
-  ✔ Implement single/double click functionality to "Currently in Item List" @done(24-01-06 23:57)
-  - Implement ToA bonuses
-  - Add functionality for report generation
-  - Add weaponry to classes (i.e allowed: Staves, small shields etc.)
-  - Configure spellcraft change tab. Enable button when slot selection clicked on armor/weapons?
-  ✔ Change class deleting vault. Carry it over to new class @started(24-01-05 15:35) @done(24-01-05 15:49) @lasted(14m7s)
+  > General Program
+    - Add confirmation on close program
+    - Add functionality for report generation
+    ✔ Set information box from selected slot @done(24-01-08 00:13)
+    - Create check for empty currentItems for unlock class change
+    - Configure spellcraft change tab. Enable button when slot selection clicked on armor/weapons?
+  > Stats
+    - Implement all weapon/magic skills bonus
+    - Implement Mythirian bonus
+    - Implement ToA bonuses
+    - ToA Button to display all stats/only stats affected
+    - Make Acuity affect specific magic stat per class
+  > Vault
+    - Only display items in vault if character level is at or above bonus level
+    - Make shield not go into right hand
+    - Add an item for every slot for testing
+    ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)
+    ✔ Display items in master vault @done(24-01-05 21:55)
+    ✔ Remove from available list item if in allAddedItems. Iterate vault and removed all added items widgets, don't modify vault @done(24-01-06 23:57)
+    ✔ Link "Currently In Item List" to Slot Selections @done(24-01-06 23:57)
+    ✔ Implement single/double click functionality to "Currently in Item List" @done(24-01-06 23:57)
+    - Check class usability of item
+    - Check allowed armor type
+    - Set current slot selection from selected item in "currently in item list"
+  > Bugs
+  > Character
+    ✔ Change class to stop deleting vault. Carry it over to new class @done(24-01-05 15:49)
+   - Add weaponry to classes (i.e allowed: Staves, small shields etc.)
+  > Spellcrafting Tab
+  - Bind equipment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
+  > Filter Tab
+  > Notes for Mythirian when making vault
+    - Mark resists as 'mythical_<resist>_resist'
