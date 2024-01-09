@@ -984,7 +984,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget">
             <property name="currentIndex">
-             <number>2</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="welcomeTab">
              <attribute name="title">
@@ -1524,14 +1524,14 @@ p, li { white-space: pre-wrap; }
                   </spacer>
                  </item>
                  <item>
-                  <widget class="QLabel" name="label_39">
+                  <widget class="QLabel" name="filterLabel">
                    <property name="text">
                     <string>Filter Status: Inactive</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_12">
+                  <widget class="QPushButton" name="vaultClearFilter">
                    <property name="text">
                     <string>Clear Filters</string>
                    </property>
@@ -1586,36 +1586,4179 @@ p, li { white-space: pre-wrap; }
                    <property name="title">
                     <string>Bonus Added Filters</string>
                    </property>
-                   <layout class="QGridLayout" name="gridLayout_10" columnstretch="9,1">
+                   <layout class="QGridLayout" name="gridLayout_10" rowstretch="0,0,0,0,0,0,0,0" columnstretch="85,0,15">
+                    <item row="1" column="2">
+                     <widget class="QSpinBox" name="bonusFilter2Value">
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>200</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="2">
+                     <widget class="QSpinBox" name="bonusFilter4Value">
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>200</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QSpinBox" name="bonusFilter1Value">
+                      <property name="buttonSymbols">
+                       <enum>QAbstractSpinBox::UpDownArrows</enum>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>200</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QSpinBox" name="bonusFilter3Value">
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>200</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="2">
+                     <widget class="QSpinBox" name="bonusFilter5Value">
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>200</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QComboBox" name="bonusFilter5">
+                      <item>
+                       <property name="text">
+                        <string>&lt;Unfiltered&gt;</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Armor Factor</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Focus Levels</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Melee Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Magic Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Dual Wielding Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Archery Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Style Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Range</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Resist Pierce</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Pool</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Duration</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arcane Siphoning</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Healing Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buff Enhance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Debuff Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Endurance Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Health Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Level</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical XP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Realm Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Bounty Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Physical Defenses</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical DPS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Evade Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Safe Fall</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Siege</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Strength Cao</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Parry Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Block Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Mesmerize Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Stun Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Speed Decrease Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Encumberance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Craft Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Coin</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Shields Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Parry Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stealth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Envenom Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Critical Strike Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Polearm Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Two Handed Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Rejuvenation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancement Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Smite Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Staff Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Flexible Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dual Wield Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Instruments Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Deathsight Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Painworking Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Death Servant Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Chants Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Soulrending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Archery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Earth Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Wind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fire Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arboreal Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Creeping Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verdant Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spectral Guard Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Phantasmal Wail Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ethereal Shriek Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Regrowth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nurture Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Music Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blades Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blunt Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piercing Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Dual Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Valor Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Large Weapons Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nature Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Light Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mana Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Void Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancements Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Spear</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mentalism Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scythe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hammer Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Sword Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Left Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Darkness Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Suppression Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bone Army Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Augmentation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pacification Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Beastcraft Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spear Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Runecarving Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Savagery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hand to Hand Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Subterranean Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Battlesongs Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Summoning Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stormcalling Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Odins Will Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrown Weapons Skill</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QComboBox" name="bonusFilter4">
+                      <item>
+                       <property name="text">
+                        <string>&lt;Unfiltered&gt;</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Armor Factor</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Focus Levels</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Melee Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Magic Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Dual Wielding Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Archery Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Style Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Range</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Resist Pierce</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Pool</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Duration</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arcane Siphoning</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Healing Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buff Enhance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Debuff Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Endurance Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Health Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Level</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical XP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Realm Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Bounty Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Physical Defenses</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical DPS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Evade Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Safe Fall</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Siege</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Strength Cao</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Parry Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Block Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Mesmerize Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Stun Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Speed Decrease Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Encumberance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Craft Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Coin</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Shields Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Parry Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stealth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Envenom Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Critical Strike Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Polearm Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Two Handed Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Rejuvenation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancement Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Smite Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Staff Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Flexible Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dual Wield Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Instruments Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Deathsight Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Painworking Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Death Servant Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Chants Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Soulrending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Archery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Earth Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Wind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fire Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arboreal Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Creeping Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verdant Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spectral Guard Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Phantasmal Wail Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ethereal Shriek Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Regrowth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nurture Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Music Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blades Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blunt Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piercing Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Dual Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Valor Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Large Weapons Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nature Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Light Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mana Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Void Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancements Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Spear</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mentalism Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scythe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hammer Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Sword Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Left Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Darkness Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Suppression Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bone Army Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Augmentation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pacification Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Beastcraft Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spear Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Runecarving Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Savagery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hand to Hand Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Subterranean Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Battlesongs Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Summoning Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stormcalling Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Odins Will Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrown Weapons Skill</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
                     <item row="0" column="0">
-                     <widget class="QComboBox" name="comboBox_7"/>
+                     <widget class="QComboBox" name="bonusFilter1">
+                      <item>
+                       <property name="text">
+                        <string>&lt;Unfiltered&gt;</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Armor Factor</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Focus Levels</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Melee Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Magic Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Dual Wielding Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Archery Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Style Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Range</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Resist Pierce</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Pool</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Duration</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arcane Siphoning</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Healing Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buff Enhance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Debuff Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Endurance Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Health Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Level</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical XP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Realm Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Bounty Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Physical Defenses</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical DPS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Evade Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Safe Fall</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Siege</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Strength Cao</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Parry Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Block Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Mesmerize Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Stun Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Speed Decrease Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Encumberance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Craft Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Coin</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Shields Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Parry Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stealth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Envenom Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Critical Strike Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Polearm Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Two Handed Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Rejuvenation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancement Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Smite Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Staff Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Flexible Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dual Wield Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Instruments Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Deathsight Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Painworking Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Death Servant Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Chants Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Soulrending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Archery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Earth Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Wind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fire Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arboreal Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Creeping Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verdant Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spectral Guard Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Phantasmal Wail Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ethereal Shriek Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Regrowth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nurture Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Music Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blades Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blunt Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piercing Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Dual Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Valor Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Large Weapons Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nature Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Light Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mana Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Void Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancements Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Spear</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mentalism Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scythe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hammer Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Sword Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Left Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Darkness Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Suppression Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bone Army Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Augmentation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pacification Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Beastcraft Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spear Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Runecarving Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Savagery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hand to Hand Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Subterranean Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Battlesongs Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Summoning Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stormcalling Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Odins Will Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrown Weapons Skill</string>
+                       </property>
+                      </item>
+                     </widget>
                     </item>
                     <item row="1" column="0">
-                     <widget class="QComboBox" name="comboBox_9"/>
-                    </item>
-                    <item row="2" column="0">
-                     <widget class="QComboBox" name="comboBox_10"/>
+                     <widget class="QComboBox" name="bonusFilter2">
+                      <item>
+                       <property name="text">
+                        <string>&lt;Unfiltered&gt;</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Armor Factor</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Focus Levels</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Melee Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Magic Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Dual Wielding Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Archery Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Style Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Range</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Resist Pierce</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Pool</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Duration</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arcane Siphoning</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Healing Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buff Enhance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Debuff Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Endurance Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Health Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Level</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical XP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Realm Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Bounty Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Physical Defenses</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical DPS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Evade Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Safe Fall</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Siege</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Strength Cao</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Parry Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Block Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Mesmerize Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Stun Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Speed Decrease Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Encumberance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Craft Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Coin</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Shields Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Parry Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stealth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Envenom Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Critical Strike Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Polearm Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Two Handed Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Rejuvenation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancement Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Smite Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Staff Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Flexible Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dual Wield Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Instruments Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Deathsight Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Painworking Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Death Servant Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Chants Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Soulrending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Archery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Earth Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Wind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fire Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arboreal Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Creeping Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verdant Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spectral Guard Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Phantasmal Wail Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ethereal Shriek Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Regrowth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nurture Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Music Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blades Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blunt Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piercing Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Dual Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Valor Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Large Weapons Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nature Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Light Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mana Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Void Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancements Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Spear</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mentalism Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scythe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hammer Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Sword Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Left Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Darkness Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Suppression Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bone Army Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Augmentation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pacification Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Beastcraft Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spear Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Runecarving Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Savagery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hand to Hand Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Subterranean Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Battlesongs Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Summoning Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stormcalling Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Odins Will Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrown Weapons Skill</string>
+                       </property>
+                      </item>
+                     </widget>
                     </item>
                     <item row="4" column="0">
-                     <widget class="QComboBox" name="comboBox_12"/>
-                    </item>
-                    <item row="3" column="0">
-                     <widget class="QComboBox" name="comboBox_11"/>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QSpinBox" name="spinBox"/>
-                    </item>
-                    <item row="1" column="1">
-                     <widget class="QSpinBox" name="spinBox_2"/>
-                    </item>
-                    <item row="2" column="1">
-                     <widget class="QSpinBox" name="spinBox_3"/>
-                    </item>
-                    <item row="3" column="1">
-                     <widget class="QSpinBox" name="spinBox_4"/>
-                    </item>
-                    <item row="4" column="1">
-                     <widget class="QSpinBox" name="spinBox_5"/>
+                     <widget class="QComboBox" name="bonusFilter3">
+                      <item>
+                       <property name="text">
+                        <string>&lt;Unfiltered&gt;</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Strength Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piety Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Intelligence Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Empathy Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Charisma Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fatigue Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hit Points Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Armor Factor</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Focus Levels</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Melee Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Magic Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Dual Wielding Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>All Archery Skills</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Melee Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Style Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Damage</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Range</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Resist Pierce</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Pool</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Duration</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arcane Siphoning</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Healing Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buff Enhance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Debuff Bonus</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Power Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Endurance Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Health Regen</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spell Level</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical XP</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Realm Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Bounty Points</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Physical Defenses</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical DPS</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Evade Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Safe Fall</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Siege</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Strength Cao</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Constitution Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Dexterity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Quickness Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Acuity Cap</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Crush Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Slash Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Thrust Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Heat Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Cold Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Matter Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Energy Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Body Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Spirit Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Essence Resist</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Parry Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Block Chance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Mesmerize Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Stun Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Speed Decrease Reduction</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Encumberance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Craft Speed</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mythical Coin</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Shields Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Parry Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stealth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Envenom Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Critical Strike Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Crush Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Slash Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrust Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Polearm Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Two Handed Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Matter Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Body Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spirit Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Rejuvenation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancement Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Smite Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Staff Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Flexible Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Dual Wield Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Instruments Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Deathsight Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Painworking Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Death Servant Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Chants Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Soulrending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Archery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Earth Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Cold Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Wind Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Fire Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Arboreal Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Creeping Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verdant Path Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spectral Guard Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Phantasmal Wail Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Ethereal Shriek Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Regrowth Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nurture Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Music Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blades Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Blunt Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Piercing Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Dual Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Valor Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Large Weapons Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Nature Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Light Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mana Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Void Magic Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Enhancements Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Celtic Spear</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mentalism Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scythe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hammer Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Sword Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Left Axe Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Darkness Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Suppression Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bone Army Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Mending Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Augmentation Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Pacification Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Beastcraft Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Spear Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Runecarving Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Savagery Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Hand to Hand Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Subterranean Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Battlesongs Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Summoning Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stormcalling Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Odins Will Skill</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Thrown Weapons Skill</string>
+                       </property>
+                      </item>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
@@ -1632,6 +5775,19 @@ p, li { white-space: pre-wrap; }
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="1" column="0">
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
                     <item row="0" column="0" colspan="2">
                      <spacer name="horizontalSpacer_3">
                       <property name="orientation">
@@ -1646,27 +5802,14 @@ p, li { white-space: pre-wrap; }
                      </spacer>
                     </item>
                     <item row="0" column="3">
-                     <widget class="QPushButton" name="pushButton_16">
+                     <widget class="QPushButton" name="filterSearchButton">
                       <property name="text">
                        <string>Search</string>
                       </property>
                      </widget>
                     </item>
-                    <item row="1" column="0">
-                     <spacer name="verticalSpacer">
-                      <property name="orientation">
-                       <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>20</width>
-                        <height>40</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
                     <item row="0" column="2">
-                     <widget class="QPushButton" name="pushButton_17">
+                     <widget class="QPushButton" name="clearFiltersOnFilterPage">
                       <property name="text">
                        <string>Clear Filters</string>
                       </property>

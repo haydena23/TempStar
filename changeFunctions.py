@@ -7,7 +7,7 @@ from widgets import unequipMessageBox
 from reportGeneration import formatItemReportForInformationBox
 
 from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox, QTabWidget
-from PyQt5.QtWidgets import QGroupBox, QTextEdit
+from PyQt5.QtWidgets import QGroupBox, QTextEdit, QSpinBox
 from PyQt5.QtCore import Qt
 
 def changeClass(self, class_type: ClassType):
@@ -170,6 +170,24 @@ def resetOnVaultComboBoxChange(self):
     setSlotSelectionLabel(self, vaultCurrentSlotText)
     refreshSlotSelectionListWidget(self)
 
+def setFilters(self):
+    filters = []
+    for i in range(1, 6):
+        filterName = f'bonusFilter{i}'
+        valueName = f'bonusFilter{i}Value'
+        bonusFilterText = self.findChild(QComboBox, filterName).currentText().replace(" ","_").lower()
+        bonusFilterValue = self.findChild(QSpinBox, valueName).value()
+        if "<unfiltered>" not in bonusFilterText:
+            filters.append({'stat': bonusFilterText, 'value': bonusFilterValue})
+    return filters
+
+def resetFilterPage(self):
+    for i in range(1, 6):
+        filterName = f'bonusFilter{i}'
+        valueName = f'bonusFilter{i}Value'
+        self.findChild(QComboBox, filterName).setCurrentIndex(0)
+        self.findChild(QSpinBox, valueName).setValue(1)
+
 def populateVault(self):
     vaultAvailableWidget = self.findChild(QListWidget, 'vaultAvailableWidget')
     vaultAvailableWidget.clear()
@@ -177,6 +195,19 @@ def populateVault(self):
     counter = 0
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
     currentLevel = int(self.findChild(QComboBox, 'levelComboBox').currentText())
+    
+    filterFlagText = self.findChild(QLabel, 'filterLabel').text().split(": ")[1]
+    filterFlag = False
+    filters = []
+    print(filterFlagText)
+    if filterFlagText == "Active":
+        filters = setFilters(self)
+        if len(filters) != 0:
+            filterFlag = True
+        else:
+            filterFlag = False
+            self.findChild(QLabel, 'filterLabel').setText("Filter Status: Inactive")
+    print(filters)
     try:
         availableVaultItems = self.character.vault.get(self.vaultCurrentSlotText)
         addedItemNames = [item.name for item in self.character.allAddedItems.get(self.vaultCurrentSlotText)]
@@ -191,7 +222,14 @@ def populateVault(self):
                             if (item.slot == 'Left Hand' and item.item_type != 'Shield' and 
                                 len(self.character.dual_wield_skills) == 0 and self.vaultCurrentSlotText == 'Left Hand'):
                                 pass
+                            if filterFlag:
+                                print("CALLED HERE")
+                                if all(item.stats.get(f['stat'], 0) >= f['value'] for f in filters):
+                            #         print(item.stats.get(f['stat']) >= f['value'] for f in filters)
+                                    vaultAvailableWidget.addItem(QListWidgetItem(item.name))
+                                    counter += 1  
                             else:
+                                print("called")
                                 vaultAvailableWidget.addItem(QListWidgetItem(item.name))
                                 counter += 1
         self.findChild(QGroupBox, 'availableItemListGroupBox').setTitle(f"Available Item List : ( {counter} )")

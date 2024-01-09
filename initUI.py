@@ -1,11 +1,12 @@
-from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton, QTabWidget, QCheckBox
+from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton, QTabWidget, QCheckBox, QLabel
 
 from Models.mappings import class_type_mapping, race_type_mapping, realm_rank_map
 
 from changeFunctions import changeClass, changeRace, setSlotSelectionLabel, setSlotSelectionList, setInformationTextEdit
 from changeFunctions import changeRealmRank, unquipAllSlotsWarning, setItemFromSlotSelection, setEquippedWeapons, setLevel, setItemsListWidgetSlots
 from changeFunctions import changeTab, vaultItemDoubleClick, vaultItemSingleClick, populateVault, resetOnVaultComboBoxChange
-from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick, vaultItemAddAll, vaultCurrentRemoveAll
+from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick, vaultItemAddAll, vaultCurrentRemoveAll, populateAvailable
+from changeFunctions import resetFilterPage
 from statsHandler import checkTOADisplay
 
 from newCharacter import create_new_character_on_open
@@ -36,6 +37,9 @@ def initUI(self):
     configTOACheckBox(self, checkTOADisplay)
     configVaultAddAllButton(self, vaultItemAddAll)
     configRemoveAllItemButton(self, vaultCurrentRemoveAll)
+    configFilterSearchButton(self, changeTab)
+    configVaultClearFilterButton(self, changeTab)
+    configFilterClearFilterButton(self, resetFilterPage)
     
 """
 Configure Class ComboBox
@@ -236,7 +240,33 @@ def configVaultDoneButton(self, vault_done_callback):
     self.vaultDoneButton.clicked.connect(lambda: on_vault_done_button_pressed(self, vault_done_callback))
 
 def on_vault_done_button_pressed(self, vault_done_callback):
+    self.findChild(QLabel, 'filterLabel').setText("Filter Status: Inactive")
     vault_done_callback(self, 1, None)
+    
+"""
+Configure Vault Clear Filter Push Button
+"""
+
+def configVaultClearFilterButton(self, vault_clear_filter_callback):
+    self.vaultClearFilter = self.findChild(QPushButton, 'vaultClearFilter')
+    self.vaultClearFilter.clicked.connect(lambda: on_vault_clear_filter_button_pressed(self, vault_clear_filter_callback))
+
+def on_vault_clear_filter_button_pressed(self, vault_clear_filter_callback):
+    self.findChild(QLabel, 'filterLabel').setText("Filter Status: Inactive")
+    resetFilterPage(self)
+    vault_clear_filter_callback(self, 2, None)
+    
+"""
+Configure Filter Page Clear Filter Push Button
+"""
+
+def configFilterClearFilterButton(self, filter_clear_filter_callback):
+    self.filterClearFilter = self.findChild(QPushButton, 'clearFiltersOnFilterPage')
+    self.filterClearFilter.clicked.connect(lambda: on_filter_clear_filter_button_pressed(self, filter_clear_filter_callback))
+
+def on_filter_clear_filter_button_pressed(self, filter_clear_filter_callback):
+    self.findChild(QLabel, 'filterLabel').setText("Filter Status: Inactive")
+    filter_clear_filter_callback(self)
     
 """
 Configure Vault Add Single Item Push Button
@@ -292,3 +322,15 @@ def configTOACheckBox(self, checkbox_callback):
 
 def on_checkbox_pressed(self, checkbox_callback):
     checkbox_callback(self)
+    
+"""
+Configure Filter Search Push Button
+"""
+
+def configFilterSearchButton(self, filter_search_callback):
+    self.filterSearch = self.findChild(QPushButton, 'filterSearchButton')
+    self.filterSearch.clicked.connect(lambda: on_filter_search_button_pressed(self, filter_search_callback))
+
+def on_filter_search_button_pressed(self, filter_search_callback):
+    self.findChild(QLabel, 'filterLabel').setText("Filter Status: Active")
+    filter_search_callback(self, 2, None)
