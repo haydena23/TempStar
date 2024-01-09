@@ -185,7 +185,7 @@ table_names = {
     'statsCapTable',
     'resistsTable',
     'skillsTable',
-    # 'bonusesTable'
+    'bonusesTable'
 }
 
 realm_rank_map = {

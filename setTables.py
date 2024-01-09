@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox
 from PyQt5.QtGui import QColor, QBrush
+from PyQt5.QtCore import Qt
 
 from Models.levels import levels
 from Models.mappings import mythical_base_map
@@ -18,20 +19,24 @@ def initTables(self):
 def setTableItemGeometry(table: QTableWidget):
     for row in range(table.rowCount()):
         table.setRowHeight(row,20)
-        table.setColumnWidth(0,100)
+        table.setColumnWidth(0,200)
         table.setColumnWidth(1,20)
         table.setColumnWidth(2,20)
         table.setColumnWidth(3,20)
+    table.resizeColumnsToContents()
 
 def setSkillsTable(self):
     self.skillsTable = self.findChild(QTableWidget, 'skillsTable')
+    skills = self.character.skills
     magic_skills = self.character.magic_skills
     melee_skills = self.character.melee_skills
-    total_skills = len(magic_skills) + len(melee_skills)
+    dual_wield_skills = self.character.dual_wield_skills
+    archery_skills = self.character.archery_skills
+    total_skills = len(skills) + len(magic_skills) + len(melee_skills) + len(dual_wield_skills) + len(archery_skills)
     current_row = 0
     self.skillsTable.setRowCount(total_skills)
     
-    for skill, value in {**magic_skills, **melee_skills}.items():
+    for skill, value in {**magic_skills, **melee_skills, **dual_wield_skills, **archery_skills, **skills}.items():
         skill_item = QTableWidgetItem(str(skill))
         value_item = QTableWidgetItem(str(value))
         
@@ -48,7 +53,22 @@ def setSkillsTable(self):
         self.skillsTable.setColumnWidth(1,20)
         self.skillsTable.setColumnWidth(2,20)
         self.skillsTable.setColumnWidth(3,20)
+    self.skillsTable.resizeColumnToContents(0)
         
+def setBonusesTable(self):
+    self.bonusesTable = self.findChild(QTableWidget, 'bonusesTable')
+    self.bonusesTable.setRowCount(0)
+    level = self.findChild(QComboBox, 'levelComboBox').currentText()
+    for i, (bonus_name, bonus_value) in enumerate(self.character.toa_bonuses.items()):
+        self.bonusesTable.insertRow(i)
+        formatted_name = bonus_name.replace('_', ' ').title()
+        self.bonusesTable.setItem(i, 0, QTableWidgetItem(formatted_name))
+        self.bonusesTable.setItem(i, 1, QTableWidgetItem(str(bonus_value)))
+        third_column_value = levels.get(level).get('bonusesTable').get(bonus_name, 0)
+        self.bonusesTable.setItem(i, 2, QTableWidgetItem(str(third_column_value)))
+        self.bonusesTable.setRowHidden(i, True)
+    calculateDifferenceOfStatAndCap(self, 'bonusesTable')
+    
 def clearTable(self, table_name):
     self.tableToClear = self.findChild(QTableWidget, table_name)
     self.level = self.findChild(QComboBox, 'levelComboBox').currentText() 

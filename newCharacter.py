@@ -3,7 +3,7 @@ from Models.classes import *
 from Models.races import *
 from Models.mappings import *
 from PyQt5.QtWidgets import QTableWidgetItem, QTableWidget, QComboBox
-from setTables import initTables, setSkillsTable, calculateDifferenceOfStatAndCap
+from setTables import initTables, setSkillsTable, calculateDifferenceOfStatAndCap, setBonusesTable
 
 def new_character_change(self, class_type: ClassType):
     self.character = Character("New Character", class_type, 1, 1, 1, self.character.allAddedItems, self.character.vault)
@@ -19,6 +19,7 @@ def reset_ui_for_new_character(self):
     set_initial_table(self, 'statsCapTable', stats_cap_mapping, self.character.stat_caps)
     set_initial_table(self, 'resistsTable', resists_row_mapping, self.character.resists)
     setSkillsTable(self)
+    setBonusesTable(self)
     setAllowedClassesComboBox(self)
     setRealmRank(self)
 

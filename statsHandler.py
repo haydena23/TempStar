@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QComboBox, QCheckBox, QLabel
 from PyQt5.QtCore import Qt
 
 from setTables import clearTable, calculateDifferenceOfStatAndCap
@@ -35,6 +35,7 @@ def calculateNowStats(self):
                     if item.slot in weaponsNotAllowed:
                         pass
                     else:
+
                         for stat, value in item.stats.items():
                             if '_' in stat:
                                 stat = ' '.join(word.capitalize() for word in stat.split('_'))
@@ -44,12 +45,21 @@ def calculateNowStats(self):
                                 statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
                                 currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
                                 valueWidget = QTableWidgetItem(str(value + currentValue))
-                                self.tableWidget.setItem(statWidgetRow,1,valueWidget)
+                                self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
                             except:
                                 pass
         adjustBaseCapFromStatCap(self)
+        skillsTable = self.findChild(QTableWidget, 'resistsTable')
+        skillsTable.resizeColumnToContents(2)
         for table in table_names:
             calculateDifferenceOfStatAndCap(self, table)
+        checkTOADisplay(self)
+        totalUtility = 0
+        for slot, item in self.character.currentItems.items():
+            if item is not None:
+                if slot not in weaponsNotAllowed:
+                    totalUtility += item.total_utility
+        self.findChild(QLabel, 'totalUtilityValue').setText(f"( {totalUtility} )")
     
 def adjustBaseCapFromStatCap(self):
     if self.character:
@@ -79,7 +89,20 @@ def adjustSkillsFromRealmRank(self, realm_rank):
             self.skillsTable.setItem(row, 1, correctedSkillWidget)
             self.skillsTable.setItem(row, 2, correctedSkillCapWidget)
         calculateDifferenceOfStatAndCap(self, 'skillsTable')
-        
 def autoUpdateRealmRank(self):
     currentRealmRank = realm_rank_map.get(self.findChild(QComboBox, 'realmRankComboBox').currentText())
     adjustSkillsFromRealmRank(self, currentRealmRank)
+    
+def checkTOADisplay(self):
+    bonusesTable = self.findChild(QTableWidget, 'bonusesTable')
+    allBonusesCheck = self.findChild(QCheckBox, 'checkBox').isChecked()
+    if allBonusesCheck:
+        for i in range(bonusesTable.rowCount()):
+            bonusesTable.setRowHidden(i, False)
+    else:
+        for i in range(bonusesTable.rowCount()):
+            if int(bonusesTable.item(i,1).text()) == 0:
+                bonusesTable.setRowHidden(i, True)
+            else:
+                bonusesTable.setRowHidden(i, False)
+    bonusesTable.resizeColumnToContents(0)

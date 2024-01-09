@@ -7,11 +7,14 @@ Todo:
     - Create check for empty currentItems for unlock class change
     - Configure spellcraft change tab. Enable button when slot selection clicked on armor/weapons?
   > Stats
-    - Implement all weapon/magic skills bonus
-    - Implement Mythirian bonus
-    - Implement ToA bonuses
-    - ToA Button to display all stats/only stats affected
+    - Implement all weapon/magic/dual/archery skills bonus
+    ✔ Implement Mythirian bonus @done(24-01-08 16:50)
+    ✔ Implement ToA bonuses @done(24-01-08 17:33)
+    ✔ ToA Button to display all stats/only stats affected @done(24-01-08 16:50)
     - Make Acuity affect specific magic stat per class
+    ✔ Implement Total Utility label @done(24-01-08 17:18)
+  > Items
+    - Implement procs
   > Vault
     - Only display items in vault if character level is at or above bonus level
     - Make shield not go into right hand
@@ -33,3 +36,4 @@ Todo:
   > Filter Tab
   > Notes for Mythirian when making vault
     - Mark resists as 'mythical_<resist>_resist'
+    - Look at self.character.toa_bonuses to see all bonuses

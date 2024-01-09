@@ -1,5 +1,4 @@
-from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton, QTabWidget
-from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton, QTabWidget, QCheckBox
 
 from Models.mappings import class_type_mapping, race_type_mapping, realm_rank_map
 
@@ -7,6 +6,7 @@ from changeFunctions import changeClass, changeRace, setSlotSelectionLabel, setS
 from changeFunctions import changeRealmRank, unquipAllSlotsWarning, setItemFromSlotSelection, setEquippedWeapons, setLevel, setItemsListWidgetSlots
 from changeFunctions import changeTab, vaultItemDoubleClick, vaultItemSingleClick, populateVault, resetOnVaultComboBoxChange
 from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick
+from statsHandler import checkTOADisplay
 
 from newCharacter import create_new_character_on_open
 from Models.vault import loadVault
@@ -33,6 +33,7 @@ def initUI(self):
     configVaultDoneButton(self, changeTab)
     configVaultAddItemButton(self, vaultItemDoubleClick)
     configRemoveAddItemButton(self, vaultCurrentDoubleClick)
+    configTOACheckBox(self, checkTOADisplay)
     
 """
 Configure Class ComboBox
@@ -256,3 +257,14 @@ def configRemoveAddItemButton(self, remove_item_button_callback):
 
 def on_vault_remove_item_button_pressed(self, remove_item_button_callback):
     remove_item_button_callback(self)
+      
+"""
+Configure TOA Check Box
+"""
+
+def configTOACheckBox(self, checkbox_callback):
+    self.checkbox = self.findChild(QCheckBox, 'checkBox')
+    self.checkbox.stateChanged.connect(lambda: on_checkbox_pressed(self, checkbox_callback))
+
+def on_checkbox_pressed(self, checkbox_callback):
+    checkbox_callback(self)

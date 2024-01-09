@@ -305,7 +305,8 @@
                 "dexterity_cap": 6,
                 "crush_resist": 3,
                 "slash_resist": 3,
-                "thrust_resist": 3
+                "thrust_resist": 3,
+                "melee_speed": 8
             },
             "single_utility": 142.0,
             "total_utility": 162.0,
@@ -329,7 +330,10 @@
                 "strength": 18,
                 "strength_cap": 7,
                 "cold_resist": 7,
-                "crush_resist": 8
+                "crush_resist": 8,
+                "melee_speed": 5,
+                "spell_range": 5,
+                "mythical_strength_cap": 5
             },
             "single_utility": 81.0,
             "total_utility": 96.0,

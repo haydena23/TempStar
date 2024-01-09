@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
-    <height>800</height>
+    <width>1600</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1400</width>
-    <height>800</height>
+    <width>1600</width>
+    <height>1000</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -958,6 +958,23 @@
                   </property>
                  </widget>
                 </item>
+                <item row="4" column="2">
+                 <widget class="QLabel" name="label_40">
+                  <property name="text">
+                   <string>Total Utility :</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="QLabel" name="totalUtilityValue">
+                  <property name="text">
+                   <string>( 0 )</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -967,7 +984,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget">
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="welcomeTab">
              <attribute name="title">
@@ -3489,6 +3506,26 @@ p, li { white-space: pre-wrap; }
                </item>
               </widget>
              </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="informationLabel">
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Information</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+               <property name="indent">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="0">
               <widget class="QTextEdit" name="informationBox">
                <property name="verticalScrollBarPolicy">
@@ -3511,26 +3548,6 @@ p, li { white-space: pre-wrap; }
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="informationLabel">
-               <property name="font">
-                <font>
-                 <weight>75</weight>
-                 <bold>true</bold>
-                 <underline>false</underline>
-                </font>
-               </property>
-               <property name="text">
-                <string>Information</string>
-               </property>
-               <property name="textFormat">
-                <enum>Qt::AutoText</enum>
-               </property>
-               <property name="indent">
-                <number>2</number>
-               </property>
-              </widget>
-             </item>
             </layout>
            </widget>
           </item>
@@ -3547,7 +3564,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1400</width>
+     <width>1600</width>
      <height>21</height>
     </rect>
    </property>

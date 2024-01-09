@@ -42,6 +42,62 @@ level1_resists_default_caps = {
     'essence_resist': 41
 }
 
+level1_bonuses_default_caps = {
+    'all_melee_skills': 1, 
+    'all_magic_skills': 1,
+    'all_dual_wielding_skills': 1,
+    'all_archery_skills': 1, 
+    'all_focus_levels': 1, 
+    'melee_speed': 0, 
+    'melee_damage': 0, 
+    'style_damage': 0, 
+    'power_pool': 0, 
+    'spell_speed': 0, 
+    'spell_damage': 0, 
+    'spell_range': 0, 
+    'resist_pierce': 0, 
+    'spell_duration': 0, 
+    'arcane_siphoning': 0, 
+    'healing_bonus': 0, 
+    'buff_enhance': 0, 
+    'debuff_bonus': 0,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_realm_points': 0,
+    'mythical_bounty_points': 0,
+    'mythical_xp': 0, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 level1_skills_default_caps = {
     'skill1': 1,
     'skill2': 1,
@@ -101,6 +157,62 @@ level2_resists_default_caps = {
     'essence_resist': 41
 }
 
+level2_bonuses_default_caps = {
+    'all_melee_skills': 1, 
+    'all_magic_skills': 1,
+    'all_dual_wielding_skills': 1,
+    'all_archery_skills': 1, 
+    'all_focus_levels': 2, 
+    'melee_speed': 0, 
+    'melee_damage': 0, 
+    'style_damage': 0, 
+    'power_pool': 1, 
+    'spell_speed': 0, 
+    'spell_damage': 0, 
+    'spell_range': 0, 
+    'resist_pierce': 0, 
+    'spell_duration': 1, 
+    'arcane_siphoning': 1, 
+    'healing_bonus': 1, 
+    'buff_enhance': 1, 
+    'debuff_bonus': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_realm_points': 0,
+    'mythical_bounty_points': 0,
+    'mythical_xp': 0, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -147,6 +259,62 @@ level3_resists_default_caps = {
     'body_resist': 2, 
     'spirit_resist': 2,
     'essence_resist': 41
+}
+
+level3_bonuses_default_caps = {
+    'all_focus_levels': 3,
+    'all_melee_skills': 1, 
+    'all_magic_skills': 1,
+    'all_dual_wielding_skills': 1,
+    'all_archery_skills': 1, 
+    'melee_speed': 0, 
+    'melee_damage': 0, 
+    'style_damage': 0, 
+    'spell_speed': 0, 
+    'spell_damage': 0, 
+    'spell_range': 0, 
+    'resist_pierce': 0, 
+    'power_pool': 1,
+    'spell_duration': 1, 
+    'arcane_siphoning': 1, 
+    'healing_bonus': 1, 
+    'buff_enhance': 1, 
+    'debuff_bonus': 1,
+    'mythical_xp': 0,
+    'mythical_realm_points': 0,
+    'mythical_bounty_points': 0,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -197,6 +365,62 @@ level4_resists_default_caps = {
     'essence_resist': 41
 }
 
+level4_bonuses_default_caps = {
+    'all_focus_levels': 4,
+    'all_melee_skills': 1, 
+    'all_magic_skills': 1,
+    'all_dual_wielding_skills': 1,
+    'all_archery_skills': 1, 
+    'melee_speed': 0, 
+    'melee_damage': 0, 
+    'style_damage': 0, 
+    'spell_speed': 0, 
+    'spell_damage': 0, 
+    'spell_range': 0, 
+    'resist_pierce': 0, 
+    'power_pool': 2,
+    'spell_duration': 2, 
+    'arcane_siphoning': 2, 
+    'healing_bonus': 2, 
+    'buff_enhance': 2, 
+    'debuff_bonus': 2,
+    'mythical_xp': 0,
+    'mythical_realm_points': 0,
+    'mythical_bounty_points': 0,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -243,6 +467,62 @@ level5_resists_default_caps = {
     'body_resist': 3, 
     'spirit_resist': 3,
     'essence_resist': 41
+}
+
+level5_bonuses_default_caps = {
+    'all_focus_levels': 5,
+    'all_melee_skills': 2, 
+    'all_magic_skills': 2,
+    'all_dual_wielding_skills': 2,
+    'all_archery_skills': 2, 
+    'melee_speed': 1, 
+    'melee_damage': 1, 
+    'style_damage': 1, 
+    'spell_speed': 1, 
+    'spell_damage': 1, 
+    'spell_range': 1, 
+    'resist_pierce': 1, 
+    'power_pool': 2,
+    'spell_duration': 2, 
+    'arcane_siphoning': 2, 
+    'healing_bonus': 2, 
+    'buff_enhance': 2, 
+    'debuff_bonus': 2,
+    'mythical_xp': 1,
+    'mythical_realm_points': 1,
+    'mythical_bounty_points': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level5_skills_default_caps = {
@@ -304,6 +584,62 @@ level6_resists_default_caps = {
     'essence_resist': 41
 }
 
+level6_bonuses_default_caps = {
+    'all_focus_levels': 6,
+    'all_melee_skills': 2, 
+    'all_magic_skills': 2,
+    'all_dual_wielding_skills': 2,
+    'all_archery_skills': 2, 
+    'melee_speed': 1, 
+    'melee_damage': 1, 
+    'style_damage': 1, 
+    'spell_speed': 1, 
+    'spell_damage': 1, 
+    'spell_range': 1, 
+    'resist_pierce': 1, 
+    'power_pool': 3,
+    'spell_duration': 3, 
+    'arcane_siphoning': 3, 
+    'healing_bonus': 3, 
+    'buff_enhance': 3, 
+    'debuff_bonus': 3,
+    'mythical_xp': 1,
+    'mythical_realm_points': 1,
+    'mythical_bounty_points': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -350,6 +686,62 @@ level7_resists_default_caps = {
     'body_resist': 4, 
     'spirit_resist': 4,
     'essence_resist': 41
+}
+
+level7_bonuses_default_caps = {
+    'all_focus_levels': 7,
+    'all_melee_skills': 2, 
+    'all_magic_skills': 2,
+    'all_dual_wielding_skills': 2,
+    'all_archery_skills': 2, 
+    'melee_speed': 1, 
+    'melee_damage': 1, 
+    'style_damage': 1, 
+    'spell_speed': 1, 
+    'spell_damage': 1, 
+    'spell_range': 1, 
+    'resist_pierce': 1, 
+    'power_pool': 3,
+    'spell_duration': 3, 
+    'arcane_siphoning': 3, 
+    'healing_bonus': 3, 
+    'buff_enhance': 3, 
+    'debuff_bonus': 3,
+    'mythical_xp': 1,
+    'mythical_realm_points': 1,
+    'mythical_bounty_points': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -400,6 +792,62 @@ level8_resists_default_caps = {
     'essence_resist': 41
 }
 
+level8_bonuses_default_caps = {
+    'all_focus_levels': 8,
+    'all_melee_skills': 2, 
+    'all_magic_skills': 2,
+    'all_dual_wielding_skills': 2,
+    'all_archery_skills': 2, 
+    'melee_speed': 1, 
+    'melee_damage': 1, 
+    'style_damage': 1, 
+    'spell_speed': 1, 
+    'spell_damage': 1, 
+    'spell_range': 1, 
+    'resist_pierce': 1, 
+    'power_pool': 4,
+    'spell_duration': 4, 
+    'arcane_siphoning': 4, 
+    'healing_bonus': 4, 
+    'buff_enhance': 4, 
+    'debuff_bonus': 4,
+    'mythical_xp': 1,
+    'mythical_realm_points': 1,
+    'mythical_bounty_points': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -448,6 +896,62 @@ level9_resists_default_caps = {
     'essence_resist': 41
 }
 
+level9_bonuses_default_caps = {
+    'all_focus_levels': 9,
+    'all_melee_skills': 2, 
+    'all_magic_skills': 2,
+    'all_dual_wielding_skills': 2,
+    'all_archery_skills': 2, 
+    'melee_speed': 1, 
+    'melee_damage': 1, 
+    'style_damage': 1, 
+    'spell_speed': 1, 
+    'spell_damage': 1, 
+    'spell_range': 1, 
+    'resist_pierce': 1, 
+    'power_pool': 4,
+    'spell_duration': 4, 
+    'arcane_siphoning': 4, 
+    'healing_bonus': 4, 
+    'buff_enhance': 4, 
+    'debuff_bonus': 4,
+    'mythical_xp': 1,
+    'mythical_realm_points': 1,
+    'mythical_bounty_points': 1,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -494,6 +998,62 @@ level10_resists_default_caps = {
     'body_resist': 6, 
     'spirit_resist': 6,
     'essence_resist': 41
+}
+
+level10_bonuses_default_caps = {
+    'all_focus_levels': 10,
+    'all_melee_skills': 3, 
+    'all_magic_skills': 3,
+    'all_dual_wielding_skills': 3,
+    'all_archery_skills': 3, 
+    'melee_speed': 2, 
+    'melee_damage': 2, 
+    'style_damage': 2, 
+    'spell_speed': 2, 
+    'spell_damage': 2, 
+    'spell_range': 2, 
+    'resist_pierce': 2, 
+    'power_pool': 5,
+    'spell_duration': 5, 
+    'arcane_siphoning': 5, 
+    'healing_bonus': 5, 
+    'buff_enhance': 5, 
+    'debuff_bonus': 5,
+    'mythical_xp': 2,
+    'mythical_realm_points': 2,
+    'mythical_bounty_points': 2,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level10_skills_default_caps = {
@@ -555,6 +1115,62 @@ level11_resists_default_caps = {
     'essence_resist': 41
 }
 
+level11_bonuses_default_caps = {
+    'all_focus_levels': 11,
+    'all_melee_skills': 3, 
+    'all_magic_skills': 3,
+    'all_dual_wielding_skills': 3,
+    'all_archery_skills': 3, 
+    'melee_speed': 2, 
+    'melee_damage': 2, 
+    'style_damage': 2, 
+    'spell_speed': 2, 
+    'spell_damage': 2, 
+    'spell_range': 2, 
+    'resist_pierce': 2, 
+    'power_pool': 5,
+    'spell_duration': 5, 
+    'arcane_siphoning': 5, 
+    'healing_bonus': 5, 
+    'buff_enhance': 5, 
+    'debuff_bonus': 5,
+    'mythical_xp': 2,
+    'mythical_realm_points': 2,
+    'mythical_bounty_points': 2,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -601,6 +1217,62 @@ level12_resists_default_caps = {
     'body_resist': 7, 
     'spirit_resist': 7,
     'essence_resist': 41
+}
+
+level12_bonuses_default_caps = {
+    'all_focus_levels': 12,
+    'all_melee_skills': 3, 
+    'all_magic_skills': 3,
+    'all_dual_wielding_skills': 3,
+    'all_archery_skills': 3, 
+    'melee_speed': 2, 
+    'melee_damage': 2, 
+    'style_damage': 2, 
+    'spell_speed': 2, 
+    'spell_damage': 2, 
+    'spell_range': 2, 
+    'resist_pierce': 2, 
+    'power_pool': 6,
+    'spell_duration': 6, 
+    'arcane_siphoning': 6, 
+    'healing_bonus': 6, 
+    'buff_enhance': 6, 
+    'debuff_bonus': 6,
+    'mythical_xp': 2,
+    'mythical_realm_points': 2,
+    'mythical_bounty_points': 2,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -651,6 +1323,62 @@ level13_resists_default_caps = {
     'essence_resist': 41
 }
 
+level13_bonuses_default_caps = {
+    'all_focus_levels': 13,
+    'all_melee_skills': 3, 
+    'all_magic_skills': 3,
+    'all_dual_wielding_skills': 3,
+    'all_archery_skills': 3, 
+    'melee_speed': 2, 
+    'melee_damage': 2, 
+    'style_damage': 2, 
+    'spell_speed': 2, 
+    'spell_damage': 2, 
+    'spell_range': 2, 
+    'resist_pierce': 2, 
+    'power_pool': 6,
+    'spell_duration': 6, 
+    'arcane_siphoning': 6, 
+    'healing_bonus': 6, 
+    'buff_enhance': 6, 
+    'debuff_bonus': 6,
+    'mythical_xp': 2,
+    'mythical_realm_points': 2,
+    'mythical_bounty_points': 2,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -699,6 +1427,62 @@ level14_resists_default_caps = {
     'essence_resist': 41
 }
 
+level14_bonuses_default_caps = {
+    'all_focus_levels': 14,
+    'all_melee_skills': 3, 
+    'all_magic_skills': 3,
+    'all_dual_wielding_skills': 3,
+    'all_archery_skills': 3, 
+    'melee_speed': 2, 
+    'melee_damage': 2, 
+    'style_damage': 2, 
+    'spell_speed': 2, 
+    'spell_damage': 2, 
+    'spell_range': 2, 
+    'resist_pierce': 2, 
+    'power_pool': 7,
+    'spell_duration': 7, 
+    'arcane_siphoning': 7, 
+    'healing_bonus': 7, 
+    'buff_enhance': 7, 
+    'debuff_bonus': 7,
+    'mythical_xp': 2,
+    'mythical_realm_points': 2,
+    'mythical_bounty_points': 2,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -745,6 +1529,62 @@ level15_resists_default_caps = {
     'body_resist': 8, 
     'spirit_resist': 8,
     'essence_resist': 41
+}
+
+level15_bonuses_default_caps = {
+    'all_focus_levels': 15,
+    'all_melee_skills': 4, 
+    'all_magic_skills': 4,
+    'all_dual_wielding_skills': 4,
+    'all_archery_skills': 4, 
+    'melee_speed': 3, 
+    'melee_damage': 3, 
+    'style_damage': 3, 
+    'spell_speed': 3, 
+    'spell_damage': 3, 
+    'spell_range': 3, 
+    'resist_pierce': 3, 
+    'power_pool': 7,
+    'spell_duration': 7, 
+    'arcane_siphoning': 7, 
+    'healing_bonus': 7, 
+    'buff_enhance': 7, 
+    'debuff_bonus': 7,
+    'mythical_xp': 3,
+    'mythical_realm_points': 3,
+    'mythical_bounty_points': 3,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level15_skills_default_caps = {
@@ -806,6 +1646,62 @@ level16_resists_default_caps = {
     'essence_resist': 41
 }
 
+level16_bonuses_default_caps = {
+    'all_focus_levels': 16,
+    'all_melee_skills': 4, 
+    'all_magic_skills': 4,
+    'all_dual_wielding_skills': 4,
+    'all_archery_skills': 4, 
+    'melee_speed': 3, 
+    'melee_damage': 3, 
+    'style_damage': 3, 
+    'spell_speed': 3, 
+    'spell_damage': 3, 
+    'spell_range': 3, 
+    'resist_pierce': 3, 
+    'power_pool': 8,
+    'spell_duration': 8, 
+    'arcane_siphoning': 8, 
+    'healing_bonus': 8, 
+    'buff_enhance': 8, 
+    'debuff_bonus': 8,
+    'mythical_xp': 3,
+    'mythical_realm_points': 3,
+    'mythical_bounty_points': 3,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -852,6 +1748,62 @@ level17_resists_default_caps = {
     'body_resist': 9, 
     'spirit_resist': 9,
     'essence_resist': 41
+}
+
+level17_bonuses_default_caps = {
+    'all_focus_levels': 17,
+    'all_melee_skills': 4, 
+    'all_magic_skills': 4,
+    'all_dual_wielding_skills': 4,
+    'all_archery_skills': 4, 
+    'melee_speed': 3, 
+    'melee_damage': 3, 
+    'style_damage': 3, 
+    'spell_speed': 3, 
+    'spell_damage': 3, 
+    'spell_range': 3, 
+    'resist_pierce': 3, 
+    'power_pool': 8,
+    'spell_duration': 8, 
+    'arcane_siphoning': 8, 
+    'healing_bonus': 8, 
+    'buff_enhance': 8, 
+    'debuff_bonus': 8,
+    'mythical_xp': 3,
+    'mythical_realm_points': 3,
+    'mythical_bounty_points': 3,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -902,6 +1854,62 @@ level18_resists_default_caps = {
     'essence_resist': 41
 }
 
+level18_bonuses_default_caps = {
+    'all_focus_levels': 18,
+    'all_melee_skills': 4, 
+    'all_magic_skills': 4,
+    'all_dual_wielding_skills': 4,
+    'all_archery_skills': 4, 
+    'melee_speed': 3, 
+    'melee_damage': 3, 
+    'style_damage': 3, 
+    'spell_speed': 3, 
+    'spell_damage': 3, 
+    'spell_range': 3, 
+    'resist_pierce': 3, 
+    'power_pool': 9,
+    'spell_duration': 9, 
+    'arcane_siphoning': 9, 
+    'healing_bonus': 9, 
+    'buff_enhance': 9, 
+    'debuff_bonus': 9,
+    'mythical_xp': 3,
+    'mythical_realm_points': 3,
+    'mythical_bounty_points': 3,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -950,6 +1958,62 @@ level19_resists_default_caps = {
     'essence_resist': 41
 }
 
+level19_bonuses_default_caps = {
+    'all_focus_levels': 19,
+    'all_melee_skills': 4, 
+    'all_magic_skills': 4,
+    'all_dual_wielding_skills': 4,
+    'all_archery_skills': 4, 
+    'melee_speed': 3, 
+    'melee_damage': 3, 
+    'style_damage': 3, 
+    'spell_speed': 3, 
+    'spell_damage': 3, 
+    'spell_range': 3, 
+    'resist_pierce': 3, 
+    'power_pool': 9,
+    'spell_duration': 9, 
+    'arcane_siphoning': 9, 
+    'healing_bonus': 9, 
+    'buff_enhance': 9, 
+    'debuff_bonus': 9,
+    'mythical_xp': 3,
+    'mythical_realm_points': 3,
+    'mythical_bounty_points': 3,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -996,6 +2060,62 @@ level20_resists_default_caps = {
     'body_resist': 11, 
     'spirit_resist': 11,
     'essence_resist': 41
+}
+
+level20_bonuses_default_caps = {
+    'all_focus_levels': 20,
+    'all_melee_skills': 5, 
+    'all_magic_skills': 5,
+    'all_dual_wielding_skills': 5,
+    'all_archery_skills': 5, 
+    'melee_speed': 4, 
+    'melee_damage': 4, 
+    'style_damage': 4, 
+    'spell_speed': 4, 
+    'spell_damage': 4, 
+    'spell_range': 4, 
+    'resist_pierce': 4, 
+    'power_pool': 10,
+    'spell_duration': 10, 
+    'arcane_siphoning': 10, 
+    'healing_bonus': 10, 
+    'buff_enhance': 10, 
+    'debuff_bonus': 10,
+    'mythical_xp': 4,
+    'mythical_realm_points': 4,
+    'mythical_bounty_points': 4,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level20_skills_default_caps = {
@@ -1057,6 +2177,62 @@ level21_resists_default_caps = {
     'essence_resist': 41
 }
 
+level21_bonuses_default_caps = {
+    'all_focus_levels': 21,
+    'all_melee_skills': 5, 
+    'all_magic_skills': 5,
+    'all_dual_wielding_skills': 5,
+    'all_archery_skills': 5, 
+    'melee_speed': 4, 
+    'melee_damage': 4, 
+    'style_damage': 4, 
+    'spell_speed': 4, 
+    'spell_damage': 4, 
+    'spell_range': 4, 
+    'resist_pierce': 4, 
+    'power_pool': 10,
+    'spell_duration': 10, 
+    'arcane_siphoning': 10, 
+    'healing_bonus': 10, 
+    'buff_enhance': 10, 
+    'debuff_bonus': 10,
+    'mythical_xp': 4,
+    'mythical_realm_points': 4,
+    'mythical_bounty_points': 4,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1103,6 +2279,62 @@ level22_resists_default_caps = {
     'body_resist': 12, 
     'spirit_resist': 12,
     'essence_resist': 41
+}
+
+level22_bonuses_default_caps = {
+    'all_focus_levels': 22,
+    'all_melee_skills': 5, 
+    'all_magic_skills': 5,
+    'all_dual_wielding_skills': 5,
+    'all_archery_skills': 5, 
+    'melee_speed': 4, 
+    'melee_damage': 4, 
+    'style_damage': 4, 
+    'spell_speed': 4, 
+    'spell_damage': 4, 
+    'spell_range': 4, 
+    'resist_pierce': 4, 
+    'power_pool': 11,
+    'spell_duration': 11, 
+    'arcane_siphoning': 11, 
+    'healing_bonus': 11, 
+    'buff_enhance': 11, 
+    'debuff_bonus': 11,
+    'mythical_xp': 4,
+    'mythical_realm_points': 4,
+    'mythical_bounty_points': 4,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -1153,6 +2385,62 @@ level23_resists_default_caps = {
     'essence_resist': 41
 }
 
+level23_bonuses_default_caps = {
+    'all_focus_levels': 23,
+    'all_melee_skills': 5, 
+    'all_magic_skills': 5,
+    'all_dual_wielding_skills': 5,
+    'all_archery_skills': 5, 
+    'melee_speed': 4, 
+    'melee_damage': 4, 
+    'style_damage': 4, 
+    'spell_speed': 4, 
+    'spell_damage': 4, 
+    'spell_range': 4, 
+    'resist_pierce': 4, 
+    'power_pool': 11,
+    'spell_duration': 11, 
+    'arcane_siphoning': 11, 
+    'healing_bonus': 11, 
+    'buff_enhance': 11, 
+    'debuff_bonus': 11,
+    'mythical_xp': 4,
+    'mythical_realm_points': 4,
+    'mythical_bounty_points': 4,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1201,6 +2489,62 @@ level24_resists_default_caps = {
     'essence_resist': 41
 }
 
+level24_bonuses_default_caps = {
+    'all_focus_levels': 24,
+    'all_melee_skills': 5, 
+    'all_magic_skills': 5,
+    'all_dual_wielding_skills': 5,
+    'all_archery_skills': 5, 
+    'melee_speed': 4, 
+    'melee_damage': 4, 
+    'style_damage': 4, 
+    'spell_speed': 4, 
+    'spell_damage': 4, 
+    'spell_range': 4, 
+    'resist_pierce': 4, 
+    'power_pool': 12,
+    'spell_duration': 12, 
+    'arcane_siphoning': 12, 
+    'healing_bonus': 12, 
+    'buff_enhance': 12, 
+    'debuff_bonus': 12,
+    'mythical_xp': 4,
+    'mythical_realm_points': 4,
+    'mythical_bounty_points': 4,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1247,6 +2591,62 @@ level25_resists_default_caps = {
     'body_resist': 13, 
     'spirit_resist': 13,
     'essence_resist': 41
+}
+
+level25_bonuses_default_caps = {
+    'all_focus_levels': 25,
+    'all_melee_skills': 6, 
+    'all_magic_skills': 6,
+    'all_dual_wielding_skills': 6,
+    'all_archery_skills': 6, 
+    'melee_speed': 5, 
+    'melee_damage': 5, 
+    'style_damage': 5, 
+    'spell_speed': 5, 
+    'spell_damage': 5, 
+    'spell_range': 5, 
+    'resist_pierce': 5, 
+    'power_pool': 12,
+    'spell_duration': 12, 
+    'arcane_siphoning': 12, 
+    'healing_bonus': 12, 
+    'buff_enhance': 12, 
+    'debuff_bonus': 12,
+    'mythical_xp': 5,
+    'mythical_realm_points': 5,
+    'mythical_bounty_points': 5,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level25_skills_default_caps = {
@@ -1308,6 +2708,62 @@ level26_resists_default_caps = {
     'essence_resist': 41
 }
 
+level26_bonuses_default_caps = {
+    'all_focus_levels': 26,
+    'all_melee_skills': 6, 
+    'all_magic_skills': 6,
+    'all_dual_wielding_skills': 6,
+    'all_archery_skills': 6, 
+    'melee_speed': 5, 
+    'melee_damage': 5, 
+    'style_damage': 5, 
+    'spell_speed': 5, 
+    'spell_damage': 5, 
+    'spell_range': 5, 
+    'resist_pierce': 5, 
+    'power_pool': 13,
+    'spell_duration': 13, 
+    'arcane_siphoning': 13, 
+    'healing_bonus': 13, 
+    'buff_enhance': 13, 
+    'debuff_bonus': 13,
+    'mythical_xp': 5,
+    'mythical_realm_points': 5,
+    'mythical_bounty_points': 5,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1354,6 +2810,62 @@ level27_resists_default_caps = {
     'body_resist': 14, 
     'spirit_resist': 14,
     'essence_resist': 41
+}
+
+level27_bonuses_default_caps = {
+    'all_focus_levels': 27,
+    'all_melee_skills': 6, 
+    'all_magic_skills': 6,
+    'all_dual_wielding_skills': 6,
+    'all_archery_skills': 6, 
+    'melee_speed': 5, 
+    'melee_damage': 5, 
+    'style_damage': 5, 
+    'spell_speed': 5, 
+    'spell_damage': 5, 
+    'spell_range': 5, 
+    'resist_pierce': 5, 
+    'power_pool': 13,
+    'spell_duration': 13, 
+    'arcane_siphoning': 13, 
+    'healing_bonus': 13, 
+    'buff_enhance': 13, 
+    'debuff_bonus': 13,
+    'mythical_xp': 5,
+    'mythical_realm_points': 5,
+    'mythical_bounty_points': 5,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -1404,6 +2916,62 @@ level28_resists_default_caps = {
     'essence_resist': 41
 }
 
+level28_bonuses_default_caps = {
+    'all_focus_levels': 28,
+    'all_melee_skills': 6, 
+    'all_magic_skills': 6,
+    'all_dual_wielding_skills': 6,
+    'all_archery_skills': 6, 
+    'melee_speed': 5, 
+    'melee_damage': 5, 
+    'style_damage': 5, 
+    'spell_speed': 5, 
+    'spell_damage': 5, 
+    'spell_range': 5, 
+    'resist_pierce': 5, 
+    'power_pool': 14,
+    'spell_duration': 14, 
+    'arcane_siphoning': 14, 
+    'healing_bonus': 14, 
+    'buff_enhance': 14, 
+    'debuff_bonus': 14,
+    'mythical_xp': 5,
+    'mythical_realm_points': 5,
+    'mythical_bounty_points': 5,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1452,6 +3020,62 @@ level29_resists_default_caps = {
     'essence_resist': 41
 }
 
+level29_bonuses_default_caps = {
+    'all_focus_levels': 29,
+    'all_melee_skills': 6, 
+    'all_magic_skills': 6,
+    'all_dual_wielding_skills': 6,
+    'all_archery_skills': 6, 
+    'melee_speed': 5, 
+    'melee_damage': 5, 
+    'style_damage': 5, 
+    'spell_speed': 5, 
+    'spell_damage': 5, 
+    'spell_range': 5, 
+    'resist_pierce': 5, 
+    'power_pool': 14,
+    'spell_duration': 14, 
+    'arcane_siphoning': 14, 
+    'healing_bonus': 14, 
+    'buff_enhance': 14, 
+    'debuff_bonus': 14,
+    'mythical_xp': 5,
+    'mythical_realm_points': 5,
+    'mythical_bounty_points': 5,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1498,6 +3122,62 @@ level30_resists_default_caps = {
     'body_resist': 16, 
     'spirit_resist': 16,
     'essence_resist': 41
+}
+
+level30_bonuses_default_caps = {
+    'all_focus_levels': 30,
+    'all_melee_skills': 7, 
+    'all_magic_skills': 7,
+    'all_dual_wielding_skills': 7,
+    'all_archery_skills': 7, 
+    'melee_speed': 6, 
+    'melee_damage': 6, 
+    'style_damage': 6, 
+    'spell_speed': 6, 
+    'spell_damage': 6, 
+    'spell_range': 6, 
+    'resist_pierce': 6, 
+    'power_pool': 15,
+    'spell_duration': 15, 
+    'arcane_siphoning': 15, 
+    'healing_bonus': 15, 
+    'buff_enhance': 15, 
+    'debuff_bonus': 15,
+    'mythical_xp': 6,
+    'mythical_realm_points': 6,
+    'mythical_bounty_points': 6,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level30_skills_default_caps = {
@@ -1559,6 +3239,62 @@ level31_resists_default_caps = {
     'essence_resist': 41
 }
 
+level31_bonuses_default_caps = {
+    'all_focus_levels': 31,
+    'all_melee_skills': 7, 
+    'all_magic_skills': 7,
+    'all_dual_wielding_skills': 7,
+    'all_archery_skills': 7, 
+    'melee_speed': 6, 
+    'melee_damage': 6, 
+    'style_damage': 6, 
+    'spell_speed': 6, 
+    'spell_damage': 6, 
+    'spell_range': 6, 
+    'resist_pierce': 6, 
+    'power_pool': 15,
+    'spell_duration': 15, 
+    'arcane_siphoning': 15, 
+    'healing_bonus': 15, 
+    'buff_enhance': 15, 
+    'debuff_bonus': 15,
+    'mythical_xp': 6,
+    'mythical_realm_points': 6,
+    'mythical_bounty_points': 6,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1605,6 +3341,62 @@ level32_resists_default_caps = {
     'body_resist': 17, 
     'spirit_resist': 17,
     'essence_resist': 41
+}
+
+level32_bonuses_default_caps = {
+    'all_focus_levels': 32,
+    'all_melee_skills': 7, 
+    'all_magic_skills': 7,
+    'all_dual_wielding_skills': 7,
+    'all_archery_skills': 7, 
+    'melee_speed': 6, 
+    'melee_damage': 6, 
+    'style_damage': 6, 
+    'spell_speed': 6, 
+    'spell_damage': 6, 
+    'spell_range': 6, 
+    'resist_pierce': 6, 
+    'power_pool': 16,
+    'spell_duration': 16, 
+    'arcane_siphoning': 16, 
+    'healing_bonus': 16, 
+    'buff_enhance': 16, 
+    'debuff_bonus': 16,
+    'mythical_xp': 6,
+    'mythical_realm_points': 6,
+    'mythical_bounty_points': 6,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -1655,6 +3447,62 @@ level33_resists_default_caps = {
     'essence_resist': 41
 }
 
+level33_bonuses_default_caps = {
+    'all_focus_levels': 33,
+    'all_melee_skills': 7, 
+    'all_magic_skills': 7,
+    'all_dual_wielding_skills': 7,
+    'all_archery_skills': 7, 
+    'melee_speed': 6, 
+    'melee_damage': 6, 
+    'style_damage': 6, 
+    'spell_speed': 6, 
+    'spell_damage': 6, 
+    'spell_range': 6, 
+    'resist_pierce': 6, 
+    'power_pool': 16,
+    'spell_duration': 16, 
+    'arcane_siphoning': 16, 
+    'healing_bonus': 16, 
+    'buff_enhance': 16, 
+    'debuff_bonus': 16,
+    'mythical_xp': 6,
+    'mythical_realm_points': 6,
+    'mythical_bounty_points': 6,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1703,6 +3551,62 @@ level34_resists_default_caps = {
     'essence_resist': 41
 }
 
+level34_bonuses_default_caps = {
+    'all_focus_levels': 34,
+    'all_melee_skills': 7, 
+    'all_magic_skills': 7,
+    'all_dual_wielding_skills': 7,
+    'all_archery_skills': 7, 
+    'melee_speed': 6, 
+    'melee_damage': 6, 
+    'style_damage': 6, 
+    'spell_speed': 6, 
+    'spell_damage': 6, 
+    'spell_range': 6, 
+    'resist_pierce': 6, 
+    'power_pool': 17,
+    'spell_duration': 17, 
+    'arcane_siphoning': 17, 
+    'healing_bonus': 17, 
+    'buff_enhance': 17, 
+    'debuff_bonus': 17,
+    'mythical_xp': 6,
+    'mythical_realm_points': 6,
+    'mythical_bounty_points': 6,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1749,6 +3653,62 @@ level35_resists_default_caps = {
     'body_resist': 18, 
     'spirit_resist': 18,
     'essence_resist': 41
+}
+
+level35_bonuses_default_caps = {
+    'all_focus_levels': 35,
+    'all_melee_skills': 8, 
+    'all_magic_skills': 8,
+    'all_dual_wielding_skills': 8,
+    'all_archery_skills': 8, 
+    'melee_speed': 7, 
+    'melee_damage': 7, 
+    'style_damage': 7, 
+    'spell_speed': 7, 
+    'spell_damage': 7, 
+    'spell_range': 7, 
+    'resist_pierce': 7, 
+    'power_pool': 17,
+    'spell_duration': 17, 
+    'arcane_siphoning': 17, 
+    'healing_bonus': 17, 
+    'buff_enhance': 17, 
+    'debuff_bonus': 17,
+    'mythical_xp': 7,
+    'mythical_realm_points': 7,
+    'mythical_bounty_points': 7,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level35_skills_default_caps = {
@@ -1810,6 +3770,62 @@ level36_resists_default_caps = {
     'essence_resist': 41
 }
 
+level36_bonuses_default_caps = {
+    'all_focus_levels': 36,
+    'all_melee_skills': 8, 
+    'all_magic_skills': 8,
+    'all_dual_wielding_skills': 8,
+    'all_archery_skills': 8, 
+    'melee_speed': 7, 
+    'melee_damage': 7, 
+    'style_damage': 7, 
+    'spell_speed': 7, 
+    'spell_damage': 7, 
+    'spell_range': 7, 
+    'resist_pierce': 7, 
+    'power_pool': 18,
+    'spell_duration': 18, 
+    'arcane_siphoning': 18, 
+    'healing_bonus': 18, 
+    'buff_enhance': 18, 
+    'debuff_bonus': 18,
+    'mythical_xp': 7,
+    'mythical_realm_points': 7,
+    'mythical_bounty_points': 7,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1856,6 +3872,62 @@ level37_resists_default_caps = {
     'body_resist': 19, 
     'spirit_resist': 19,
     'essence_resist': 41
+}
+
+level37_bonuses_default_caps = {
+    'all_focus_levels': 37,
+    'all_melee_skills': 8, 
+    'all_magic_skills': 8,
+    'all_dual_wielding_skills': 8,
+    'all_archery_skills': 8, 
+    'melee_speed': 7, 
+    'melee_damage': 7, 
+    'style_damage': 7, 
+    'spell_speed': 7, 
+    'spell_damage': 7, 
+    'spell_range': 7, 
+    'resist_pierce': 7, 
+    'power_pool': 18,
+    'spell_duration': 18, 
+    'arcane_siphoning': 18, 
+    'healing_bonus': 18, 
+    'buff_enhance': 18, 
+    'debuff_bonus': 18,
+    'mythical_xp': 7,
+    'mythical_realm_points': 7,
+    'mythical_bounty_points': 7,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -1906,6 +3978,62 @@ level38_resists_default_caps = {
     'essence_resist': 41
 }
 
+level38_bonuses_default_caps = {
+    'all_focus_levels': 38,
+    'all_melee_skills': 8, 
+    'all_magic_skills': 8,
+    'all_dual_wielding_skills': 8,
+    'all_archery_skills': 8, 
+    'melee_speed': 7, 
+    'melee_damage': 7, 
+    'style_damage': 7, 
+    'spell_speed': 7, 
+    'spell_damage': 7, 
+    'spell_range': 7, 
+    'resist_pierce': 7, 
+    'power_pool': 19,
+    'spell_duration': 19, 
+    'arcane_siphoning': 19, 
+    'healing_bonus': 19, 
+    'buff_enhance': 19, 
+    'debuff_bonus': 19,
+    'mythical_xp': 7,
+    'mythical_realm_points': 7,
+    'mythical_bounty_points': 7,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -1954,6 +4082,62 @@ level39_resists_default_caps = {
     'essence_resist': 41
 }
 
+level39_bonuses_default_caps = {
+    'all_focus_levels': 39,
+    'all_melee_skills': 8, 
+    'all_magic_skills': 8,
+    'all_dual_wielding_skills': 8,
+    'all_archery_skills': 8, 
+    'melee_speed': 7, 
+    'melee_damage': 7, 
+    'style_damage': 7, 
+    'spell_speed': 7, 
+    'spell_damage': 7, 
+    'spell_range': 7, 
+    'resist_pierce': 7, 
+    'power_pool': 19,
+    'spell_duration': 19, 
+    'arcane_siphoning': 19, 
+    'healing_bonus': 19, 
+    'buff_enhance': 19, 
+    'debuff_bonus': 19,
+    'mythical_xp': 7,
+    'mythical_realm_points': 7,
+    'mythical_bounty_points': 7,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2000,6 +4184,62 @@ level40_resists_default_caps = {
     'body_resist': 21, 
     'spirit_resist': 21,
     'essence_resist': 41
+}
+
+level40_bonuses_default_caps = {
+    'all_focus_levels': 40,
+    'all_melee_skills': 9, 
+    'all_magic_skills': 9,
+    'all_dual_wielding_skills': 9,
+    'all_archery_skills': 9, 
+    'melee_speed': 8, 
+    'melee_damage': 8, 
+    'style_damage': 8, 
+    'spell_speed': 8, 
+    'spell_damage': 8, 
+    'spell_range': 8, 
+    'resist_pierce': 8, 
+    'power_pool': 20,
+    'spell_duration': 20, 
+    'arcane_siphoning': 20, 
+    'healing_bonus': 20, 
+    'buff_enhance': 20, 
+    'debuff_bonus': 20,
+    'mythical_xp': 8,
+    'mythical_realm_points': 8,
+    'mythical_bounty_points': 8,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level40_skills_default_caps = {
@@ -2061,6 +4301,62 @@ level41_resists_default_caps = {
     'essence_resist': 41
 }
 
+level41_bonuses_default_caps = {
+    'all_focus_levels': 41,
+    'all_melee_skills': 9, 
+    'all_magic_skills': 9,
+    'all_dual_wielding_skills': 9,
+    'all_archery_skills': 9, 
+    'melee_speed': 8, 
+    'melee_damage': 8, 
+    'style_damage': 8, 
+    'spell_speed': 8, 
+    'spell_damage': 8, 
+    'spell_range': 8, 
+    'resist_pierce': 8, 
+    'power_pool': 20,
+    'spell_duration': 20, 
+    'arcane_siphoning': 20, 
+    'healing_bonus': 20, 
+    'buff_enhance': 20, 
+    'debuff_bonus': 20,
+    'mythical_xp': 8,
+    'mythical_realm_points': 8,
+    'mythical_bounty_points': 8,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2107,6 +4403,62 @@ level42_resists_default_caps = {
     'body_resist': 22, 
     'spirit_resist': 22,
     'essence_resist': 41
+}
+
+level42_bonuses_default_caps = {
+    'all_focus_levels': 42,
+    'all_melee_skills': 9, 
+    'all_magic_skills': 9,
+    'all_dual_wielding_skills': 9,
+    'all_archery_skills': 9, 
+    'melee_speed': 8, 
+    'melee_damage': 8, 
+    'style_damage': 8, 
+    'spell_speed': 8, 
+    'spell_damage': 8, 
+    'spell_range': 8, 
+    'resist_pierce': 8, 
+    'power_pool': 21,
+    'spell_duration': 21, 
+    'arcane_siphoning': 21, 
+    'healing_bonus': 21, 
+    'buff_enhance': 21, 
+    'debuff_bonus': 21,
+    'mythical_xp': 8,
+    'mythical_realm_points': 8,
+    'mythical_bounty_points': 8,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -2157,6 +4509,62 @@ level43_resists_default_caps = {
     'essence_resist': 41
 }
 
+level43_bonuses_default_caps = {
+    'all_focus_levels': 43,
+    'all_melee_skills': 9, 
+    'all_magic_skills': 9,
+    'all_dual_wielding_skills': 9,
+    'all_archery_skills': 9, 
+    'melee_speed': 8, 
+    'melee_damage': 8, 
+    'style_damage': 8, 
+    'spell_speed': 8, 
+    'spell_damage': 8, 
+    'spell_range': 8, 
+    'resist_pierce': 8, 
+    'power_pool': 21,
+    'spell_duration': 21, 
+    'arcane_siphoning': 21, 
+    'healing_bonus': 21, 
+    'buff_enhance': 21, 
+    'debuff_bonus': 21,
+    'mythical_xp': 8,
+    'mythical_realm_points': 8,
+    'mythical_bounty_points': 8,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2205,6 +4613,62 @@ level44_resists_default_caps = {
     'essence_resist': 41
 }
 
+level44_bonuses_default_caps = {
+    'all_focus_levels': 44,
+    'all_melee_skills': 9, 
+    'all_magic_skills': 9,
+    'all_dual_wielding_skills': 9,
+    'all_archery_skills': 9, 
+    'melee_speed': 8, 
+    'melee_damage': 8, 
+    'style_damage': 8, 
+    'spell_speed': 8, 
+    'spell_damage': 8, 
+    'spell_range': 8, 
+    'resist_pierce': 8, 
+    'power_pool': 22,
+    'spell_duration': 22, 
+    'arcane_siphoning': 22, 
+    'healing_bonus': 22, 
+    'buff_enhance': 22, 
+    'debuff_bonus': 22,
+    'mythical_xp': 8,
+    'mythical_realm_points': 8,
+    'mythical_bounty_points': 8,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2251,6 +4715,62 @@ level45_resists_default_caps = {
     'body_resist': 23, 
     'spirit_resist': 23,
     'essence_resist': 41
+}
+
+level45_bonuses_default_caps = {
+    'all_focus_levels': 45,
+    'all_melee_skills': 10, 
+    'all_magic_skills': 10,
+    'all_dual_wielding_skills': 10,
+    'all_archery_skills': 10, 
+    'melee_speed': 9, 
+    'melee_damage': 9, 
+    'style_damage': 9, 
+    'spell_speed': 9, 
+    'spell_damage': 9, 
+    'spell_range': 9, 
+    'resist_pierce': 9, 
+    'power_pool': 22,
+    'spell_duration': 22, 
+    'arcane_siphoning': 22, 
+    'healing_bonus': 22, 
+    'buff_enhance': 22, 
+    'debuff_bonus': 22,
+    'mythical_xp': 9,
+    'mythical_realm_points': 9,
+    'mythical_bounty_points': 9,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 level45_skills_default_caps = {
@@ -2312,6 +4832,62 @@ level46_resists_default_caps = {
     'essence_resist': 41
 }
 
+level46_bonuses_default_caps = {
+    'all_focus_levels': 46,
+    'all_melee_skills': 10, 
+    'all_magic_skills': 10,
+    'all_dual_wielding_skills': 10,
+    'all_archery_skills': 10, 
+    'melee_speed': 9, 
+    'melee_damage': 9, 
+    'style_damage': 9, 
+    'spell_speed': 9, 
+    'spell_damage': 9, 
+    'spell_range': 9, 
+    'resist_pierce': 9, 
+    'power_pool': 23,
+    'spell_duration': 23, 
+    'arcane_siphoning': 23, 
+    'healing_bonus': 23, 
+    'buff_enhance': 23, 
+    'debuff_bonus': 23,
+    'mythical_xp': 9,
+    'mythical_realm_points': 9,
+    'mythical_bounty_points': 9,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2358,6 +4934,62 @@ level47_resists_default_caps = {
     'body_resist': 24, 
     'spirit_resist': 24,
     'essence_resist': 41
+}
+
+level47_bonuses_default_caps = {
+    'all_focus_levels': 47,
+    'all_melee_skills': 10, 
+    'all_magic_skills': 10,
+    'all_dual_wielding_skills': 10,
+    'all_archery_skills': 10, 
+    'melee_speed': 9, 
+    'melee_damage': 9, 
+    'style_damage': 9, 
+    'spell_speed': 9, 
+    'spell_damage': 9, 
+    'spell_range': 9, 
+    'resist_pierce': 9, 
+    'power_pool': 23,
+    'spell_duration': 23, 
+    'arcane_siphoning': 23, 
+    'healing_bonus': 23, 
+    'buff_enhance': 23, 
+    'debuff_bonus': 23,
+    'mythical_xp': 9,
+    'mythical_realm_points': 9,
+    'mythical_bounty_points': 9,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -2408,6 +5040,62 @@ level48_resists_default_caps = {
     'essence_resist': 41
 }
 
+level48_bonuses_default_caps = {
+    'all_focus_levels': 48,
+    'all_melee_skills': 10, 
+    'all_magic_skills': 10,
+    'all_dual_wielding_skills': 10,
+    'all_archery_skills': 10, 
+    'melee_speed': 9, 
+    'melee_damage': 9, 
+    'style_damage': 9, 
+    'spell_speed': 9, 
+    'spell_damage': 9, 
+    'spell_range': 9, 
+    'resist_pierce': 9, 
+    'power_pool': 24,
+    'spell_duration': 24, 
+    'arcane_siphoning': 24, 
+    'healing_bonus': 24, 
+    'buff_enhance': 24, 
+    'debuff_bonus': 24,
+    'mythical_xp': 9,
+    'mythical_realm_points': 9,
+    'mythical_bounty_points': 9,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 #############################
 #############################
 #############################
@@ -2454,6 +5142,62 @@ level49_resists_default_caps = {
     'body_resist': 25, 
     'spirit_resist': 25,
     'essence_resist': 41
+}
+
+level49_bonuses_default_caps = {
+    'all_focus_levels': 49,
+    'all_melee_skills': 10, 
+    'all_magic_skills': 10,
+    'all_dual_wielding_skills': 10,
+    'all_archery_skills': 10, 
+    'melee_speed': 9, 
+    'melee_damage': 9, 
+    'style_damage': 9, 
+    'spell_speed': 9, 
+    'spell_damage': 9, 
+    'spell_range': 9, 
+    'resist_pierce': 9, 
+    'power_pool': 24,
+    'spell_duration': 24, 
+    'arcane_siphoning': 24, 
+    'healing_bonus': 24, 
+    'buff_enhance': 24, 
+    'debuff_bonus': 24,
+    'mythical_xp': 9,
+    'mythical_realm_points': 9,
+    'mythical_bounty_points': 9,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
 }
 
 #############################
@@ -2504,6 +5248,62 @@ level50_resists_default_caps = {
     'essence_resist': 41
 }
 
+level50_bonuses_default_caps = {
+    'all_focus_levels': 50,
+    'all_melee_skills': 11, 
+    'all_magic_skills': 11,
+    'all_dual_wielding_skills': 11,
+    'all_archery_skills': 11, 
+    'melee_speed': 10, 
+    'melee_damage': 10, 
+    'style_damage': 10, 
+    'spell_speed': 10, 
+    'spell_damage': 10, 
+    'spell_range': 10, 
+    'resist_pierce': 10, 
+    'power_pool': 25,
+    'spell_duration': 25, 
+    'arcane_siphoning': 25, 
+    'healing_bonus': 25, 
+    'buff_enhance': 25, 
+    'debuff_bonus': 25,
+    'mythical_xp': 10,
+    'mythical_realm_points': 10,
+    'mythical_bounty_points': 10,
+    'power_regen': 50, 
+    'spell_level': 10, 
+    'endurance_regen': 10, 
+    'health_regen': 50, 
+    'mythical_physical_defenses': 50,
+    'mythical_dps': 50, 
+    'mythical_evade_chance': 10, 
+    'mythical_safe_fall': 50, 
+    'mythical_siege': 50, 
+    'mythical_strength_cap': 50, 
+    'mythical_constitution_cap': 50, 
+    'mythical_dexterity_cap': 50,
+    'mythical_quickness_cap': 50, 
+    'mythical_acuity_cap': 50, 
+    'mythical_crush_resist': 15, 
+    'mythical_slash_resist': 15,
+    'mythical_thrust_resist': 15, 
+    'mythical_heat_resist': 15, 
+    'mythical_cold_resist': 15, 
+    'mythical_matter_resist': 15,
+    'mythical_energy_resist': 15, 
+    'mythical_body_resist': 15, 
+    'mythical_spirit_resist': 15, 
+    'mythical_essence_resist': 50,
+    'mythical_parry_chance': 10, 
+    'mythical_block_chance': 10, 
+    'mythical_mesmerize_reduction': 50, 
+    'mythical_stun_reduction': 50,
+    'mythical_speed_decrease_reduction': 50, 
+    'mythical_encumberance': 50, 
+    'mythical_craft_speed': 50,
+    'mythical_coin': 50
+}
+
 level50_skills_default_caps = {
     'skill1': 11,
     'skill2': 11,
@@ -2523,350 +5323,401 @@ level1 = {
     'statsTable': level1_main_stats_default_caps,
     'statsCapTable': level1_stat_caps_default_caps,
     'skillsTable': level1_skills_default_caps,
-    'resistsTable': level1_resists_default_caps
+    'resistsTable': level1_resists_default_caps,
+    'bonusesTable': level1_bonuses_default_caps
 }
 
 level2 = {
     'statsTable': level2_main_stats_default_caps,
     'statsCapTable': level2_stat_caps_default_caps,
     'skillsTable': level1_skills_default_caps,
-    'resistsTable': level2_resists_default_caps
+    'resistsTable': level2_resists_default_caps,
+    'bonusesTable': level2_bonuses_default_caps
 }
 
 level3 = {
     'statsTable': level3_main_stats_default_caps,
     'statsCapTable': level3_stat_caps_default_caps,
     'skillsTable': level1_skills_default_caps,
-    'resistsTable': level3_resists_default_caps
+    'resistsTable': level3_resists_default_caps,
+    'bonusesTable': level3_bonuses_default_caps
 }
 
 level4 = {
     'statsTable': level4_main_stats_default_caps,
     'statsCapTable': level4_stat_caps_default_caps,
     'skillsTable': level1_skills_default_caps,
-    'resistsTable': level4_resists_default_caps
+    'resistsTable': level4_resists_default_caps,
+    'bonusesTable': level4_bonuses_default_caps
 }
 
 level5 = {
     'statsTable': level5_main_stats_default_caps,
     'statsCapTable': level5_stat_caps_default_caps,
     'skillsTable': level5_skills_default_caps,
-    'resistsTable': level5_resists_default_caps
+    'resistsTable': level5_resists_default_caps,
+    'bonusesTable': level5_bonuses_default_caps
 }
 
 level6 = {
     'statsTable': level6_main_stats_default_caps,
     'statsCapTable': level6_stat_caps_default_caps,
     'skillsTable': level5_skills_default_caps,
-    'resistsTable': level6_resists_default_caps
+    'resistsTable': level6_resists_default_caps,
+    'bonusesTable': level6_bonuses_default_caps
 }
 
 level7 = {
     'statsTable': level7_main_stats_default_caps,
     'statsCapTable': level7_stat_caps_default_caps,
     'skillsTable': level5_skills_default_caps,
-    'resistsTable': level7_resists_default_caps
+    'resistsTable': level7_resists_default_caps,
+    'bonusesTable': level7_bonuses_default_caps
 }
 
 level8 = {
     'statsTable': level8_main_stats_default_caps,
     'statsCapTable': level8_stat_caps_default_caps,
     'skillsTable': level5_skills_default_caps,
-    'resistsTable': level8_resists_default_caps
+    'resistsTable': level8_resists_default_caps,
+    'bonusesTable': level8_bonuses_default_caps
 }
 
 level9 = {
     'statsTable': level9_main_stats_default_caps,
     'statsCapTable': level9_stat_caps_default_caps,
     'skillsTable': level5_skills_default_caps,
-    'resistsTable': level9_resists_default_caps
+    'resistsTable': level9_resists_default_caps,
+    'bonusesTable': level9_bonuses_default_caps
 }
 
 level10 = {
     'statsTable': level10_main_stats_default_caps,
     'statsCapTable': level10_stat_caps_default_caps,
     'skillsTable': level10_skills_default_caps,
-    'resistsTable': level10_resists_default_caps
+    'resistsTable': level10_resists_default_caps,
+    'bonusesTable': level10_bonuses_default_caps
 }
 
 level11 = {
     'statsTable': level11_main_stats_default_caps,
     'statsCapTable': level11_stat_caps_default_caps,
     'skillsTable': level10_skills_default_caps,
-    'resistsTable': level11_resists_default_caps
+    'resistsTable': level11_resists_default_caps,
+    'bonusesTable': level11_bonuses_default_caps
 }
 
 level12 = {
     'statsTable': level12_main_stats_default_caps,
     'statsCapTable': level12_stat_caps_default_caps,
     'skillsTable': level10_skills_default_caps,
-    'resistsTable': level12_resists_default_caps
+    'resistsTable': level12_resists_default_caps,
+    'bonusesTable': level12_bonuses_default_caps
 }
 
 level13 = {
     'statsTable': level13_main_stats_default_caps,
     'statsCapTable': level13_stat_caps_default_caps,
     'skillsTable': level10_skills_default_caps,
-    'resistsTable': level13_resists_default_caps
+    'resistsTable': level13_resists_default_caps,
+    'bonusesTable': level13_bonuses_default_caps
 }
 
 level14 = {
     'statsTable': level14_main_stats_default_caps,
     'statsCapTable': level14_stat_caps_default_caps,
     'skillsTable': level10_skills_default_caps,
-    'resistsTable': level14_resists_default_caps
+    'resistsTable': level14_resists_default_caps,
+    'bonusesTable': level14_bonuses_default_caps
 }
 
 level15 = {
     'statsTable': level15_main_stats_default_caps,
     'statsCapTable': level15_stat_caps_default_caps,
     'skillsTable': level15_skills_default_caps,
-    'resistsTable': level15_resists_default_caps
+    'resistsTable': level15_resists_default_caps,
+    'bonusesTable': level15_bonuses_default_caps
 }
 
 level16 = {
     'statsTable': level16_main_stats_default_caps,
     'statsCapTable': level16_stat_caps_default_caps,
     'skillsTable': level15_skills_default_caps,
-    'resistsTable': level16_resists_default_caps
+    'resistsTable': level16_resists_default_caps,
+    'bonusesTable': level16_bonuses_default_caps
 }
 
 level17 = {
     'statsTable': level17_main_stats_default_caps,
     'statsCapTable': level17_stat_caps_default_caps,
     'skillsTable': level15_skills_default_caps,
-    'resistsTable': level17_resists_default_caps
+    'resistsTable': level17_resists_default_caps,
+    'bonusesTable': level17_bonuses_default_caps
 }
 
 level18 = {
     'statsTable': level18_main_stats_default_caps,
     'statsCapTable': level18_stat_caps_default_caps,
     'skillsTable': level15_skills_default_caps,
-    'resistsTable': level18_resists_default_caps
+    'resistsTable': level18_resists_default_caps,
+    'bonusesTable': level18_bonuses_default_caps
 }
 
 level19 = {
     'statsTable': level19_main_stats_default_caps,
     'statsCapTable': level19_stat_caps_default_caps,
     'skillsTable': level15_skills_default_caps,
-    'resistsTable': level19_resists_default_caps
+    'resistsTable': level19_resists_default_caps,
+    'bonusesTable': level19_bonuses_default_caps
 }
 
 level20 = {
     'statsTable': level20_main_stats_default_caps,
     'statsCapTable': level20_stat_caps_default_caps,
     'skillsTable': level20_skills_default_caps,
-    'resistsTable': level20_resists_default_caps
+    'resistsTable': level20_resists_default_caps,
+    'bonusesTable': level20_bonuses_default_caps
 }
 
 level21 = {
     'statsTable': level21_main_stats_default_caps,
     'statsCapTable': level21_stat_caps_default_caps,
     'skillsTable': level20_skills_default_caps,
-    'resistsTable': level21_resists_default_caps
+    'resistsTable': level21_resists_default_caps,
+    'bonusesTable': level21_bonuses_default_caps
 }
 
 level22 = {
     'statsTable': level22_main_stats_default_caps,
     'statsCapTable': level22_stat_caps_default_caps,
     'skillsTable': level20_skills_default_caps,
-    'resistsTable': level22_resists_default_caps
+    'resistsTable': level22_resists_default_caps,
+    'bonusesTable': level22_bonuses_default_caps
 }
 
 level23 = {
     'statsTable': level23_main_stats_default_caps,
     'statsCapTable': level23_stat_caps_default_caps,
     'skillsTable': level20_skills_default_caps,
-    'resistsTable': level23_resists_default_caps
+    'resistsTable': level23_resists_default_caps,
+    'bonusesTable': level23_bonuses_default_caps
 }
 
 level24 = {
     'statsTable': level24_main_stats_default_caps,
     'statsCapTable': level24_stat_caps_default_caps,
     'skillsTable': level20_skills_default_caps,
-    'resistsTable': level24_resists_default_caps
+    'resistsTable': level24_resists_default_caps,
+    'bonusesTable': level24_bonuses_default_caps
 }
 
 level25 = {
     'statsTable': level25_main_stats_default_caps,
     'statsCapTable': level25_stat_caps_default_caps,
     'skillsTable': level25_skills_default_caps,
-    'resistsTable': level25_resists_default_caps
+    'resistsTable': level25_resists_default_caps,
+    'bonusesTable': level25_bonuses_default_caps
 }
 
 level26 = {
     'statsTable': level26_main_stats_default_caps,
     'statsCapTable': level26_stat_caps_default_caps,
     'skillsTable': level25_skills_default_caps,
-    'resistsTable': level26_resists_default_caps
+    'resistsTable': level26_resists_default_caps,
+    'bonusesTable': level26_bonuses_default_caps
 }
 
 level27 = {
     'statsTable': level27_main_stats_default_caps,
     'statsCapTable': level27_stat_caps_default_caps,
     'skillsTable': level25_skills_default_caps,
-    'resistsTable': level27_resists_default_caps
+    'resistsTable': level27_resists_default_caps,
+    'bonusesTable': level27_bonuses_default_caps
 }
 
 level28 = {
     'statsTable': level28_main_stats_default_caps,
     'statsCapTable': level28_stat_caps_default_caps,
     'skillsTable': level25_skills_default_caps,
-    'resistsTable': level28_resists_default_caps
+    'resistsTable': level28_resists_default_caps,
+    'bonusesTable': level28_bonuses_default_caps
 }
 
 level29 = {
     'statsTable': level29_main_stats_default_caps,
     'statsCapTable': level29_stat_caps_default_caps,
     'skillsTable': level25_skills_default_caps,
-    'resistsTable': level29_resists_default_caps
+    'resistsTable': level29_resists_default_caps,
+    'bonusesTable': level29_bonuses_default_caps
 }
 
 level30 = {
     'statsTable': level30_main_stats_default_caps,
     'statsCapTable': level30_stat_caps_default_caps,
     'skillsTable': level30_skills_default_caps,
-    'resistsTable': level30_resists_default_caps
+    'resistsTable': level30_resists_default_caps,
+    'bonusesTable': level30_bonuses_default_caps
 }
 
 level31 = {
     'statsTable': level31_main_stats_default_caps,
     'statsCapTable': level31_stat_caps_default_caps,
     'skillsTable': level30_skills_default_caps,
-    'resistsTable': level31_resists_default_caps
+    'resistsTable': level31_resists_default_caps,
+    'bonusesTable': level31_bonuses_default_caps
 }
 
 level32 = {
     'statsTable': level32_main_stats_default_caps,
     'statsCapTable': level32_stat_caps_default_caps,
     'skillsTable': level30_skills_default_caps,
-    'resistsTable': level32_resists_default_caps
+    'resistsTable': level32_resists_default_caps,
+    'bonusesTable': level32_bonuses_default_caps
 }
 
 level33 = {
     'statsTable': level33_main_stats_default_caps,
     'statsCapTable': level33_stat_caps_default_caps,
     'skillsTable': level30_skills_default_caps,
-    'resistsTable': level33_resists_default_caps
+    'resistsTable': level33_resists_default_caps,
+    'bonusesTable': level33_bonuses_default_caps
 }
 
 level34 = {
     'statsTable': level34_main_stats_default_caps,
     'statsCapTable': level34_stat_caps_default_caps,
     'skillsTable': level30_skills_default_caps,
-    'resistsTable': level34_resists_default_caps
+    'resistsTable': level34_resists_default_caps,
+    'bonusesTable': level34_bonuses_default_caps
 }
 
 level35 = {
     'statsTable': level35_main_stats_default_caps,
     'statsCapTable': level35_stat_caps_default_caps,
     'skillsTable': level35_skills_default_caps,
-    'resistsTable': level35_resists_default_caps
+    'resistsTable': level35_resists_default_caps,
+    'bonusesTable': level35_bonuses_default_caps
 }
 
 level36 = {
     'statsTable': level36_main_stats_default_caps,
     'statsCapTable': level36_stat_caps_default_caps,
     'skillsTable': level35_skills_default_caps,
-    'resistsTable': level36_resists_default_caps
+    'resistsTable': level36_resists_default_caps,
+    'bonusesTable': level36_bonuses_default_caps
 }
 
 level37 = {
     'statsTable': level37_main_stats_default_caps,
     'statsCapTable': level37_stat_caps_default_caps,
     'skillsTable': level35_skills_default_caps,
-    'resistsTable': level37_resists_default_caps
+    'resistsTable': level37_resists_default_caps,
+    'bonusesTable': level37_bonuses_default_caps
 }
 
 level38 = {
     'statsTable': level38_main_stats_default_caps,
     'statsCapTable': level38_stat_caps_default_caps,
     'skillsTable': level35_skills_default_caps,
-    'resistsTable': level38_resists_default_caps
+    'resistsTable': level38_resists_default_caps,
+    'bonusesTable': level38_bonuses_default_caps
 }
 
 level39 = {
     'statsTable': level39_main_stats_default_caps,
     'statsCapTable': level39_stat_caps_default_caps,
     'skillsTable': level35_skills_default_caps,
-    'resistsTable': level39_resists_default_caps
+    'resistsTable': level39_resists_default_caps,
+    'bonusesTable': level39_bonuses_default_caps
 }
 
 level40 = {
     'statsTable': level40_main_stats_default_caps,
     'statsCapTable': level40_stat_caps_default_caps,
     'skillsTable': level40_skills_default_caps,
-    'resistsTable': level40_resists_default_caps
+    'resistsTable': level40_resists_default_caps,
+    'bonusesTable': level40_bonuses_default_caps
 }
 
 level41 = {
     'statsTable': level41_main_stats_default_caps,
     'statsCapTable': level41_stat_caps_default_caps,
     'skillsTable': level40_skills_default_caps,
-    'resistsTable': level41_resists_default_caps
+    'resistsTable': level41_resists_default_caps,
+    'bonusesTable': level41_bonuses_default_caps
 }
 
 level42 = {
     'statsTable': level42_main_stats_default_caps,
     'statsCapTable': level42_stat_caps_default_caps,
     'skillsTable': level40_skills_default_caps,
-    'resistsTable': level42_resists_default_caps
+    'resistsTable': level42_resists_default_caps,
+    'bonusesTable': level42_bonuses_default_caps
 }
 
 level43 = {
     'statsTable': level43_main_stats_default_caps,
     'statsCapTable': level43_stat_caps_default_caps,
     'skillsTable': level40_skills_default_caps,
-    'resistsTable': level43_resists_default_caps
+    'resistsTable': level43_resists_default_caps,
+    'bonusesTable': level43_bonuses_default_caps
 }
 
 level44 = {
     'statsTable': level44_main_stats_default_caps,
     'statsCapTable': level44_stat_caps_default_caps,
     'skillsTable': level40_skills_default_caps,
-    'resistsTable': level44_resists_default_caps
+    'resistsTable': level44_resists_default_caps,
+    'bonusesTable': level44_bonuses_default_caps
 }
 
 level45 = {
     'statsTable': level45_main_stats_default_caps,
     'statsCapTable': level45_stat_caps_default_caps,
     'skillsTable': level45_skills_default_caps,
-    'resistsTable': level45_resists_default_caps
+    'resistsTable': level45_resists_default_caps,
+    'bonusesTable': level45_bonuses_default_caps
 }
 
 level46 = {
     'statsTable': level46_main_stats_default_caps,
     'statsCapTable': level46_stat_caps_default_caps,
     'skillsTable': level45_skills_default_caps,
-    'resistsTable': level46_resists_default_caps
+    'resistsTable': level46_resists_default_caps,
+    'bonusesTable': level46_bonuses_default_caps
 }
 
 level47 = {
     'statsTable': level47_main_stats_default_caps,
     'statsCapTable': level47_stat_caps_default_caps,
     'skillsTable': level45_skills_default_caps,
-    'resistsTable': level47_resists_default_caps
+    'resistsTable': level47_resists_default_caps,
+    'bonusesTable': level47_bonuses_default_caps
 }
 
 level48 = {
     'statsTable': level48_main_stats_default_caps,
     'statsCapTable': level48_stat_caps_default_caps,
     'skillsTable': level45_skills_default_caps,
-    'resistsTable': level48_resists_default_caps
+    'resistsTable': level48_resists_default_caps,
+    'bonusesTable': level48_bonuses_default_caps
 }
 
 level49 = {
     'statsTable': level49_main_stats_default_caps,
     'statsCapTable': level49_stat_caps_default_caps,
     'skillsTable': level45_skills_default_caps,
-    'resistsTable': level49_resists_default_caps
+    'resistsTable': level49_resists_default_caps,
+    'bonusesTable': level49_bonuses_default_caps,
+    'bonusesTable': level49_bonuses_default_caps
 }
 
 level50 = {
     'statsTable': level50_main_stats_default_caps,
     'statsCapTable': level50_stat_caps_default_caps,
     'skillsTable': level50_skills_default_caps,
-    'resistsTable': level50_resists_default_caps
+    'resistsTable': level50_resists_default_caps,
+    'bonusesTable': level50_bonuses_default_caps
 }
 
 levels = {
