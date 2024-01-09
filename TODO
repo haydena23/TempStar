@@ -7,7 +7,7 @@ Todo:
     - Create check for empty currentItems for unlock class change
     - Configure spellcraft change tab. Enable button when slot selection clicked on armor/weapons?
   > Stats
-    - Implement all weapon/magic/dual/archery skills bonus
+    ✔ Implement all weapon/magic/dual/archery skills bonus @done(24-01-09 00:17)
     ✔ Implement Mythirian bonus @done(24-01-08 16:50)
     ✔ Implement ToA bonuses @done(24-01-08 17:33)
     ✔ ToA Button to display all stats/only stats affected @done(24-01-08 16:50)
@@ -18,7 +18,7 @@ Todo:
   > Vault
     - Only display items in vault if character level is at or above bonus level
     - Do not add items to left hand if character dual wield skills is empty
-    - Make shield not go into right hand
+    ✔ Make shield not go into right hand @done(24-01-09 00:17)
     - Add an item for every slot for testing
     ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)
     ✔ Display items in master vault @done(24-01-05 21:55)

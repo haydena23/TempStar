@@ -5,7 +5,7 @@ from Models.mappings import class_type_mapping, race_type_mapping, realm_rank_ma
 from changeFunctions import changeClass, changeRace, setSlotSelectionLabel, setSlotSelectionList, setInformationTextEdit
 from changeFunctions import changeRealmRank, unquipAllSlotsWarning, setItemFromSlotSelection, setEquippedWeapons, setLevel, setItemsListWidgetSlots
 from changeFunctions import changeTab, vaultItemDoubleClick, vaultItemSingleClick, populateVault, resetOnVaultComboBoxChange
-from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick
+from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick, vaultItemAddAll, vaultCurrentRemoveAll
 from statsHandler import checkTOADisplay
 
 from newCharacter import create_new_character_on_open
@@ -32,8 +32,10 @@ def initUI(self):
     configVaultCurrentlyInWidget(self, vaultCurrentSingleClick, vaultCurrentDoubleClick)
     configVaultDoneButton(self, changeTab)
     configVaultAddItemButton(self, vaultItemDoubleClick)
-    configRemoveAddItemButton(self, vaultCurrentDoubleClick)
+    configRemoveItemButton(self, vaultCurrentDoubleClick)
     configTOACheckBox(self, checkTOADisplay)
+    configVaultAddAllButton(self, vaultItemAddAll)
+    configRemoveAllItemButton(self, vaultCurrentRemoveAll)
     
 """
 Configure Class ComboBox
@@ -248,15 +250,37 @@ def on_vault_add_item_button_pressed(self, add_item_button_callback):
     add_item_button_callback(self)
     
 """
+Configure Vault Add All Item Push Button
+"""
+
+def configVaultAddAllButton(self, add_all_button_callback):
+    self.vaultAddAll = self.findChild(QPushButton, 'addAllFromVault')
+    self.vaultAddAll.clicked.connect(lambda: on_vault_add_all_button_pressed(self, add_all_button_callback))
+
+def on_vault_add_all_button_pressed(self, add_all_button_callback):
+    add_all_button_callback(self)
+    
+"""
 Configure Vault Remove Single Item Push Button
 """
 
-def configRemoveAddItemButton(self, remove_item_button_callback):
+def configRemoveItemButton(self, remove_item_button_callback):
     self.vaultRemoveItem = self.findChild(QPushButton, 'removeFromVaultButton')
     self.vaultRemoveItem.clicked.connect(lambda: on_vault_remove_item_button_pressed(self, remove_item_button_callback))
 
 def on_vault_remove_item_button_pressed(self, remove_item_button_callback):
     remove_item_button_callback(self)
+
+"""
+Configure Vault Remove All Item Push Button
+"""
+
+def configRemoveAllItemButton(self, remove_all_button_callback):
+    self.vaultRemoveAll = self.findChild(QPushButton, 'removeAllButton')
+    self.vaultRemoveAll.clicked.connect(lambda: on_vault_remove_all_button_pressed(self, remove_all_button_callback))
+
+def on_vault_remove_all_button_pressed(self, remove_all_button_callback):
+    remove_all_button_callback(self)
       
 """
 Configure TOA Check Box

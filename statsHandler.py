@@ -25,6 +25,7 @@ def updateResistsFromRace(self, race_type: RaceType):
         
 def calculateNowStats(self):
     if self.character:
+        currentLevel = int(self.findChild(QComboBox, 'levelComboBox').currentText())
         equipWeapons = self.findChild(QComboBox, 'equippedWeaponsComboBox')
         weaponsNotAllowed = equip_weapon_map.get(equipWeapons.currentText())
         for table in table_names:
@@ -33,6 +34,8 @@ def calculateNowStats(self):
             for name, item in self.character.currentItems.items():
                 if item is not None:
                     if item.slot in weaponsNotAllowed:
+                        pass
+                    if item.bonus_level > currentLevel:
                         pass
                     else:
 
@@ -57,7 +60,7 @@ def calculateNowStats(self):
         checkTOADisplay(self)
         totalUtility = 0
         for slot, item in self.character.currentItems.items():
-            if item is not None:
+            if item is not None and currentLevel >= item.bonus_level:
                 if slot not in weaponsNotAllowed:
                     totalUtility += item.total_utility
         self.findChild(QLabel, 'totalUtilityValue').setText(f"( {totalUtility} )")

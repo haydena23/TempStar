@@ -984,7 +984,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget">
             <property name="currentIndex">
-             <number>1</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="welcomeTab">
              <attribute name="title">
@@ -1480,7 +1480,7 @@ p, li { white-space: pre-wrap; }
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="pushButton_10">
+                        <widget class="QPushButton" name="removeAllButton">
                          <property name="text">
                           <string>Remove All</string>
                          </property>
