@@ -230,8 +230,8 @@ slot_mapping = {
 equip_weapon_map = {
     "<Choose Weapons Equipped>": ["Right Hand", "Left Hand", "Two Hand", "Ranged"],
     "Right and Left Hands": ["Two Hand", "Ranged"],
-    "Two Handed": ["Right Hand", "Left Hand", "Ranged"],
-    "Ranged / Instrument": ["Right Hand", "Left Hand", "Two Hand"]
+    "Two Handed / Instrument": ["Right Hand", "Left Hand", "Ranged"],
+    "Ranged": ["Right Hand", "Left Hand", "Two Hand"]
 }
 
 armor_name_map = {

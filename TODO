@@ -17,6 +17,7 @@ Todo:
     - Implement procs
   > Vault
     - Only display items in vault if character level is at or above bonus level
+    - Do not add items to left hand if character dual wield skills is empty
     - Make shield not go into right hand
     - Add an item for every slot for testing
     ✔ Bind Master Vault button with Master Vault tab and set master vault slot based on slot selection @done(24-01-05 21:55)

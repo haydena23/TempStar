@@ -906,12 +906,12 @@
                   </item>
                   <item>
                    <property name="text">
-                    <string>Two Handed</string>
+                    <string>Two Handed / Instrument</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Ranged / Instrument</string>
+                    <string>Ranged</string>
                    </property>
                   </item>
                  </widget>
@@ -1335,6 +1335,11 @@ p, li { white-space: pre-wrap; }
                    <item>
                     <property name="text">
                      <string>Left Hand</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Two Hand</string>
                     </property>
                    </item>
                    <item>

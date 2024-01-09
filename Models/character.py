@@ -8,7 +8,6 @@ class Character:
         self.level = level
         self.champion_level = champion_level
         self.realm_rank = realm_rank
-        self.total_utility = 0
         self.base_stats = {
             'strength': 0, 'constitution': 0, 'dexterity': 0, 'quickness': 0,
             'piety': 0, 'intelligence': 0, 'empathy': 0, 'charisma': 0,

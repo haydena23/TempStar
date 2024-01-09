@@ -1,7 +1,9 @@
 from Models.races import *
 
 class ClassType:
-    def __init__(self, name, skills, magic_skills, melee_skills, dual_wield_skills, archery_skills, allowed_races: RaceType, armor_types, realm):
+    def __init__(self, name, skills, magic_skills, melee_skills, dual_wield_skills,
+                 archery_skills, allowed_races: RaceType, armor_types, realm,
+                 weaponry, shield_types):
         self.name = name
         self.skills = skills
         self.magic_skills = magic_skills
@@ -11,6 +13,8 @@ class ClassType:
         self.allowed_races = allowed_races
         self.armor_types = armor_types
         self.realm = realm
+        self.weaponry = weaponry
+        self.shield_types = shield_types
 
 ##################################
 #       Hibernian Classes
@@ -42,7 +46,22 @@ Armsman = ClassType(
                  'Studded',
                  'Chain',
                  'Plate'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry = {
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Two Handed',
+        'Polearm',
+        'Crossbow',
+        'Shield'
+    },
+    shield_types = {
+        'Small',
+        'Medium',
+        'Large'
+    }
 )
 
 Cabalist = ClassType(
@@ -63,7 +82,14 @@ Cabalist = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Cleric = ClassType(
@@ -85,7 +111,15 @@ Cleric = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small',
+                  'Medium'}
 )
 
 Friar = ClassType(
@@ -105,7 +139,14 @@ Friar = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Heretic = ClassType(
@@ -128,7 +169,15 @@ Heretic = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Flexible'
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Infiltrator = ClassType(
@@ -150,7 +199,15 @@ Infiltrator = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Crossbow'
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Mauler_Alb = ClassType(
@@ -162,7 +219,9 @@ Mauler_Alb = ClassType(
     archery_skills={},
     allowed_races={},
     armor_types={},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={},
+    shield_types={}
 )
 
 Mercenary = ClassType(
@@ -188,7 +247,16 @@ Mercenary = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shortbow'
+        'Shield'},
+    shield_types={'Small',
+                  'Medium'}
 )
 
 Minstrel = ClassType(
@@ -211,7 +279,15 @@ Minstrel = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Instrument'
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Necromancer = ClassType(
@@ -231,7 +307,14 @@ Necromancer = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Paladin = ClassType(
@@ -258,7 +341,17 @@ Paladin = ClassType(
                  'Studded',
                  'Chain',
                  'Plate'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Two Hand'
+        'Shield'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Reaver = ClassType(
@@ -283,7 +376,17 @@ Reaver = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Flexible',
+        'Shield'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Scout = ClassType(
@@ -305,7 +408,15 @@ Scout = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Studded'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield',
+        'Longbow'},
+    shield_types={'Small'}
 )
 
 Sorcerer = ClassType(
@@ -326,7 +437,14 @@ Sorcerer = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Theurgist = ClassType(
@@ -345,7 +463,14 @@ Theurgist = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 Wizard = ClassType(
@@ -365,7 +490,14 @@ Wizard = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Albion'}
+    realm={'Albion'},
+    weaponry={
+        'Staff',
+        'Slashing',
+        'Thrusting',
+        'Crushing',
+        'Shield'},
+    shield_types={'Small'}
 )
 
 ##################################
@@ -389,7 +521,13 @@ Animist = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Bainshee = ClassType(
@@ -408,7 +546,13 @@ Bainshee = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Bard = ClassType(
@@ -430,7 +574,14 @@ Bard = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Reinforced'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Instrument'},
+    shield_types={'Small'}
 )
 
 Blademaster = ClassType(
@@ -454,7 +605,15 @@ Blademaster = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Reinforced'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Shortbow'},
+    shield_types={'Small',
+                  'Medium'}
 )
 
 Champion = ClassType(
@@ -481,7 +640,16 @@ Champion = ClassType(
                  'Leather',
                  'Reinforced',
                  'Scale'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Large Weapons'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Druid = ClassType(
@@ -503,7 +671,13 @@ Druid = ClassType(
                  'Leather',
                  'Reinforced',
                  'Scale'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Eldritch = ClassType(
@@ -521,7 +695,13 @@ Eldritch = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Enchanter = ClassType(
@@ -539,7 +719,13 @@ Enchanter = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Hero = ClassType(
@@ -566,7 +752,18 @@ Hero = ClassType(
                  'Leather',
                  'Reinforced',
                  'Scale'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Large Weapons',
+              'Celtic Spear',
+              'Shortbow'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Mauler_Hib = ClassType(
@@ -578,7 +775,9 @@ Mauler_Hib = ClassType(
     archery_skills={},
     allowed_races={},
     armor_types={},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={},
+    shield_types={}
 )
 
 Mentalist = ClassType(
@@ -598,7 +797,13 @@ Mentalist = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Nightshade = ClassType(
@@ -618,7 +823,13 @@ Nightshade = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Ranger = ClassType(
@@ -639,7 +850,14 @@ Ranger = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Reinforced'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Recursive Bow'},
+    shield_types={'Small'}
 )
 
 Valewalker = ClassType(
@@ -655,7 +873,14 @@ Valewalker = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Scythe'},
+    shield_types={'Small'}
 )
 
 Vampiir = ClassType(
@@ -667,7 +892,9 @@ Vampiir = ClassType(
     archery_skills={},
     allowed_races={},
     armor_types={},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={},
+    shield_types={}
 )
 
 Warden = ClassType(
@@ -693,7 +920,16 @@ Warden = ClassType(
                  'Leather',
                  'Reinforced',
                  'Scale'},
-    realm={'Hibernia'}
+    realm={'Hibernia'},
+    weaponry={'Staff',
+              'Blade',
+              'Blunt',
+              'Piercing',
+              'Shield',
+              'Shortbow'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 ##################################
@@ -719,7 +955,15 @@ Berserker = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Studded'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Thrown',
+              'Two Handed'},
+    shield_types={'Small'}
 )
 
 Bonedancer = ClassType(
@@ -739,7 +983,13 @@ Bonedancer = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Healer = ClassType(
@@ -761,7 +1011,13 @@ Healer = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Hunter = ClassType(
@@ -783,7 +1039,16 @@ Hunter = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Studded'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Spear',
+              'Composite Bow',
+              'Two Handed'},
+    shield_types={'Small'}
 )
 
 Mauler_Mid = ClassType(
@@ -795,7 +1060,9 @@ Mauler_Mid = ClassType(
     archery_skills={},
     allowed_races={},
     armor_types={},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={},
+    shield_types={}
 )
 
 Runemaster = ClassType(
@@ -815,7 +1082,13 @@ Runemaster = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Savage = ClassType(
@@ -838,7 +1111,15 @@ Savage = ClassType(
     armor_types={'Cloth',
                  'Leather',
                  'Studded'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Hand to Hand',
+              'Two Handed'},
+    shield_types={'Small'}
 )
 
 Shadowblade = ClassType(
@@ -860,7 +1141,15 @@ Shadowblade = ClassType(
                    },
     armor_types={'Cloth',
                  'Leather'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Thrown',
+              'Two Handed'},
+    shield_types={}
 )
 
 Shaman = ClassType(
@@ -883,7 +1172,13 @@ Shaman = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Skald = ClassType(
@@ -906,7 +1201,15 @@ Skald = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Two Handed'},
+    shield_types={'Small',
+                  'Medium'}
 )
 
 Spiritmaster = ClassType(
@@ -925,7 +1228,13 @@ Spiritmaster = ClassType(
                    NoRace
                    },
     armor_types={'Cloth'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield'},
+    shield_types={'Small'}
 )
 
 Thane = ClassType(
@@ -950,7 +1259,16 @@ Thane = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Two Handed'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Valkyrie = ClassType(
@@ -974,7 +1292,17 @@ Valkyrie = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Spear',
+              'Two Handed'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )
 
 Warlock = ClassType(
@@ -986,7 +1314,9 @@ Warlock = ClassType(
     archery_skills={},
     allowed_races={},
     armor_types={},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={},
+    shield_types={}
 )
 
 Warrior = ClassType(
@@ -1011,5 +1341,15 @@ Warrior = ClassType(
                  'Leather',
                  'Studded',
                  'Chain'},
-    realm={'Midgard'}
+    realm={'Midgard'},
+    weaponry={'Staff',
+              'Sword',
+              'Axe',
+              'Hammer',
+              'Shield',
+              'Two Handed',
+              'Thrown'},
+    shield_types={'Small',
+                  'Medium',
+                  'Large'}
 )

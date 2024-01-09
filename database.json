@@ -305,8 +305,7 @@
                 "dexterity_cap": 6,
                 "crush_resist": 3,
                 "slash_resist": 3,
-                "thrust_resist": 3,
-                "melee_speed": 8
+                "thrust_resist": 3
             },
             "single_utility": 142.0,
             "total_utility": 162.0,
@@ -422,6 +421,85 @@
             "dps": 0,
             "speed": 0,
             "damage_type": "",
+            "shield_size": ""
+        },
+        {
+            "slot": "Two Hand",
+            "name": "Hammer of Howling Might",
+            "stats": {
+                "strength": 25,
+                "quickness": 22,
+                "quickness_cap": 3,
+                "all_melee_skills": 3,
+                "melee_speed": 4,
+                "melee_damage": 4,
+                "style_damage": 4
+            },
+            "single_utility": 122.3,
+            "total_utility": 137.3,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Two Handed",
+            "quality": "100%",
+            "dps": 16.5,
+            "speed": 5.8,
+            "damage_type": "Crush",
+            "shield_size": ""
+        },
+        {
+            "slot": "Ranged",
+            "name": "Lothissi's Crossbow",
+            "stats": {
+                "dexterity": 22,
+                "quickness": 22,
+                "spell_speed": 2,
+                "dexterity_cap": 6,
+                "energy_resist": 5,
+                "spirit_resist": 5
+            },
+            "single_utility": 71.3,
+            "total_utility": 71.3,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Crossbow",
+            "quality": "96%",
+            "dps": 16.2,
+            "speed": 4.9,
+            "damage_type": "Slash",
+            "shield_size": ""
+        },
+        {
+            "slot": "Ranged",
+            "name": "Lothissi's Crossbow",
+            "stats": {
+                "dexterity": 22,
+                "quickness": 22,
+                "spell_speed": 2,
+                "dexterity_cap": 6,
+                "energy_resist": 5,
+                "spirit_resist": 5
+            },
+            "single_utility": 71.3,
+            "total_utility": 71.3,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Crossbow",
+            "quality": "96%",
+            "dps": 16.2,
+            "speed": 4.9,
+            "damage_type": "Slash",
             "shield_size": ""
         }
     ]

@@ -48,6 +48,7 @@ def calculateNowStats(self):
                                 self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
                             except:
                                 pass
+        allSkillsAdjust(self)
         adjustBaseCapFromStatCap(self)
         skillsTable = self.findChild(QTableWidget, 'resistsTable')
         skillsTable.resizeColumnToContents(2)
@@ -60,6 +61,44 @@ def calculateNowStats(self):
                 if slot not in weaponsNotAllowed:
                     totalUtility += item.total_utility
         self.findChild(QLabel, 'totalUtilityValue').setText(f"( {totalUtility} )")
+        
+def allSkillsAdjust(self):
+    skillsTable = self.findChild(QTableWidget, 'skillsTable')
+    melee_adjust = min(get_bonus_value(self, 'All Melee Skills'), get_bonus_cap_value(self, 'All Melee Skills'))
+    magic_adjust = min(get_bonus_value(self, 'All Magic Skills'), get_bonus_cap_value(self, 'All Magic Skills'))
+    dual_adjust = min(get_bonus_value(self, 'All Dual Wielding Skills'), get_bonus_cap_value(self, 'All Dual Wielding Skills'))
+    archery_adjust = min(get_bonus_value(self, 'All Archery Skills'), get_bonus_cap_value(self, 'All Archery Skills'))
+    for row in range(skillsTable.rowCount()):
+        if skillsTable.item(row, 0).text() in self.character.melee_skills:
+            currentValue = int(self.skillsTable.item(row, 1).text())
+            adjustedValue = QTableWidgetItem(str(melee_adjust + currentValue))
+            skillsTable.setItem(row, 1, adjustedValue)
+        if skillsTable.item(row, 0).text() in self.character.magic_skills:
+            currentValue = int(self.skillsTable.item(row, 1).text())
+            adjustedValue = QTableWidgetItem(str(magic_adjust + currentValue))
+            skillsTable.setItem(row, 1, adjustedValue)
+        if skillsTable.item(row, 0).text() in self.character.dual_wield_skills:
+            currentValue = int(self.skillsTable.item(row, 1).text())
+            adjustedValue = QTableWidgetItem(str(dual_adjust + currentValue))
+            skillsTable.setItem(row, 1, adjustedValue)
+        if skillsTable.item(row, 0).text() in self.character.archery_skills:
+            currentValue = int(self.skillsTable.item(row, 1).text())
+            adjustedValue = QTableWidgetItem(str(archery_adjust + currentValue))
+            skillsTable.setItem(row, 1, adjustedValue)
+
+def get_bonus_value(self, bonus_name):
+    bonusesTableWidget = self.findChild(QTableWidget, 'bonusesTable')
+    for i in range(bonusesTableWidget.rowCount()):
+        if bonusesTableWidget.item(i, 0).text() == bonus_name:
+            return int(bonusesTableWidget.item(i, 1).text())
+    return 0
+
+def get_bonus_cap_value(self, bonus_name):
+    bonusesTableWidget = self.findChild(QTableWidget, 'bonusesTable')
+    for i in range(bonusesTableWidget.rowCount()):
+        if bonusesTableWidget.item(i, 0).text() == bonus_name:
+            return int(bonusesTableWidget.item(i, 2).text())
+    return 0
     
 def adjustBaseCapFromStatCap(self):
     if self.character:

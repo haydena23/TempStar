@@ -166,13 +166,16 @@ def populateAvailable(self):
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
     currentlyInWidget = self.findChild(QListWidget, 'currentlyInItemListWidget')
     currentlyInWidget.clear()
-    itemsToPickFrom = self.character.allAddedItems.get(self.vaultCurrentSlotText)
-    counter = 0       
-    for item in itemsToPickFrom:
-        currentlyInWidget.addItem(QListWidgetItem(item.name))
-        counter += 1
-    self.findChild(QGroupBox, 'currentlyInItemList').setTitle(f"Current in Item List : ( {counter} )")
-    currentlyInWidget.sortItems(Qt.SortOrder.AscendingOrder)
+    try:
+        itemsToPickFrom = self.character.allAddedItems.get(self.vaultCurrentSlotText)
+        counter = 0       
+        for item in itemsToPickFrom:
+            currentlyInWidget.addItem(QListWidgetItem(item.name))
+            counter += 1
+        self.findChild(QGroupBox, 'currentlyInItemList').setTitle(f"Current in Item List : ( {counter} )")
+        currentlyInWidget.sortItems(Qt.SortOrder.AscendingOrder)
+    except:
+        pass
 
 def vaultItemSingleClick(self):
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
