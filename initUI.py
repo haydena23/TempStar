@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QComboBox, QListWidget, QPushButton, QTabWidget, QCheckBox, QLabel
+from PyQt5.QtCore import Qt
 
 from Models.mappings import class_type_mapping, race_type_mapping, realm_rank_map
 
@@ -8,6 +9,9 @@ from changeFunctions import changeTab, vaultItemDoubleClick, vaultItemSingleClic
 from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick, vaultItemAddAll, vaultCurrentRemoveAll, populateAvailable
 from changeFunctions import resetFilterPage
 from statsHandler import checkTOADisplay
+
+from SCCalc.adjustUIfunctions import initSCArmorTypes, onChangeArmor, setArchtypes, initSCArchTypes, setLevelBox
+from SCCalc.adjustUIfunctions import setMaxImbue, createNewItem, deleteItem, onSCSlotChanged
 
 from newCharacter import create_new_character_on_open
 from Models.vault import loadVault
@@ -41,6 +45,14 @@ def initUI(self):
     configVaultClearFilterButton(self, changeTab)
     configFilterClearFilterButton(self, resetFilterPage)
     
+    # Spellcrafting
+    configSCArmorComboBox(self, onChangeArmor)
+    configSCArchtypesComboBox(self, setArchtypes, setArchtypes, setArchtypes, setArchtypes)
+    configSCLevelComboBox(self, setLevelBox)
+    configSCCreateButton(self, createNewItem)
+    configSCDeleteButton(self, deleteItem)
+    configSCSlotComboBox(self, onSCSlotChanged)
+    
 """
 Configure Class ComboBox
 """
@@ -53,6 +65,7 @@ def on_class_changed(self, class_type_mapping, change_class_callback):
     selected_class_type = class_type_mapping.get(selected_class_name)
     if selected_class_type:
         change_class_callback(self, selected_class_type)
+    initSCArmorTypes(self)
         
 """
 Configure Race ComboBox
@@ -174,7 +187,13 @@ def configSpellcraftButton(self, spellcraft_button_callback):
     self.spellcraftButton.clicked.connect(lambda: on_spellcraft_button_pressed(self, spellcraft_button_callback))
 
 def on_spellcraft_button_pressed(self, spellcraft_button_callback):
-    spellcraft_button_callback(self, 4, None)
+    try:
+        currentSelection = self.findChild(QListWidget, 'itemsListWidget').currentItem().text().split(":")[0]
+        index = self.findChild(QComboBox, 'scCurrentSlot').findText(currentSelection, Qt.MatchFlag.MatchExactly)
+        self.findChild(QComboBox, 'scCurrentSlot').setCurrentIndex(index)
+        spellcraft_button_callback(self, 4, None)
+    except Exception as e:
+        spellcraft_button_callback(self, 4, None)
     
 """
 Configure Tab Widget
@@ -187,6 +206,13 @@ def configTabWidget(self, tab_widget_callback):
 def on_tab_widget_changed(self, tab_widget_callback):
     index = self.tabWidget.currentIndex()
     selected_slot = self.findChild(QListWidget, 'itemsListWidget').currentItem().text().split(":")[0]
+    try:
+        currentSelection = self.findChild(QListWidget, 'itemsListWidget').currentItem().text().split(":")[0]
+        indexOfSlot = self.findChild(QComboBox, 'scCurrentSlot').findText(currentSelection, Qt.MatchFlag.MatchExactly)
+        if indexOfSlot != -1:
+            self.findChild(QComboBox, 'scCurrentSlot').setCurrentIndex(indexOfSlot)
+    except Exception as e:
+        pass
     tab_widget_callback(self, index, selected_slot)
     
 """
@@ -334,3 +360,89 @@ def configFilterSearchButton(self, filter_search_callback):
 def on_filter_search_button_pressed(self, filter_search_callback):
     self.findChild(QLabel, 'filterLabel').setText("Filter Status: Active")
     filter_search_callback(self, 2, None)
+    
+"""
+Configure SC Armor Combo Box
+"""
+
+def configSCArmorComboBox(self, sc_armor_combobox_slot_callback):
+    self.scArmorComboBox = self.findChild(QComboBox, 'scArmorTypeCombo')
+    initSCArmorTypes(self)
+    self.scArmorComboBox.currentIndexChanged.connect(lambda: on_sc_armor_combobox_changed(self, sc_armor_combobox_slot_callback))
+
+def on_sc_armor_combobox_changed(self, sc_armor_combobox_slot_callback):
+    sc_armor_combobox_slot_callback(self)
+    
+"""
+Configure SC Archtype Combo Box
+"""
+
+def configSCArchtypesComboBox(self, sc_archtype1_combobox_callback, sc_archtype2_combobox_callback, sc_archtype3_combobox_callback, sc_archtype4_combobox_callback):
+    self.scArchtype1 = self.findChild(QComboBox, 'statCategory1')
+    self.scArchtype2 = self.findChild(QComboBox, 'statCategory2')
+    self.scArchtype3 = self.findChild(QComboBox, 'statCategory3')
+    self.scArchtype4 = self.findChild(QComboBox, 'statCategory4')
+    initSCArchTypes(self)
+    for i in range(1, 5):
+        setArchtypes(self, self.findChild(QComboBox, f'statCategory{i}'))
+    self.scArchtype1.currentIndexChanged.connect(lambda: on_sc_archtype1_combobox_changed(self, sc_archtype1_combobox_callback))
+    self.scArchtype2.currentIndexChanged.connect(lambda: on_sc_archtype2_combobox_changed(self, sc_archtype2_combobox_callback))
+    self.scArchtype3.currentIndexChanged.connect(lambda: on_sc_archtype3_combobox_changed(self, sc_archtype3_combobox_callback))
+    self.scArchtype4.currentIndexChanged.connect(lambda: on_sc_archtype4_combobox_changed(self, sc_archtype4_combobox_callback))
+
+def on_sc_archtype1_combobox_changed(self, sc_armor_combobox_slot_callback):
+    sc_armor_combobox_slot_callback(self, self.scArchtype1)
+    
+def on_sc_archtype2_combobox_changed(self, sc_armor_combobox_slot_callback):
+    sc_armor_combobox_slot_callback(self, self.scArchtype2)
+    
+def on_sc_archtype3_combobox_changed(self, sc_armor_combobox_slot_callback):
+    sc_armor_combobox_slot_callback(self, self.scArchtype3)
+    
+def on_sc_archtype4_combobox_changed(self, sc_armor_combobox_slot_callback):
+    sc_armor_combobox_slot_callback(self, self.scArchtype4)
+
+"""
+Configure SC Level Combo Box
+"""
+ 
+def configSCLevelComboBox(self, sc_level_combobox_callback):
+    self.scLevelCombobox = self.findChild(QComboBox, 'scArmorLevelCombo')
+    setMaxImbue(self, self.scLevelCombobox.currentText())
+    self.scLevelCombobox.currentIndexChanged.connect(lambda: on_sc_level_combobox_changed(self, sc_level_combobox_callback))
+
+def on_sc_level_combobox_changed(self, sc_level_combobox_callback):
+    sc_level_combobox_callback(self)
+    
+"""
+Configure SC Create Push Button
+"""
+
+def configSCCreateButton(self, sc_create_button_callback):
+    self.createButton = self.findChild(QPushButton, 'scCreateNewButton')
+    self.createButton.clicked.connect(lambda: on_sc_create_button_pressed(self, sc_create_button_callback))
+
+def on_sc_create_button_pressed(self, sc_create_button_callback):
+    sc_create_button_callback(self)
+    
+"""
+Configure SC Delete Push Button
+"""
+
+def configSCDeleteButton(self, sc_delete_button_callback):
+    self.deleteButton = self.findChild(QPushButton, 'scDeleteItemButton')
+    self.deleteButton.clicked.connect(lambda: on_sc_delete_button_pressed(self, sc_delete_button_callback))
+
+def on_sc_delete_button_pressed(self, sc_delete_button_callback):
+    sc_delete_button_callback(self)
+    
+"""
+Config SC Slot Combobox
+"""
+
+def configSCSlotComboBox(self, sc_slot_combobox_callback):
+    self.scCurrentSlot = self.findChild(QComboBox, 'scCurrentSlot')
+    self.scCurrentSlot.currentIndexChanged.connect(lambda: on_sc_current_slot_changed(self, sc_slot_combobox_callback))
+    
+def on_sc_current_slot_changed(self, on_sc_current_slot_changed):
+    on_sc_current_slot_changed(self)

@@ -46,8 +46,13 @@ Todo:
     ✔ Change class to stop deleting vault. Carry it over to new class @done(24-01-05 15:49)
     ✔ Add weaponry to classes (i.e allowed: Staves, small shields etc.) @done(24-01-09 01:49)
   > Spellcrafting Tab
-    - Bind equipment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection
+    ✔ Bind equipment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection @done(24-01-10 21:05)
+    - Completely fill out armor_maps
+    - Disable armor if non-armor selected
   > Filter Tab
+    - Implement search by quality
+    - Search by weapon type
+    - Search by armor type
   > Notes for Mythirian when making vault
     - Mark resists as 'mythical_<resist>_resist'
     - Look at self.character.toa_bonuses to see all bonuses

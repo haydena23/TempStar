@@ -175,7 +175,7 @@ Heretic = ClassType(
         'Slashing',
         'Thrust',
         'Crushing',
-        'Flexible'
+        'Flexible',
         'Shield'},
     shield_types={'Small'}
 )
@@ -205,7 +205,7 @@ Infiltrator = ClassType(
         'Slashing',
         'Thrust',
         'Crushing',
-        'Crossbow'
+        'Crossbow',
         'Shield'},
     shield_types={'Small'}
 )
@@ -253,7 +253,7 @@ Mercenary = ClassType(
         'Slashing',
         'Thrust',
         'Crushing',
-        'Shortbow'
+        'Shortbow',
         'Shield'},
     shield_types={'Small',
                   'Medium'}
@@ -285,7 +285,7 @@ Minstrel = ClassType(
         'Slashing',
         'Thrust',
         'Crushing',
-        'Instrument'
+        'Instrument',
         'Shield'},
     shield_types={'Small'}
 )
@@ -347,7 +347,7 @@ Paladin = ClassType(
         'Slashing',
         'Thrust',
         'Crushing',
-        'Two Hand'
+        'Two Hand',
         'Shield'},
     shield_types={'Small',
                   'Medium',

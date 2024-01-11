@@ -10,11 +10,14 @@ from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox, QTa
 from PyQt5.QtWidgets import QGroupBox, QTextEdit, QSpinBox
 from PyQt5.QtCore import Qt
 
+from SCCalc.adjustUIfunctions import resetSpellcraftUI, checkForItemsForDisable
+
 def changeClass(self, class_type: ClassType):
     new_character_change(self, class_type)
     slotSelectionWidget = self.findChild(QListWidget, 'slotSelectionListWidget')
     slotSelectionWidget.clear()
     slotSelectionWidget.addItem(QListWidgetItem(str("<Empty Slot>")))
+    resetSpellcraftUI(self)
 
 def changeRace(self, race_type: RaceType):
     updateResistsFromRace(self, race_type)
@@ -157,6 +160,7 @@ def changeTab(self, index, slot):
     setItemsListWidgetSlots(self, itemsListWidget)
     slotSelectionWidget = self.findChild(QListWidget, 'slotSelectionListWidget')
     slotSelectionWidget.sortItems(Qt.SortOrder.AscendingOrder)
+    checkForItemsForDisable(self)
 
 def resetOnVaultComboBoxChange(self):
     self.character.copyTempToCurrent()
@@ -199,7 +203,6 @@ def populateVault(self):
     filterFlagText = self.findChild(QLabel, 'filterLabel').text().split(": ")[1]
     filterFlag = False
     filters = []
-    print(filterFlagText)
     if filterFlagText == "Active":
         filters = setFilters(self)
         if len(filters) != 0:
@@ -207,10 +210,10 @@ def populateVault(self):
         else:
             filterFlag = False
             self.findChild(QLabel, 'filterLabel').setText("Filter Status: Inactive")
-    print(filters)
     try:
         availableVaultItems = self.character.vault.get(self.vaultCurrentSlotText)
         addedItemNames = [item.name for item in self.character.allAddedItems.get(self.vaultCurrentSlotText)]
+        print(availableVaultItems[1].item_type)
         for item in availableVaultItems:
             if item.name not in addedItemNames and currentLevel >= item.bonus_level:
                 if item.item_type in self.character.class_type.weaponry or item.item_type in self.character.class_type.armor_types or item.item_type == "Magical":
@@ -219,17 +222,14 @@ def populateVault(self):
                         if item.usable == "All" or playerClass in item.usable:
                             if item.item_type == 'Shield' and item.shield_size not in self.character.class_type.shield_types:
                                 pass
-                            if (item.slot == 'Left Hand' and item.item_type != 'Shield' and 
+                            elif (item.slot == 'Left Hand' and item.item_type != 'Shield' and 
                                 len(self.character.dual_wield_skills) == 0 and self.vaultCurrentSlotText == 'Left Hand'):
                                 pass
-                            if filterFlag:
-                                print("CALLED HERE")
+                            elif filterFlag:
                                 if all(item.stats.get(f['stat'], 0) >= f['value'] for f in filters):
-                            #         print(item.stats.get(f['stat']) >= f['value'] for f in filters)
                                     vaultAvailableWidget.addItem(QListWidgetItem(item.name))
                                     counter += 1  
                             else:
-                                print("called")
                                 vaultAvailableWidget.addItem(QListWidgetItem(item.name))
                                 counter += 1
         self.findChild(QGroupBox, 'availableItemListGroupBox').setTitle(f"Available Item List : ( {counter} )")
