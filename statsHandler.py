@@ -33,24 +33,20 @@ def calculateNowStats(self):
             clearTable(self, table)
             for name, item in self.character.currentItems.items():
                 if item is not None:
-                    if item.slot in weaponsNotAllowed:
-                        pass
-                    if item.bonus_level > currentLevel:
-                        pass
-                    else:
-
-                        for stat, value in item.stats.items():
-                            if '_' in stat:
-                                stat = ' '.join(word.capitalize() for word in stat.split('_'))
-                            else:
-                                stat = stat.capitalize()
-                            try:
-                                statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
-                                currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
-                                valueWidget = QTableWidgetItem(str(value + currentValue))
-                                self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
-                            except:
-                                pass
+                    if item.slot not in weaponsNotAllowed:
+                        if item.bonus_level <= currentLevel:
+                            for stat, value in item.stats.items():
+                                if '_' in stat:
+                                    stat = ' '.join(word.capitalize() for word in stat.split('_'))
+                                else:
+                                    stat = stat.capitalize()
+                                try:
+                                    statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
+                                    currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
+                                    valueWidget = QTableWidgetItem(str(value + currentValue))
+                                    self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
+                                except Exception as e:
+                                    print(f"Error in calculateNowStats: {e}")
         allSkillsAdjust(self)
         adjustBaseCapFromStatCap(self)
         skillsTable = self.findChild(QTableWidget, 'resistsTable')
@@ -131,6 +127,7 @@ def adjustSkillsFromRealmRank(self, realm_rank):
             self.skillsTable.setItem(row, 1, correctedSkillWidget)
             self.skillsTable.setItem(row, 2, correctedSkillCapWidget)
         calculateDifferenceOfStatAndCap(self, 'skillsTable')
+        
 def autoUpdateRealmRank(self):
     currentRealmRank = realm_rank_map.get(self.findChild(QComboBox, 'realmRankComboBox').currentText())
     adjustSkillsFromRealmRank(self, currentRealmRank)

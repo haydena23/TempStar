@@ -2,8 +2,10 @@ from PyQt5.QtWidgets import QComboBox, QLabel, QListWidget, QCheckBox, QPushButt
 from PyQt5.QtWidgets import QListWidgetItem
 from PyQt5.QtCore import Qt
 
-from SCCalc.sc_maps import alb_arch_maps, arch_map, imbue_caps
+from SCCalc.sc_maps import alb_arch_maps, arch_map, imbue_caps, stat_values_by_level
 from SCCalc.calculator import onNewItemCreated
+
+from changeFunctions import autoUpdateRealmRank
 
 def resetSpellcraftUI(self):
     resetArchtypes(self)
@@ -14,7 +16,6 @@ def initSCArmorTypes(self):
     for armor_type in self.character.class_type.armor_types:
         armor.append(armor_type)
     armor.sort()
-    currentSlot = self.findChild(QComboBox, 'scArmorTypeCombo').currentText()
     for index, armortype in enumerate(armor):
         self.scArmorComboBox.insertItem(index, armortype)
         
@@ -48,11 +49,19 @@ def resetArchtypes(self):
 def setArchtypes(self, box):
     archBox = box.objectName()[-1]
     currentArchtype = box.currentText()
-    statBox = self.findChild(QComboBox, f'gemCombo{archBox}')
+    statBox = self.findChild(QComboBox, f'statCombo{archBox}')
     statBox.clear()
     currentRealm = self.character.class_type.realm
     for index, stat in enumerate(arch_map[currentRealm][currentArchtype]):
         statBox.insertItem(index, stat.replace("_"," ").title())
+        
+    valueBox = self.findChild(QComboBox, f'statValue{archBox}')
+    valueBox.clear()
+    values = list(stat_values_by_level[currentArchtype])
+    values.sort()
+    for value in values:
+        valueBox.addItem(str(value))
+    autoUpdateRealmRank(self)
         
 def setFifthSlotBonus(self):
     currentLevel = int(self.scLevelCombobox.currentText())
@@ -70,7 +79,42 @@ def onSCSlotChanged(self):
     currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
     index = self.findChild(QComboBox, 'vaultCurrentSlot').findText(currentSlot)
     self.findChild(QComboBox, 'vaultCurrentSlot').setCurrentIndex(index)
-
+    setSCItemsListWidget(self)
+    
+def onSCStatComboBoxChanged(self, box):
+    currentItem = self.findChild(QListWidget, 'scItemsListWidget').currentItem().text()
+    currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
+    vaultCopy = None
+    
+    for index, item in enumerate(self.character.vault[currentSlot]):
+        if item.name == currentItem:
+            vaultCopy = item
+            
+    statToSet = {}
+    comboboxes = [self.scStatComboBox1, self.scStatComboBox2, self.scStatComboBox3, self.scStatComboBox4]
+    for index, box in enumerate(comboboxes):
+        if box.currentText() != '<Empty>':
+            statToSet[box.currentText().lower().replace(" ","_")] = int(self.findChild(QComboBox, f'statValue{box.objectName()[-1]}').currentText())
+    vaultCopy.setStats(statToSet)
+    autoUpdateRealmRank(self)
+    
+def updateAfterValueChange(self):
+    currentItem = self.findChild(QListWidget, 'scItemsListWidget').currentItem().text()
+    currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
+    vaultCopy = None
+    
+    for index, item in enumerate(self.character.vault[currentSlot]):
+        if item.name == currentItem:
+            vaultCopy = item
+            
+    statToSet = {}
+    comboboxes = [self.scStatComboBox1, self.scStatComboBox2, self.scStatComboBox3, self.scStatComboBox4]
+    for index, box in enumerate(comboboxes):
+        if box.currentText() != '<Empty>':
+            statToSet[box.currentText().lower().replace(" ","_")] = int(self.findChild(QComboBox, f'statValue{box.objectName()[-1]}').currentText())
+    vaultCopy.setStats(statToSet)
+    autoUpdateRealmRank(self)
+    
 #####################################################
 ############# Item Handler
 #####################################################
@@ -78,31 +122,28 @@ def onSCSlotChanged(self):
 def checkForItemsForDisable(self):
     scCurrentSlot = self.findChild(QListWidget, 'scItemsListWidget').count()
     if scCurrentSlot == 0:
-        self.findChild(QCheckBox, 'autonameCheckbox').setEnabled(False)
         for i in range(1, 5):
             self.findChild(QComboBox, f'statCategory{i}').setEnabled(False)
-            self.findChild(QComboBox, f'gemCombo{i}').setEnabled(False)
-            self.findChild(QComboBox, f'gem{i}Value').setEnabled(False)
+            self.findChild(QComboBox, f'statCombo{i}').setEnabled(False)
+            self.findChild(QComboBox, f'statValue{i}').setEnabled(False)
         self.findChild(QComboBox, 'slot5Bonus').setEnabled(False)
         self.findChild(QListWidget, 'procsList').setEnabled(False)
         self.findChild(QPushButton, 'scClearStatsButton').setEnabled(False)
         self.findChild(QPushButton, 'scDeleteItemButton').setEnabled(False)
-        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(False)
-        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(False)
+        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(True)
+        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(True)
         self.findChild(QLineEdit, 'scArmorNameBox').setEnabled(False)
     else:
-        self.findChild(QCheckBox, 'autonameCheckbox').setEnabled(True)
         for i in range(1, 5):
             self.findChild(QComboBox, f'statCategory{i}').setEnabled(True)
-            self.findChild(QComboBox, f'gemCombo{i}').setEnabled(True)
-            self.findChild(QComboBox, f'gem{i}Value').setEnabled(True)
+            self.findChild(QComboBox, f'statCombo{i}').setEnabled(True)
+            self.findChild(QComboBox, f'statValue{i}').setEnabled(True)
         self.findChild(QComboBox, 'slot5Bonus').setEnabled(True)
         self.findChild(QListWidget, 'procsList').setEnabled(True)
         self.findChild(QPushButton, 'scClearStatsButton').setEnabled(True)
         self.findChild(QPushButton, 'scDeleteItemButton').setEnabled(True)
-        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(True)
-        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(True)
-        self.findChild(QLineEdit, 'scArmorNameBox').setEnabled(True)
+        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(False)
+        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(False)
         
 def createNewItem(self):
     itemListWidget = self.findChild(QListWidget, 'scItemsListWidget')
@@ -113,11 +154,28 @@ def createNewItem(self):
     index = self.findChild(QComboBox, 'vaultCurrentSlot').findText(currentSlot)
     self.findChild(QComboBox, 'vaultCurrentSlot').setCurrentIndex(index)
     
+    existingNumbers = []
+    for i in range(itemListWidget.count()):
+        itemText = itemListWidget.item(i).text()
+        try:
+            num = int(itemText.split()[-1])
+            existingNumbers.append(num)
+        except Exception as e:
+            print(f"Error in createNewItem: {e}")
+
+    existingNumbers.sort()
+    missingNumber = 1
+    for num in existingNumbers:
+        if num == missingNumber:
+            missingNumber += 1
+        else:
+            break
+    
     name = f'Level {currentItemLevel} {armorType} {currentSlot}'
-    nameCopies = itemListWidget.findItems(name, Qt.MatchFlag.MatchContains)
+    nameMissing = f'Level {currentItemLevel} {armorType} {currentSlot} {missingNumber}'
+    nameCopies = itemListWidget.findItems(name, Qt.MatchFlag.MatchExactly)
     if len(nameCopies) != 0:
-        count = str(len(nameCopies))
-        name = f'Level {currentItemLevel} {armorType} {currentSlot} {count}'
+        name = nameMissing
     newItem = QListWidgetItem(name)
     itemListWidget.addItem(newItem)
     itemListWidget.setCurrentItem(newItem)
@@ -126,10 +184,57 @@ def createNewItem(self):
     
 def deleteItem(self):
     itemListWidget = self.findChild(QListWidget, 'scItemsListWidget')
+    currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
     try:
-        currentlyRow = itemListWidget.currentRow()
-        itemToDelete = itemListWidget.takeItem(currentlyRow)
+        currentRow = itemListWidget.currentRow()
+        itemToDelete = itemListWidget.takeItem(currentRow)
+        itemName = itemToDelete.text()
         del itemToDelete
+        itemObjectVault = None
+        itemObjectAllAddedItems = None
+        
+        for index, item in enumerate(self.character.vault[currentSlot]):
+            if item.name == itemName:
+                itemObjectVault = self.character.vault[currentSlot][index]
+        for index, item in enumerate(self.character.allAddedItems[currentSlot]):
+            if item.name == itemName:
+                itemObjectAllAddedItems = self.character.allAddedItems[currentSlot][index]
+        self.character.removeFromVault(currentSlot, itemObjectVault)
+        self.character.removeFromAllItems(currentSlot, itemObjectAllAddedItems)
+        self.character.setCurrentItem(currentSlot, None)
+        self.character.setTempItem(currentSlot, None)
+        
+        itemsList = self.findChild(QListWidget, 'itemsListWidget')
+        itemListWidgetItem = itemsList.findItems(currentSlot, Qt.MatchFlag.MatchStartsWith)[0]
+        if "<Empty Slot>" not in itemListWidgetItem.text():
+            itemListWidgetItem.setText(f"{currentSlot}:\t\t<Empty Slot>")
         checkForItemsForDisable(self)
+        autoUpdateRealmRank(self)
+                
     except Exception as e:
-        print(f'Error: {e}')
+        print(f'Error in deleteItem: {e}')
+        
+def setSCItemsListWidget(self):
+    itemsListWidget = self.findChild(QListWidget, 'scItemsListWidget')
+    currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
+    
+    itemsListWidget.clear()
+    
+    try:
+        availableVaultItems = self.character.vault.get(currentSlot)
+        
+        for item in availableVaultItems:
+            if item.slot == currentSlot and item.crafted == "Yes":
+                if item.item_type in self.character.class_type.weaponry or item.item_type in self.character.class_type.armor_types:
+                    if item.realm == "All" or item.realm == self.character.class_type.realm:
+                        if item.item_type == 'Shield' and item.shield_size not in self.character.class_type.shield_types:
+                            pass
+                        elif (item.slot == 'Left Hand' and item.item_type != 'Shield' and 
+                            len(self.character.dual_wield_skills) == 0 and currentSlot == 'Left Hand'):
+                            pass
+                        else:
+                            itemsListWidget.addItem(QListWidgetItem(item.name))
+        
+        itemsListWidget.sortItems(Qt.SortOrder.AscendingOrder)
+    except Exception as e:
+        print(f"Error in setSCItemsListWidget: {e}")

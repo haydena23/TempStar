@@ -25,7 +25,7 @@ stat_names = {
 
 power_names = {
     "<Empty>": None,
-    "power": "Mystical Essence Jewel",
+    "power_points": "Mystical Essence Jewel",
 }
 
 hit_points_names = {
@@ -48,8 +48,6 @@ resists_names = {
 
 alb_skills_names = {
     "<Empty>": None,
-    "all_magic_skills": "Finesse Fervor Sigil",
-    "all_melee_skills": "Finesse War Sigil",
     "archery_skill": "Airy War Sigil",
     "aura_manipulation_skill": "Radiant Fervor Sigil",
     "body_magic_skill": "Heated Evocation Sigil",
@@ -85,10 +83,14 @@ alb_skills_names = {
     "wind_magic_skill": "Airy Evocation Sigil"
 }
 
+alb_all_skills = {
+    "<Empty>": None,
+    "all_magic_skills": "Finesse Fervor Sigil",
+    "all_melee_skills": "Finesse War Sigil",    
+}
+
 hib_skills_names = {
     "<Empty>": None,
-    "all_magic_skills": "Finesse Nature Spell Stone",
-    "all_melee_skills": "Finesse War Spell Stone",
     "arboreal_path_skill": "Steaming Nature Spell Stone",
     "archery_skill": "Airy War Spell Stone",
     "blades_skill": "Watery War Spell Stone",
@@ -120,10 +122,14 @@ hib_skills_names = {
     "void_magic_skill": "Icy Arcane Spell Stone"
 }
 
+hib_all_skills = {
+    "<Empty>": None,
+    "all_magic_skills": "Finesse Nature Spell Stone",
+    "all_melee_skills": "Finesse War Spell Stone",    
+}
+
 mid_skills_names = {
     "<Empty>": None,
-    "all_magic_skills": "Finesse Primal Rune",
-    "all_melee_skills": "Finesse War Rune",
     "archery_skill": "Airy War Rune",
     "augmentation_skill": "Airy Chaos Rune",
     "axe_skill": "Earthen War Rune",
@@ -152,14 +158,28 @@ mid_skills_names = {
     "stealth_skill": "Airy Battle Jewel"
 }
 
+mid_all_skills = {
+    "<Empty>": None,
+    "all_magic_skills": "Finesse Primal Rune",
+    "all_melee_skills": "Finesse War Rune",
+}
+
 imbue_cost_for_stats = {
-    'stats': {1, 3, 5, 7, 9, 11, 13, 15, 17, 19},
-    'power': {1, 2, 4, 8, 12, 16, 20, 24, 28, 32},
-    'hit_points': {1, 3, 5, 7, 9, 11, 13, 15, 17, 19},
-    'resists': {1, 2, 4, 8, 12, 16, 20, 24, 28, 32},
-    'alb_skills': {1, 5, 10, 15, 20, 25, 30, 35, 40, 45},
-    'hib_skills': {1, 5, 10, 15, 20, 25, 30, 35, 40, 45},
-    'mid_skills': {1, 5, 10, 15, 20, 25, 30, 35, 40, 45},
+    'Stats': {1, 3, 5, 7, 9, 11, 13, 15, 17, 19},
+    'Power': {1, 2, 4, 8, 12, 16, 20, 24, 28, 32},
+    'Hit Points': {1, 3, 5, 7, 9, 11, 13, 15, 17, 19},
+    'Resists': {1, 2, 4, 8, 12, 16, 20, 24, 28, 32},
+    'Skills': {1, 5, 10, 15, 20, 25, 30, 35, 40, 45},
+    'All Skills': {2}
+}
+
+stat_values_by_level = {
+    'Stats': {1, 4, 7, 10, 13, 16, 19, 22, 25, 28},
+    'Power': {1, 2, 3, 5, 7, 9, 11, 13, 15, 17},
+    'Hit Points': {4, 12, 20, 28, 36, 44, 52, 60, 68, 76},
+    'Resists': {1, 2, 3, 5, 7, 9, 11, 13, 15, 17},
+    'Skills': {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+    'All Skills': {1}
 }
 
 alb_arch_maps = {
@@ -167,7 +187,8 @@ alb_arch_maps = {
     "Power": power_names,
     "Hit Points": hit_points_names,
     "Resists": resists_names,
-    "Skills": alb_skills_names
+    "Skills": alb_skills_names,
+    "All Skills": alb_all_skills
 }
 
 hib_arch_maps = {
@@ -175,7 +196,8 @@ hib_arch_maps = {
     "Power": power_names,
     "Hit Points": hit_points_names,
     "Resists": resists_names,
-    "Skills": hib_skills_names
+    "Skills": hib_skills_names,
+    "All Skills": hib_all_skills
 }
 
 mid_arch_maps = {
@@ -183,7 +205,8 @@ mid_arch_maps = {
     "Power": power_names,
     "Hit Points": hit_points_names,
     "Resists": resists_names,
-    "Skills": mid_skills_names
+    "Skills": mid_skills_names,
+    "All Skills": mid_all_skills
 }
 
 arch_map = {

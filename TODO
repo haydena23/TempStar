@@ -49,6 +49,8 @@ Todo:
     ✔ Bind equipment spellcrafting button to spellcrafting page and set spellcrafting slot based on slot selection @done(24-01-10 21:05)
     - Completely fill out armor_maps
     - Disable armor if non-armor selected
+    - Prevent class change if SC active
+    - Add more conditions for new item creation, like shields in calculator.py
   > Filter Tab
     - Implement search by quality
     - Search by weapon type

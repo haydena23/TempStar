@@ -103,20 +103,22 @@ def setColorBasedOnDifference(self, table, row, difference):
                 item.setForeground(QBrush(QColor('red')))
                 
 def adjustStatsFromMythirian(self, capsDict, realCaps, table_name, baseStats, resistsStats):
+    currentLevel = int(self.findChild(QComboBox, 'levelComboBox').currentText())
     if self.character:
         try:
             myth = self.character.currentItems['Mythirian'].stats
             if myth is not None:
-                for mythical_key, base_keys in mythical_base_map.items():
-                    if mythical_key in myth:
-                        for bonus in mythical_base_map[mythical_key]:
-                            if bonus in capsDict:
-                                capsDict[bonus] = realCaps[bonus] + myth[mythical_key]
-                                if table_name == 'statsTable':
-                                    baseStats[bonus] = myth[mythical_key]
-                                if table_name == 'resistsTable':
-                                    resistsStats[bonus] = myth[mythical_key]
+                if self.character.currentItems['Mythirian'].bonus_level <= currentLevel:
+                    for mythical_key, base_keys in mythical_base_map.items():
+                        if mythical_key in myth:
+                            for bonus in mythical_base_map[mythical_key]:
+                                if bonus in capsDict:
+                                    capsDict[bonus] = realCaps[bonus] + myth[mythical_key]
+                                    if table_name == 'statsTable':
+                                        baseStats[bonus] = myth[mythical_key]
+                                    if table_name == 'resistsTable':
+                                        resistsStats[bonus] = myth[mythical_key]
                                     
-        except:
-            pass
+        except Exception as e:
+            print(f"Error in adjustStatsFromMythirian: {e}")
             

@@ -143,6 +143,12 @@ class Character:
     
     def removeFromAllItems(self, slot, item: Item):
         self.allAddedItems[slot].remove(item)
+        
+    def removeFromCurrentItem(self, slot, item: Item):
+        self.currentItems[slot].remove(item)
+        
+    def removeFromVault(self, slot, item: Item):
+        self.vault[slot].remove(item)
     
     def copyCurrentToTemp(self):
         self.temporaryItems = self.currentItems.copy()

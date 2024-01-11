@@ -11,7 +11,8 @@ from changeFunctions import resetFilterPage
 from statsHandler import checkTOADisplay
 
 from SCCalc.adjustUIfunctions import initSCArmorTypes, onChangeArmor, setArchtypes, initSCArchTypes, setLevelBox
-from SCCalc.adjustUIfunctions import setMaxImbue, createNewItem, deleteItem, onSCSlotChanged
+from SCCalc.adjustUIfunctions import setMaxImbue, createNewItem, deleteItem, onSCSlotChanged, onSCStatComboBoxChanged
+from SCCalc.adjustUIfunctions import updateAfterValueChange
 
 from newCharacter import create_new_character_on_open
 from Models.vault import loadVault
@@ -52,6 +53,8 @@ def initUI(self):
     configSCCreateButton(self, createNewItem)
     configSCDeleteButton(self, deleteItem)
     configSCSlotComboBox(self, onSCSlotChanged)
+    configSCStatComboBox(self, onSCStatComboBoxChanged)
+    configSCValueComboBox(self, updateAfterValueChange)
     
 """
 Configure Class ComboBox
@@ -189,11 +192,16 @@ def configSpellcraftButton(self, spellcraft_button_callback):
 def on_spellcraft_button_pressed(self, spellcraft_button_callback):
     try:
         currentSelection = self.findChild(QListWidget, 'itemsListWidget').currentItem().text().split(":")[0]
+        print(currentSelection)
         index = self.findChild(QComboBox, 'scCurrentSlot').findText(currentSelection, Qt.MatchFlag.MatchExactly)
-        self.findChild(QComboBox, 'scCurrentSlot').setCurrentIndex(index)
-        spellcraft_button_callback(self, 4, None)
+        if index == -1:
+            self.findChild(QComboBox, 'scCurrentSlot').setCurrentIndex(0)
+            spellcraft_button_callback(self, 4, None)
+        else:
+            self.findChild(QComboBox, 'scCurrentSlot').setCurrentIndex(index)
+            spellcraft_button_callback(self, 4, None)
     except Exception as e:
-        spellcraft_button_callback(self, 4, None)
+        print(f"Error at on_spellcraft_button_pressed: {e}")
     
 """
 Configure Tab Widget
@@ -446,3 +454,58 @@ def configSCSlotComboBox(self, sc_slot_combobox_callback):
     
 def on_sc_current_slot_changed(self, on_sc_current_slot_changed):
     on_sc_current_slot_changed(self)
+
+"""
+Config SC Stat Combobox
+"""
+
+def configSCStatComboBox(self, sc_stat_combo_box_callback):
+    self.scStatComboBox1 = self.findChild(QComboBox, 'statCombo1')
+    self.scStatComboBox2 = self.findChild(QComboBox, 'statCombo2')
+    self.scStatComboBox3 = self.findChild(QComboBox, 'statCombo3')
+    self.scStatComboBox4 = self.findChild(QComboBox, 'statCombo4')
+    self.scStatComboBox1.currentIndexChanged.connect(lambda: on_sc_stat_combo1_changed(self, sc_stat_combo_box_callback))
+    self.scStatComboBox2.currentIndexChanged.connect(lambda: on_sc_stat_combo2_changed(self, sc_stat_combo_box_callback))
+    self.scStatComboBox3.currentIndexChanged.connect(lambda: on_sc_stat_combo3_changed(self, sc_stat_combo_box_callback))
+    self.scStatComboBox4.currentIndexChanged.connect(lambda: on_sc_stat_combo4_changed(self, sc_stat_combo_box_callback))
+
+def on_sc_stat_combo1_changed(self, sc_stat_combo_box_callback):
+    sc_stat_combo_box_callback(self, self.scStatComboBox1)
+    
+def on_sc_stat_combo2_changed(self, sc_stat_combo_box_callback):
+    sc_stat_combo_box_callback(self, self.scStatComboBox2)
+    
+def on_sc_stat_combo3_changed(self, sc_stat_combo_box_callback):
+    sc_stat_combo_box_callback(self, self.scStatComboBox3)
+    
+def on_sc_stat_combo4_changed(self, sc_stat_combo_box_callback):
+    sc_stat_combo_box_callback(self, self.scStatComboBox4)
+
+"""
+Config SC Stat Combobox
+"""
+
+def configSCValueComboBox(self, sc_value_combo_box_callback):
+    self.scValueComboBox1 = self.findChild(QComboBox, 'statValue1')
+    self.scValueComboBox2 = self.findChild(QComboBox, 'statValue2')
+    self.scValueComboBox3 = self.findChild(QComboBox, 'statValue3')
+    self.scValueComboBox4 = self.findChild(QComboBox, 'statValue4')
+    self.scValueComboBox1.currentIndexChanged.connect(lambda: on_sc_value_combo1_changed(self, sc_value_combo_box_callback))
+    self.scValueComboBox2.currentIndexChanged.connect(lambda: on_sc_value_combo2_changed(self, sc_value_combo_box_callback))
+    self.scValueComboBox3.currentIndexChanged.connect(lambda: on_sc_value_combo3_changed(self, sc_value_combo_box_callback))
+    self.scValueComboBox4.currentIndexChanged.connect(lambda: on_sc_value_combo4_changed(self, sc_value_combo_box_callback))
+
+def on_sc_value_combo1_changed(self, sc_value_combo_box_callback):
+    print("Hello")
+    sc_value_combo_box_callback(self)
+    
+def on_sc_value_combo2_changed(self, sc_value_combo_box_callback):
+    print("Hello")
+    sc_value_combo_box_callback(self)
+    
+def on_sc_value_combo3_changed(self, sc_value_combo_box_callback):
+    print("Hello")
+    sc_value_combo_box_callback(self)
+    
+def on_sc_value_combo4_changed(self, sc_value_combo_box_callback):
+    sc_value_combo_box_callback(self)

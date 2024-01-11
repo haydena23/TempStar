@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QComboBox
 
 from Models.item import Item
+from changeFunctions import autoUpdateRealmRank
 
 def onNewItemCreated(self, name):
     slot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
@@ -29,3 +30,5 @@ def onNewItemCreated(self, name):
     self.character.addToVault(slot, newSCItem)
     self.character.addToAllItems(slot, newSCItem)
     self.character.setCurrentItem(slot, newSCItem)
+    self.character.setTempItem(slot, newSCItem)
+    autoUpdateRealmRank(self)

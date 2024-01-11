@@ -2,22 +2,21 @@ from newCharacter import new_character_change
 from statsHandler import updateResistsFromRace, adjustSkillsFromRealmRank, autoUpdateRealmRank
 
 from Models.classes import ClassType, RaceType
-from Models.mappings import slot_mapping
+from Models.mappings import slot_mapping, equip_weapon_map
 from widgets import unequipMessageBox
 from reportGeneration import formatItemReportForInformationBox
 
 from PyQt5.QtWidgets import QLabel, QListWidget, QListWidgetItem, QComboBox, QTabWidget
-from PyQt5.QtWidgets import QGroupBox, QTextEdit, QSpinBox
+from PyQt5.QtWidgets import QGroupBox, QTextEdit, QSpinBox, QCheckBox, QPushButton, QLineEdit
 from PyQt5.QtCore import Qt
 
-from SCCalc.adjustUIfunctions import resetSpellcraftUI, checkForItemsForDisable
+from SCCalc.adjustUIfunctions import checkForItemsForDisable
 
 def changeClass(self, class_type: ClassType):
     new_character_change(self, class_type)
     slotSelectionWidget = self.findChild(QListWidget, 'slotSelectionListWidget')
     slotSelectionWidget.clear()
     slotSelectionWidget.addItem(QListWidgetItem(str("<Empty Slot>")))
-    resetSpellcraftUI(self)
 
 def changeRace(self, race_type: RaceType):
     updateResistsFromRace(self, race_type)
@@ -44,7 +43,7 @@ def setSlotSelectionList(self, text):
         for item in availableItems:
             slotSelectionListWidget.addItem(QListWidgetItem(item.name))
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error in setSlotSelectionList: {e}")
     slotSelectionListWidget.sortItems(Qt.SortOrder.AscendingOrder)
     itemsSelectionListWidget = self.findChild(QListWidget, 'itemsListWidget')
     slotWidget = itemsSelectionListWidget.findItems(text, Qt.MatchFlag.MatchStartsWith)[0]
@@ -66,7 +65,6 @@ def itemScanForLockStatus(self, itemList):
         setUnlockStatus(self)
     else:
         setLockStatus(self)
-            
 
 def setItemsListWidgetSlots(self, itemsListWidget):
     for slot in range(itemsListWidget.count()):
@@ -89,13 +87,15 @@ def setInformationTextEdit(self, slot, name):
     try:
         infoBox.setText(formatItemReportForInformationBox(selectedItemInfo))
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error in setInformationTextEdit: {e}")
         infoBox.setText("<Empty Slot>")
     
 def setItemFromSlotSelection(self):
     slotSelectionListWidget = self.findChild(QListWidget, 'slotSelectionListWidget')
     slotRow = self.findChild(QListWidget, 'itemsListWidget').currentRow()
     slotName = slot_mapping.get(slotRow)
+    equipWeapons = self.findChild(QComboBox, 'equippedWeaponsComboBox')
+    weaponsNotAllowed = equip_weapon_map.get(equipWeapons.currentText())
     if slotSelectionListWidget.currentRow() == 0:
         self.character.setCurrentItem(slotName, None)
         setInformationTextEdit(self, slotName, None)
@@ -104,7 +104,8 @@ def setItemFromSlotSelection(self):
         setLockStatus(self)
         for item in self.character.allAddedItems[slotName]:
             if item.name == slotSelectionListWidget.currentItem().text():
-                self.character.setCurrentItem(slotName, item)
+                if item.slot not in weaponsNotAllowed:
+                    self.character.setCurrentItem(slotName, item)
                 setInformationTextEdit(self, slotName, item.name)
     setItemsListWidgetSlots(self, self.findChild(QListWidget, 'itemsListWidget'))
     autoUpdateRealmRank(self)
@@ -114,6 +115,7 @@ def setItemFromSlotSelection(self):
         setUnlockStatus(self)
 
 def setEquippedWeapons(self):
+    self.findChild(QListWidget, 'vaultAvailableWidget').setCurrentRow(0)
     autoUpdateRealmRank(self)
     
 def setLevel(self):
@@ -163,7 +165,6 @@ def changeTab(self, index, slot):
     checkForItemsForDisable(self)
 
 def resetOnVaultComboBoxChange(self):
-    self.character.copyTempToCurrent()
     autoUpdateRealmRank(self)
     populateVault(self)
     populateAvailable(self)
@@ -213,7 +214,6 @@ def populateVault(self):
     try:
         availableVaultItems = self.character.vault.get(self.vaultCurrentSlotText)
         addedItemNames = [item.name for item in self.character.allAddedItems.get(self.vaultCurrentSlotText)]
-        print(availableVaultItems[1].item_type)
         for item in availableVaultItems:
             if item.name not in addedItemNames and currentLevel >= item.bonus_level:
                 if item.item_type in self.character.class_type.weaponry or item.item_type in self.character.class_type.armor_types or item.item_type == "Magical":
@@ -236,7 +236,7 @@ def populateVault(self):
         vaultAvailableWidget.sortItems(Qt.SortOrder.AscendingOrder)
         setSlotSelectionList(self, self.vaultCurrentSlotText)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error in populateVault: {e}")
     
 def populateAvailable(self):
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
@@ -251,16 +251,19 @@ def populateAvailable(self):
         self.findChild(QGroupBox, 'currentlyInItemList').setTitle(f"Current in Item List : ( {counter} )")
         currentlyInWidget.sortItems(Qt.SortOrder.AscendingOrder)
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error in populateAvailable: {e}")
 
 def vaultItemSingleClick(self):
     self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
     selectedItem = self.findChild(QListWidget, 'vaultAvailableWidget').currentItem().text()
     itemsToPickFrom = self.character.vault.get(self.vaultCurrentSlotText)
     foundItem = False
+    equipWeapons = self.findChild(QComboBox, 'equippedWeaponsComboBox')
+    weaponsNotAllowed = equip_weapon_map.get(equipWeapons.currentText())
     for item in itemsToPickFrom:
         if item.name == selectedItem:
-            self.character.setCurrentItem(self.vaultCurrentSlotText, item)
+            if item.slot not in weaponsNotAllowed:
+                self.character.setCurrentItem(self.vaultCurrentSlotText, item)
             setInformationTextEdit(self, self.vaultCurrentSlotText, item.name)
             foundItem = True
     if foundItem != True:
@@ -274,13 +277,14 @@ def vaultItemDoubleClick(self):
     try:
         selectedItem = self.selectedItemWidget.currentItem().text()
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error in vaultItemDoubleClick: {e}")
         selectedItem = None
     if selectedItem != "<Empty Slot>" or selectedItem is not None:
         itemsToPickFrom = self.character.vault.get(self.vaultCurrentSlotText)
         for item in itemsToPickFrom:
             if item.name == selectedItem:
                 self.character.addToAllItems(self.vaultCurrentSlotText, item)
+                self.character.setTempItem(self.vaultCurrentSlotText, item)
                 row = self.selectedItemWidget.currentRow()
                 item = self.selectedItemWidget.takeItem(row)
                 del item
@@ -322,44 +326,50 @@ def vaultCurrentRemoveAll(self):
                 if self.character.temporaryItems[self.vaultCurrentSlotText].name == selectedItem:
                     self.character.setTempItem(self.vaultCurrentSlotText, None) 
             except Exception as e:
-                print(f"Error: {e}")
+                print(f"Error in vaultCurrentRemoveAll: {e}")
         self.selectedItemWidget.clear()
     refreshSlotSelectionListWidget(self)
     populateVault(self)
     populateAvailable(self)
     
 def vaultCurrentSingleClick(self):  
-    self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
+    vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
     selectedItem = self.findChild(QListWidget, 'currentlyInItemListWidget').currentItem().text()
+    equipWeapons = self.findChild(QComboBox, 'equippedWeaponsComboBox')
+    weaponsNotAllowed = equip_weapon_map.get(equipWeapons.currentText())
     if selectedItem is None:
         pass
     else:
-        itemsToPickFrom = self.character.allAddedItems.get(self.vaultCurrentSlotText)
+        itemsToPickFrom = self.character.allAddedItems.get(vaultCurrentSlotText)
         foundItem = False
         for item in itemsToPickFrom:
             if item.name == selectedItem:
-                self.character.setCurrentItem(self.vaultCurrentSlotText, item)
-                setInformationTextEdit(self, self.vaultCurrentSlotText, item.name)
+                if item.slot not in weaponsNotAllowed:
+                    self.character.setCurrentItem(vaultCurrentSlotText, item)
+                    self.character.setTempItem(vaultCurrentSlotText, item)
+                setInformationTextEdit(self, vaultCurrentSlotText, item.name)
                 foundItem = True
         if foundItem != True:
-            self.character.setCurrentItem(self.vaultCurrentSlotText, None)
-            setInformationTextEdit(self, self.vaultCurrentSlotText, None)
+            self.character.setCurrentItem(vaultCurrentSlotText, None)
+            setInformationTextEdit(self, vaultCurrentSlotText, None)
         autoUpdateRealmRank(self)
 
 def vaultCurrentDoubleClick(self):
-    self.vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
+    vaultCurrentSlotText = self.findChild(QComboBox, 'vaultCurrentSlot').currentText()
     self.selectedItemWidget = self.findChild(QListWidget, 'currentlyInItemListWidget')
     if self.selectedItemWidget.count() != 0:
         selectedItem = self.selectedItemWidget.currentItem().text()
-        itemsToPickFrom = self.character.allAddedItems.get(self.vaultCurrentSlotText)
+        itemsToPickFrom = self.character.allAddedItems.get(vaultCurrentSlotText)
         for item in itemsToPickFrom:
             if item.name == selectedItem:
-                self.character.removeFromAllItems(self.vaultCurrentSlotText, item)
+                self.character.removeFromAllItems(vaultCurrentSlotText, item)
                 try:
-                    if self.character.temporaryItems[self.vaultCurrentSlotText].name == selectedItem:
-                        self.character.setTempItem(self.vaultCurrentSlotText, None) 
+                    if self.character.temporaryItems[vaultCurrentSlotText].name == selectedItem:
+                        self.character.setTempItem(vaultCurrentSlotText, None) 
+                    if self.character.currentItems[vaultCurrentSlotText].name == selectedItem:
+                        self.character.setCurrentItem(vaultCurrentSlotText, None)
                 except Exception as e:
-                    print(f"Error: {e}")
+                    print(f"Error in vaultCurrentDoubleClick: {e}")
                 row = self.selectedItemWidget.currentRow()
                 item = self.selectedItemWidget.takeItem(row)
                 del item
@@ -370,6 +380,7 @@ def vaultCurrentDoubleClick(self):
         refreshSlotSelectionListWidget(self)
         populateVault(self)
         populateAvailable(self)
+    autoUpdateRealmRank(self)
     
 def refreshSlotSelectionListWidget(self):
     slotSelectionListWidget = self.findChild(QListWidget, 'slotSelectionListWidget')

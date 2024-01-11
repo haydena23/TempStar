@@ -5858,6 +5858,22 @@ p, li { white-space: pre-wrap; }
                     <property name="bottomMargin">
                      <number>2</number>
                     </property>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="label_24">
+                      <property name="text">
+                       <string>Absorb</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QLineEdit" name="scArmorNameBox"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QComboBox" name="scArmorTypeCombo"/>
+                    </item>
                     <item row="0" column="0">
                      <widget class="QLabel" name="label_23">
                       <property name="text">
@@ -5868,7 +5884,7 @@ p, li { white-space: pre-wrap; }
                       </property>
                      </widget>
                     </item>
-                    <item row="0" column="2">
+                    <item row="0" column="1">
                      <spacer name="horizontalSpacer_4">
                       <property name="orientation">
                        <enum>Qt::Horizontal</enum>
@@ -5881,43 +5897,7 @@ p, li { white-space: pre-wrap; }
                       </property>
                      </spacer>
                     </item>
-                    <item row="1" column="0" colspan="3">
-                     <widget class="QLineEdit" name="scArmorNameBox"/>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QCheckBox" name="autonameCheckbox">
-                      <property name="text">
-                       <string>Autoname</string>
-                      </property>
-                      <property name="checked">
-                       <bool>true</bool>
-                      </property>
-                     </widget>
-                    </item>
                     <item row="1" column="3">
-                     <widget class="QComboBox" name="scArmorTypeCombo"/>
-                    </item>
-                    <item row="0" column="3">
-                     <widget class="QLabel" name="label_24">
-                      <property name="text">
-                       <string>Absorb</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="4">
-                     <widget class="QLabel" name="label_25">
-                      <property name="text">
-                       <string>Level</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="4">
                      <widget class="QComboBox" name="scArmorLevelCombo">
                       <item>
                        <property name="text">
@@ -6176,6 +6156,16 @@ p, li { white-space: pre-wrap; }
                       </item>
                      </widget>
                     </item>
+                    <item row="0" column="3">
+                     <widget class="QLabel" name="label_25">
+                      <property name="text">
+                       <string>Level</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                      </property>
+                     </widget>
+                    </item>
                    </layout>
                   </widget>
                  </item>
@@ -6192,34 +6182,34 @@ p, li { white-space: pre-wrap; }
                      <widget class="QComboBox" name="statCategory2"/>
                     </item>
                     <item row="1" column="1">
-                     <widget class="QComboBox" name="gemCombo1"/>
+                     <widget class="QComboBox" name="statCombo1"/>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QComboBox" name="gemCombo2"/>
+                     <widget class="QComboBox" name="statCombo2"/>
                     </item>
                     <item row="2" column="2">
-                     <widget class="QComboBox" name="gem2Value"/>
+                     <widget class="QComboBox" name="statValue2"/>
                     </item>
                     <item row="3" column="0">
                      <widget class="QComboBox" name="statCategory3"/>
                     </item>
                     <item row="1" column="2">
-                     <widget class="QComboBox" name="gem1Value"/>
+                     <widget class="QComboBox" name="statValue1"/>
                     </item>
                     <item row="4" column="0">
                      <widget class="QComboBox" name="statCategory4"/>
                     </item>
                     <item row="4" column="1">
-                     <widget class="QComboBox" name="gemCombo4"/>
+                     <widget class="QComboBox" name="statCombo4"/>
                     </item>
                     <item row="3" column="2">
-                     <widget class="QComboBox" name="gem3Value"/>
+                     <widget class="QComboBox" name="statValue3"/>
                     </item>
                     <item row="4" column="2">
-                     <widget class="QComboBox" name="gem4Value"/>
+                     <widget class="QComboBox" name="statValue4"/>
                     </item>
                     <item row="3" column="1">
-                     <widget class="QComboBox" name="gemCombo3"/>
+                     <widget class="QComboBox" name="statCombo3"/>
                     </item>
                     <item row="5" column="0">
                      <widget class="QLabel" name="label_35">
