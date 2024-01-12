@@ -120,5 +120,6 @@ def adjustStatsFromMythirian(self, capsDict, realCaps, table_name, baseStats, re
                                         resistsStats[bonus] = myth[mythical_key]
                                     
         except Exception as e:
-            print(f"Error in adjustStatsFromMythirian: {e}")
+            pass
+            # print(f"Error in adjustStatsFromMythirian: {e}")
             

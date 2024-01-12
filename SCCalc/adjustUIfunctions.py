@@ -3,7 +3,8 @@ from PyQt5.QtWidgets import QListWidgetItem
 from PyQt5.QtCore import Qt
 
 from SCCalc.sc_maps import alb_arch_maps, arch_map, imbue_caps, stat_values_by_level
-from SCCalc.calculator import onNewItemCreated
+from SCCalc.armor_maps import alb_armor
+from SCCalc.calculator import onNewItemCreated, calculateTotalImbueCost
 
 from changeFunctions import autoUpdateRealmRank
 
@@ -12,10 +13,7 @@ def resetSpellcraftUI(self):
 
 def initSCArmorTypes(self):
     self.scArmorComboBox.clear()
-    armor = []
-    for armor_type in self.character.class_type.armor_types:
-        armor.append(armor_type)
-    armor.sort()
+    armor = list(self.character.class_type.armor_types)
     for index, armortype in enumerate(armor):
         self.scArmorComboBox.insertItem(index, armortype)
         
@@ -65,15 +63,16 @@ def setArchtypes(self, box):
         
 def setFifthSlotBonus(self):
     currentLevel = int(self.scLevelCombobox.currentText())
-    fifSlotBonusBox = self.findChild(QComboBox, 'slot5Bonus')
+    fifthSlotBonusBox = self.findChild(QComboBox, 'slot5Bonus')
+    fifthSlotBonusBox.clear()
     if currentLevel != 51:
-        fifSlotBonusBox.setCurrentIndex(0)
-        fifSlotBonusBox.setEnabled(False)
+        fifthSlotBonusBox.setCurrentIndex(0)
+        fifthSlotBonusBox.setEnabled(False)
     else:
-        fifSlotBonusBox.setEnabled(True)
+        fifthSlotBonusBox.setEnabled(True)
 
 def onChangeArmor(self):
-    pass
+    setFifthSlotBonus(self)
 
 def onSCSlotChanged(self):
     currentSlot = self.findChild(QComboBox, 'scCurrentSlot').currentText()
@@ -96,6 +95,7 @@ def onSCStatComboBoxChanged(self, box):
         if box.currentText() != '<Empty>':
             statToSet[box.currentText().lower().replace(" ","_")] = int(self.findChild(QComboBox, f'statValue{box.objectName()[-1]}').currentText())
     vaultCopy.setStats(statToSet)
+    setImbueLabels(self, calculateTotalImbueCost(self))
     autoUpdateRealmRank(self)
     
 def updateAfterValueChange(self):
@@ -113,8 +113,45 @@ def updateAfterValueChange(self):
         if box.currentText() != '<Empty>':
             statToSet[box.currentText().lower().replace(" ","_")] = int(self.findChild(QComboBox, f'statValue{box.objectName()[-1]}').currentText())
     vaultCopy.setStats(statToSet)
+    setImbueLabels(self, calculateTotalImbueCost(self))
     autoUpdateRealmRank(self)
     
+#####################################################
+############# Labels
+#####################################################
+    
+def setImbueLabels(self, costs):
+    # Default cost if a key is missing
+    default_cost = 0.0
+
+    # Define label-cost pairs
+    label_cost_pairs = [
+        ('gemImbue1', float(costs.get('comboBox1', default_cost))),
+        ('gemImbue2', float(costs.get('comboBox2', default_cost))),
+        ('gemImbue3', float(costs.get('comboBox3', default_cost))),
+        ('gemImbue4', float(costs.get('comboBox4', default_cost))),
+        ('totalCostImbue', float(costs.get('totalCost', default_cost))),
+        ('gemHighest', float(max(costs.get('comboBox1', default_cost), costs.get('comboBox2', default_cost), costs.get('comboBox3', default_cost), costs.get('comboBox4', default_cost))))
+    ]
+    for label_name, cost in label_cost_pairs:
+        label = self.findChild(QLabel, label_name)
+        if label:
+            label.setText(str(cost))
+    
+    total_cost = costs.get('totalCost', 0.0)
+    max_overcharge_value = float(self.maxOverchargeLabel.text())
+
+    if total_cost < max_overcharge_value:
+        color = "#24b5c2"  # Blue
+    elif total_cost == max_overcharge_value:
+        color = "#5ad662"  # Green
+    else:
+        color = "red"
+
+    total_cost_label = self.findChild(QLabel, 'totalCostImbue')
+    if total_cost_label:
+        total_cost_label.setStyleSheet(f"color: {color};")
+
 #####################################################
 ############# Item Handler
 #####################################################
@@ -130,8 +167,6 @@ def checkForItemsForDisable(self):
         self.findChild(QListWidget, 'procsList').setEnabled(False)
         self.findChild(QPushButton, 'scClearStatsButton').setEnabled(False)
         self.findChild(QPushButton, 'scDeleteItemButton').setEnabled(False)
-        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(True)
-        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(True)
         self.findChild(QLineEdit, 'scArmorNameBox').setEnabled(False)
     else:
         for i in range(1, 5):
@@ -142,8 +177,6 @@ def checkForItemsForDisable(self):
         self.findChild(QListWidget, 'procsList').setEnabled(True)
         self.findChild(QPushButton, 'scClearStatsButton').setEnabled(True)
         self.findChild(QPushButton, 'scDeleteItemButton').setEnabled(True)
-        self.findChild(QComboBox, 'scArmorTypeCombo').setEnabled(False)
-        self.findChild(QComboBox, 'scArmorLevelCombo').setEnabled(False)
         
 def createNewItem(self):
     itemListWidget = self.findChild(QListWidget, 'scItemsListWidget')

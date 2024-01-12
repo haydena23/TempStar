@@ -193,19 +193,19 @@ alb_plate = {
 }
 
 alb_right_hand = {
-    
+    0
 }
 
 alb_left_hand = {
-    
+    0
 }
 
 alb_two_handed = {
-    
+    0
 }
 
 alb_ranged = {
-    
+    0
 }
 
 alb_armor = {

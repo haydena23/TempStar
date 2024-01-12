@@ -496,15 +496,12 @@ def configSCValueComboBox(self, sc_value_combo_box_callback):
     self.scValueComboBox4.currentIndexChanged.connect(lambda: on_sc_value_combo4_changed(self, sc_value_combo_box_callback))
 
 def on_sc_value_combo1_changed(self, sc_value_combo_box_callback):
-    print("Hello")
     sc_value_combo_box_callback(self)
     
 def on_sc_value_combo2_changed(self, sc_value_combo_box_callback):
-    print("Hello")
     sc_value_combo_box_callback(self)
     
 def on_sc_value_combo3_changed(self, sc_value_combo_box_callback):
-    print("Hello")
     sc_value_combo_box_callback(self)
     
 def on_sc_value_combo4_changed(self, sc_value_combo_box_callback):

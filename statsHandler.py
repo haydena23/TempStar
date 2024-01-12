@@ -46,7 +46,8 @@ def calculateNowStats(self):
                                     valueWidget = QTableWidgetItem(str(value + currentValue))
                                     self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
                                 except Exception as e:
-                                    print(f"Error in calculateNowStats: {e}")
+                                    pass
+                                    # print(f"Error in calculateNowStats: {e}")
         allSkillsAdjust(self)
         adjustBaseCapFromStatCap(self)
         skillsTable = self.findChild(QTableWidget, 'resistsTable')

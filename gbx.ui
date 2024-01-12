@@ -6297,7 +6297,7 @@ p, li { white-space: pre-wrap; }
                           <enum>QFrame::Raised</enum>
                          </property>
                          <property name="text">
-                          <string>Current Charge :</string>
+                          <string>Imbue Capacity :</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6329,7 +6329,7 @@ p, li { white-space: pre-wrap; }
                           <enum>QFrame::Raised</enum>
                          </property>
                          <property name="text">
-                          <string>Imbue Capacity :</string>
+                          <string>Current Charge :</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -6385,7 +6385,7 @@ p, li { white-space: pre-wrap; }
                         </widget>
                        </item>
                        <item row="0" column="1">
-                        <widget class="QLabel" name="label_26">
+                        <widget class="QLabel" name="gemImbue1">
                          <property name="text">
                           <string>0.0</string>
                          </property>
@@ -6411,7 +6411,7 @@ p, li { white-space: pre-wrap; }
                         </widget>
                        </item>
                        <item row="1" column="1">
-                        <widget class="QLabel" name="label_27">
+                        <widget class="QLabel" name="gemImbue2">
                          <property name="text">
                           <string>0.0</string>
                          </property>
@@ -6421,36 +6421,6 @@ p, li { white-space: pre-wrap; }
                         </widget>
                        </item>
                        <item row="5" column="1">
-                        <widget class="QLabel" name="label_31">
-                         <property name="text">
-                          <string>0.0</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QLabel" name="label_29">
-                         <property name="text">
-                          <string>0.0</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="1">
-                        <widget class="QLabel" name="label_28">
-                         <property name="text">
-                          <string>0.0</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="6" column="1">
                         <widget class="QLabel" name="imbueCapacityLabel">
                          <property name="text">
                           <string>0.0</string>
@@ -6460,8 +6430,38 @@ p, li { white-space: pre-wrap; }
                          </property>
                         </widget>
                        </item>
+                       <item row="3" column="1">
+                        <widget class="QLabel" name="gemImbue4">
+                         <property name="text">
+                          <string>0.0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLabel" name="gemImbue3">
+                         <property name="text">
+                          <string>0.0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="1">
+                        <widget class="QLabel" name="totalCostImbue">
+                         <property name="text">
+                          <string>0.0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
                        <item row="4" column="1">
-                        <widget class="QLabel" name="label_30">
+                        <widget class="QLabel" name="gemHighest">
                          <property name="text">
                           <string>0.0</string>
                          </property>
