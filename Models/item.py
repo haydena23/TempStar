@@ -1,7 +1,8 @@
 class Item:
-    def __init__(self, slot, shield_size, name, stats, single_utility, total_utility, 
-                 level, bonus_level, realm, armor_factor, usable,
-                 tradeable, item_type, quality, dps, speed, damage_type, crafted
+    def __init__(self, slot: str, shield_size: str, name: str, stats: dict, single_utility: float, 
+                 total_utility: float, level: int, bonus_level: int, realm: str, armor_factor: int, 
+                 usable: str, tradeable: str, item_type: str, quality: str, dps: float, speed: float, 
+                 damage_type: str, crafted: bool, crafted_name: str, bonus_stat: dict
                  ):
         self.slot = slot
         self.name = name
@@ -21,13 +22,19 @@ class Item:
         self.damage_type = damage_type
         self.shield_size = shield_size
         self.crafted = crafted
+        self.crafted_name = crafted_name
+        self.bonus_stat = bonus_stat
     
     def setSlot(self, slot):
         self.slot = slot
     def setName(self, name):
         self.name = name
+    def setCraftedName(self, name):
+        self.crafted_name = name
     def setStats(self, stats):
         self.stats = stats
+    def setBonusStat(self, stat):
+        self.bonus_stat = stat   
     def setSingleUtility(self, single_utility):
         self.single_utility = single_utility
     def setTotalUtility(self, total_utility):

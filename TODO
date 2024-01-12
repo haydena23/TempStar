@@ -36,6 +36,7 @@ Todo:
     ✔ Check class usability of item @done(24-01-09 01:49)
     ✔ Check allowed armor type @done(24-01-09 01:49)
     - Set current slot selection from selected item in "currently in item list"
+    - Use crafted items Crafted Name instead
   > Filter
     ✔ Implement bonuses filter @done(24-01-09 05:00)
     ✔ Configure clear filter on vault page @done(24-01-09 05:00)

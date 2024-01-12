@@ -46,8 +46,18 @@ def calculateNowStats(self):
                                     valueWidget = QTableWidgetItem(str(value + currentValue))
                                     self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
                                 except Exception as e:
+                                    # print(f"Error in calculateNowStats 1: {e}")
                                     pass
-                                    # print(f"Error in calculateNowStats: {e}")
+                            for stat, value in item.bonus_stat.items():
+                                stat = stat.replace("_"," ").title()
+                                try:
+                                    statWidgetRow = (self.tableWidget.findItems(stat, Qt.MatchFlag.MatchExactly))[0].row()
+                                    currentValue = int(self.tableWidget.item(statWidgetRow, 1).text())
+                                    valueWidget = QTableWidgetItem(str(value + currentValue))
+                                    self.tableWidget.setItem(statWidgetRow,1,valueWidget)  
+                                except Exception as e:
+                                    # print(f"Error in calculateNowStats 2: {e}")
+                                    pass
         allSkillsAdjust(self)
         adjustBaseCapFromStatCap(self)
         skillsTable = self.findChild(QTableWidget, 'resistsTable')

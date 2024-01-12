@@ -84,10 +84,9 @@ def setInformationTextEdit(self, slot, name):
     for item in items:
         if item.name == name:
             selectedItemInfo = item
-    try:
+    if selectedItemInfo is not None:
         infoBox.setText(formatItemReportForInformationBox(selectedItemInfo))
-    except Exception as e:
-        print(f"Error in setInformationTextEdit: {e}")
+    else:
         infoBox.setText("<Empty Slot>")
     
 def setItemFromSlotSelection(self):
@@ -316,10 +315,8 @@ def vaultCurrentRemoveAll(self):
     if self.selectedItemWidget.count() != 0:
         self.selectedItemWidget.setCurrentRow(0)
         itemsToPickFrom = self.character.allAddedItems.get(self.vaultCurrentSlotText)
-        print(len(itemsToPickFrom))
         for i in range(len(itemsToPickFrom)):
             item = itemsToPickFrom[0]
-            print(item.name)
             selectedItem = itemsToPickFrom[0].name
             self.character.removeFromAllItems(self.vaultCurrentSlotText, item)
             try:

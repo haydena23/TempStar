@@ -3,7 +3,10 @@ from Models.item import Item
 def formatItemReportForInformationBox(item: Item):
     lines = []
 
-    lines.append(f"{item.name}")
+    if item.crafted_name != "":
+        lines.append(f"{item.crafted_name}")
+    else:
+        lines.append(f"{item.name}")
     lines.append("")
     lines.append(f"Item Slot : {item.slot}")
     lines.append(f"Item Type : {item.item_type}")
@@ -25,6 +28,8 @@ def formatItemReportForInformationBox(item: Item):
         lines.append(f"Speed : {item.speed}")
     lines.append("")
     for stat, value in item.stats.items():
+        lines.append(f"{value} {stat.replace('_', ' ').title()}")
+    for stat, value in item.bonus_stat.items():
         lines.append(f"{value} {stat.replace('_', ' ').title()}")
     
     lines.append("")

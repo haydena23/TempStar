@@ -10,9 +10,9 @@ from changeFunctions import vaultCurrentDoubleClick, vaultCurrentSingleClick, va
 from changeFunctions import resetFilterPage
 from statsHandler import checkTOADisplay
 
-from SCCalc.adjustUIfunctions import initSCArmorTypes, onChangeArmor, setArchtypes, initSCArchTypes, setLevelBox
+from SCCalc.adjustUIfunctions import initSCArmorTypes, onChangeArmor, setArchtypes, setLevelBox
 from SCCalc.adjustUIfunctions import setMaxImbue, createNewItem, deleteItem, onSCSlotChanged, onSCStatComboBoxChanged
-from SCCalc.adjustUIfunctions import updateAfterValueChange
+from SCCalc.adjustUIfunctions import updateAfterValueChange, onSCItemClicked, initSCItemsListWidget
 
 from newCharacter import create_new_character_on_open
 from Models.vault import loadVault
@@ -46,15 +46,19 @@ def initUI(self):
     configVaultClearFilterButton(self, changeTab)
     configFilterClearFilterButton(self, resetFilterPage)
     
+    self.scItems = []
+    
     # Spellcrafting
-    configSCArmorComboBox(self, onChangeArmor)
-    configSCArchtypesComboBox(self, setArchtypes, setArchtypes, setArchtypes, setArchtypes)
-    configSCLevelComboBox(self, setLevelBox)
-    configSCCreateButton(self, createNewItem)
-    configSCDeleteButton(self, deleteItem)
-    configSCSlotComboBox(self, onSCSlotChanged)
-    configSCStatComboBox(self, onSCStatComboBoxChanged)
-    configSCValueComboBox(self, updateAfterValueChange)
+    configSCItemListWidget(self, onSCItemClicked)
+    
+    # configSCArmorComboBox(self, onChangeArmor)
+    # configSCArchtypesComboBox(self, setArchtypes, setArchtypes, setArchtypes, setArchtypes)
+    # configSCLevelComboBox(self, setLevelBox)
+    # configSCCreateButton(self, createNewItem)
+    # configSCDeleteButton(self, deleteItem)
+    # configSCSlotComboBox(self, onSCSlotChanged)
+    # configSCStatComboBox(self, onSCStatComboBoxChanged)
+    # configSCValueComboBox(self, updateAfterValueChange)
     
 """
 Configure Class ComboBox
@@ -390,7 +394,6 @@ def configSCArchtypesComboBox(self, sc_archtype1_combobox_callback, sc_archtype2
     self.scArchtype2 = self.findChild(QComboBox, 'statCategory2')
     self.scArchtype3 = self.findChild(QComboBox, 'statCategory3')
     self.scArchtype4 = self.findChild(QComboBox, 'statCategory4')
-    initSCArchTypes(self)
     for i in range(1, 5):
         setArchtypes(self, self.findChild(QComboBox, f'statCategory{i}'))
     self.scArchtype1.currentIndexChanged.connect(lambda: on_sc_archtype1_combobox_changed(self, sc_archtype1_combobox_callback))
@@ -506,3 +509,27 @@ def on_sc_value_combo3_changed(self, sc_value_combo_box_callback):
     
 def on_sc_value_combo4_changed(self, sc_value_combo_box_callback):
     sc_value_combo_box_callback(self)
+    
+"""
+Config SC Fifth Combobox
+"""
+
+def configSCFifthComboBox(self, sc_fifth_callback):
+    self.fifthBox = self.findChild(QComboBox, 'slot5Bonus')
+    self.fifthBox.currentIndexChanged.connect(lambda: on_sc_fifth_changed(self, sc_fifth_callback))
+    
+def on_sc_fifth_changed(self, sc_fifth_callback):
+    sc_fifth_callback(self)
+    
+"""
+Config SC Item List
+"""
+
+def configSCItemListWidget(self, sc_item_single_click_callback):
+    self.scItemList = self.findChild(QListWidget, 'scItemsListWidget')
+    initSCItemsListWidget(self, self.scItemList)
+    self.scItemList.itemClicked.connect(lambda: on_sc_item_clicked(self, sc_item_single_click_callback))
+
+def on_sc_item_clicked(self, sc_item_single_click_callback):
+    selected_item = self.scItemList.currentRow()
+    sc_item_single_click_callback(self, selected_item)

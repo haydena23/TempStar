@@ -33,7 +33,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Left Hand",
@@ -58,7 +60,9 @@
             "speed": 4.3,
             "damage_type": "Thrust",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Right Hand",
@@ -82,7 +86,9 @@
             "speed": 3.8,
             "damage_type": "Thrust",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Ring",
@@ -111,7 +117,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Jewel",
@@ -135,7 +143,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Neck",
@@ -165,7 +175,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Wrist",
@@ -194,7 +206,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Cloak",
@@ -220,7 +234,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Head",
@@ -250,7 +266,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Arms",
@@ -276,7 +294,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Hands",
@@ -305,7 +325,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Chest",
@@ -332,7 +354,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Legs",
@@ -360,7 +384,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Feet",
@@ -387,7 +413,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Left Hand",
@@ -413,7 +441,9 @@
             "speed": 3,
             "damage_type": "Crush",
             "shield_size": "Small",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Mythirian",
@@ -437,7 +467,9 @@
             "speed": 0,
             "damage_type": "",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Two Hand",
@@ -465,7 +497,9 @@
             "speed": 5.8,
             "damage_type": "Crush",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
         },
         {
             "slot": "Ranged",
@@ -492,7 +526,33 @@
             "speed": 4.9,
             "damage_type": "Slash",
             "shield_size": "",
-            "crafted": "No"
+            "crafted": false,
+            "crafted_name": "",
+            "bonus_stat": {}
+        },
+        {
+            "slot": "Chest",
+            "name": "Test Craft",
+            "stats": {
+                "strength": 28
+            },
+            "single_utility": 0,
+            "total_utility": 0,
+            "level": 51,
+            "bonus_level": 50,
+            "realm": "Albion",
+            "armor_factor": "",
+            "usable": "All",
+            "tradeable": "Yes",
+            "item_type": "Cloth",
+            "quality": "99%",
+            "dps": 0,
+            "speed": 0,
+            "damage_type": "",
+            "shield_size": "",
+            "crafted": true,
+            "crafted_name": "Super Cool Chest",
+            "bonus_stat": {"dexterity": 28}
         }
     ]
 }
